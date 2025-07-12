@@ -208,74 +208,59 @@ const Index = () => {
 
       {/* Stellenangebote Section */}
       <div className="py-20" style={{ backgroundColor: '#f8f9fa' }}>
-        <div className="w-full max-w-7xl mx-auto px-8">
-          {/* Two Column Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="w-full max-w-5xl mx-auto px-8">
+          <div className="text-center space-y-16">
             
-            {/* Left Column - Image */}
+            {/* Title & Subtitle */}
+            <div className="space-y-6">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
+                <span className="text-[#004595]">Stellenangebote</span>
+              </h2>
+              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
+                Gemeinsam kommen wir weiter. Sie mit uns. Wir mit Ihnen. Finden und erleben Sie Arbeits- und Ausbildungsplätze mit Zukunft.
+              </p>
+            </div>
+
+            {/* Award Badge */}
             <div className="flex justify-center">
-              <div className="w-full max-w-lg">
+              <div className="w-56">
                 <img 
-                  src={workplaceCollage} 
-                  alt="Bildercollage Arbeitsplatz"
-                  className="w-full h-auto rounded-2xl shadow-lg"
+                  src={employerAward} 
+                  alt="Auszeichnung Arbeitgeber"
+                  className="w-full h-auto"
                 />
               </div>
             </div>
 
-            {/* Right Column - Content */}
-            <div className="space-y-8">
-              {/* Title */}
-              <div className="space-y-4">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-                  <span className="text-[#004595]">Stellenangebote</span>
-                </h2>
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                  Gemeinsam kommen wir weiter. Sie mit uns. Wir mit Ihnen. Finden und erleben Sie Arbeits- und Ausbildungsplätze mit Zukunft.
-                </p>
-              </div>
-
-              {/* Award Badge */}
-              <div className="flex justify-center lg:justify-start">
-                <div className="w-48">
-                  <img 
-                    src={employerAward} 
-                    alt="Auszeichnung Arbeitgeber"
-                    className="w-full h-auto"
-                  />
-                </div>
-              </div>
-
-              {/* Features Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {[
-                  "digitale Kanzlei",
-                  "Homeoffice", 
-                  "flexible Arbeitszeiten",
-                  "moderne Arbeitsplätze",
-                  "junges und dynamisches Team"
-                ].map((feature, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <div className="flex-shrink-0">
-                      <CheckIcon />
-                    </div>
-                    <span className="text-foreground font-medium">{feature}</span>
+            {/* Modern Features Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              {[
+                { icon: "💻", text: "digitale Kanzlei" },
+                { icon: "🏠", text: "Homeoffice" },
+                { icon: "⏰", text: "flexible Arbeitszeiten" },
+                { icon: "🏢", text: "moderne Arbeitsplätze" },
+                { icon: "👥", text: "junges und dynamisches Team" }
+              ].map((feature, index) => (
+                <div key={index} className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+                  <div className="text-center space-y-3">
+                    <div className="text-3xl">{feature.icon}</div>
+                    <p className="text-foreground font-semibold text-lg">{feature.text}</p>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
+            </div>
 
-              {/* CTA Button */}
-              <div className="pt-4">
-                <Button 
-                  size="lg" 
-                  className="bg-[#004595] text-white hover:bg-[#003366] font-semibold px-8 py-3 text-base rounded-lg transition-all duration-300 hover:shadow-lg"
-                  asChild
-                >
-                  <a href="https://www.steinbock-partner.de/stellenangebote/" target="_blank" rel="noopener noreferrer">
-                    Zu den Stellenangeboten
-                  </a>
-                </Button>
-              </div>
+            {/* CTA Button */}
+            <div className="pt-8">
+              <Button 
+                size="lg" 
+                className="bg-[#004595] text-white hover:bg-[#003366] font-semibold px-12 py-4 text-lg rounded-2xl transition-all duration-300 hover:shadow-lg hover:scale-105"
+                asChild
+              >
+                <a href="https://www.steinbock-partner.de/stellenangebote/" target="_blank" rel="noopener noreferrer">
+                  Zu den Stellenangeboten
+                </a>
+              </Button>
             </div>
           </div>
         </div>
