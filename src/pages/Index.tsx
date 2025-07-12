@@ -42,7 +42,7 @@ const Index = () => {
       <Header />
       
       {/* Optimized Hero Container - Fixed 650px Height */}
-      <div className="hero-content bg-gradient-to-r from-background via-background to-accent/10">
+      <div className="hero-content" style={{ backgroundColor: '#ebf4ff' }}>
         <div className="w-full max-w-7xl mx-auto">
           {/* 50/50 Layout - Fixed Height */}
           <div className="grid grid-cols-1 lg:grid-cols-2 h-[650px]">
