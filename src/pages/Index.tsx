@@ -83,19 +83,17 @@ const Index = () => {
                 </div>
               </div>
               
-              {/* Rating Section */}
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50 max-w-sm shadow-lg">
-                <div className="space-y-4">
-                  <h3 className="text-lg font-bold text-foreground">Ausgezeichnet</h3>
-                  
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, index) => (
-                      <StarIcon key={index} />
-                    ))}
-                  </div>
-                  
-                  <p className="text-base font-bold text-foreground">974+ Bewertungen</p>
+              {/* Rating Section - No Card, Horizontal Layout */}
+              <div className="flex items-center gap-6">
+                <h3 className="text-lg font-bold text-foreground">Ausgezeichnet</h3>
+                
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, index) => (
+                    <StarIcon key={index} />
+                  ))}
                 </div>
+                
+                <p className="text-base font-bold text-foreground">974+ Bewertungen</p>
               </div>
             </div>
             
