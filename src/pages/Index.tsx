@@ -116,20 +116,20 @@ const Index = () => {
         </div>
       </div>
 
-      {/* About Section */}
-      <div className="py-20" style={{ backgroundColor: '#004595' }}>
-        <div className="w-full max-w-7xl mx-auto px-8">
+      {/* About Section - Same height as Hero Section */}
+      <div className="h-[650px]" style={{ backgroundColor: '#004595' }}>
+        <div className="w-full max-w-7xl mx-auto px-8 h-full flex flex-col justify-center">
           {/* Section Title */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-16 leading-tight max-w-5xl mx-auto">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center mb-12 leading-tight max-w-4xl mx-auto">
             Willkommen bei Steinbock & Partner, einem erfahrenen Team von Anwälten und Steuerexperten.
           </h2>
 
           {/* Two Column Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center flex-1">
             
             {/* Left Column - Image */}
             <div className="flex justify-center">
-              <div className="w-full max-w-lg">
+              <div className="w-full max-w-md">
                 <img 
                   src={partnerImage} 
                   alt="Steinbock & Partner Team"
@@ -139,8 +139,8 @@ const Index = () => {
             </div>
 
             {/* Right Column - Content */}
-            <div className="space-y-8">
-              <div className="text-white/90 text-lg leading-relaxed space-y-6">
+            <div className="space-y-6">
+              <div className="text-white/90 text-base leading-relaxed space-y-4">
                 <p>
                   Unsere Mission ist es, unseren Klienten eine kompetente und effektive Rechts- und Steuerberatung zu bieten. Wir verstehen, dass rechtliche und steuerliche Angelegenheiten komplex sein können und dass eine gründliche Beratung von entscheidender Bedeutung ist.
                 </p>
@@ -153,10 +153,10 @@ const Index = () => {
               </div>
 
               {/* CTA Button */}
-              <div className="pt-4">
+              <div className="pt-2">
                 <Button 
                   size="lg" 
-                  className="bg-white text-[#004595] hover:bg-gray-100 font-semibold px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:shadow-lg"
+                  className="bg-white text-[#004595] hover:bg-gray-100 font-semibold px-6 py-3 text-base rounded-lg transition-all duration-300 hover:shadow-lg"
                 >
                   Mehr über Steinbock & Partner
                 </Button>
