@@ -169,7 +169,7 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Practice Areas Section - Carousel */}
+      {/* Practice Areas Section - Light Gray Background */}
       <div className="py-20" style={{ backgroundColor: '#f8f9fa' }}>
         <div className="w-full max-w-7xl mx-auto px-8">
           {/* Section Title */}
@@ -187,8 +187,8 @@ const Index = () => {
         </div>
       </div>
 
-      {/* News Section */}
-      <div className="py-20" style={{ backgroundColor: '#f8f9fa' }}>
+      {/* News Section - White Background with subtle shadow */}
+      <div className="py-20 bg-white border-y border-gray-100">
         <div className="w-full max-w-7xl mx-auto px-8">
           {/* Section Title */}
           <div className="text-center mb-16">
@@ -205,8 +205,8 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Stellenangebote Section */}
-      <div className="py-20" style={{ backgroundColor: '#f8f9fa' }}>
+      {/* Stellenangebote Section - Gradient Background */}
+      <div className="py-20 bg-gradient-to-br from-gray-50 via-gray-100 to-blue-50">
         <div className="w-full max-w-7xl mx-auto px-8">
           {/* Two Column Layout - Equal Widths */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
