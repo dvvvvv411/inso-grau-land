@@ -1,5 +1,3 @@
-import { Check, Star } from "lucide-react";
-
 const Index = () => {
   const features = [
     "20+ Jahre Erfahrung",
@@ -8,51 +6,91 @@ const Index = () => {
     "digitale Kanzlei"
   ];
 
+  // Custom checkmark SVG from the original (blue color #004595)
+  const CheckIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 12" height="12" width="17" className="flex-shrink-0">
+      <path 
+        fill="#004595" 
+        d="M5.98276 9.61866L14.6493 0.96591C14.8437 0.773793 15.074 0.677734 15.3402 0.677734C15.6064 0.677734 15.8355 0.774224 16.0277 0.967202C16.2198 1.16018 16.3158 1.39129 16.3158 1.66052C16.3158 1.92977 16.2198 2.16229 16.0277 2.35808L6.67354 11.7122C6.47808 11.9043 6.24698 12.0004 5.98025 12.0004C5.71352 12.0004 5.4841 11.9043 5.29198 11.7122L0.884545 7.30477C0.692428 7.1079 0.598133 6.87468 0.601658 6.60512C0.605199 6.33556 0.703459 6.10472 0.896437 5.91261C1.08941 5.72049 1.32052 5.62443 1.58975 5.62443C1.859 5.62443 2.09152 5.72049 2.28731 5.91261L5.98276 9.61866Z"
+      />
+    </svg>
+  );
+
+  // Custom star SVG from the original (yellow color #FFCC00)
+  const StarIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 26" height="26" width="26">
+      <g clipPath="url(#clip0_1276_8372)">
+        <path 
+          fill="#FFCC00" 
+          d="M13 20.2642L6.47172 24.1952C6.28453 24.3122 6.08564 24.3648 5.87505 24.3531C5.66446 24.3414 5.47727 24.2771 5.31348 24.1601C5.14969 24.0431 5.02684 23.891 4.94495 23.7038C4.86305 23.5166 4.8455 23.306 4.8923 23.072L6.61211 15.6312L0.855997 10.6122C0.668806 10.4484 0.557661 10.267 0.522563 10.0681C0.487465 9.86924 0.493315 9.6762 0.540112 9.48901C0.58691 9.30182 0.692205 9.14388 0.855997 9.01518C1.01979 8.88649 1.21868 8.81044 1.45267 8.78704L9.06899 8.12017L12.0172 1.10052C12.1108 0.889929 12.2512 0.731987 12.4384 0.626692C12.6256 0.521397 12.8128 0.46875 13 0.46875C13.1872 0.46875 13.3744 0.521397 13.5616 0.626692C13.7488 0.731987 13.8892 0.889929 13.9828 1.10052L16.931 8.12017L24.5473 8.78704C24.7813 8.81044 24.9802 8.88649 25.144 9.01518C25.3078 9.14388 25.4131 9.30182 25.4599 9.48901C25.5067 9.6762 25.5125 9.86924 25.4774 10.0681C25.4423 10.267 25.3312 10.4484 25.144 10.6122L19.3879 15.6312L21.1077 23.072C21.1545 23.306 21.137 23.5166 21.0551 23.7038C20.9732 23.891 20.8503 24.0431 20.6865 24.1601C20.5227 24.2771 20.3355 24.3414 20.125 24.3531C19.9144 24.3648 19.7155 24.3122 19.5283 24.1952L13 20.2642Z"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1276_8372">
+          <rect transform="translate(0.5 0.46875)" fill="white" height="25" width="25"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+  );
+
   return (
-    <div className="min-h-screen bg-background py-16">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Company Name - hidden on small screens */}
-          <p className="text-lg text-muted-foreground mb-4 hidden sm:block">
-            Steinbock & Partner
-          </p>
-          
-          {/* Main Headline */}
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-            Rechtsanwälte und Steuerberater
-          </h1>
-          
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12">
-            Ein starkes Team. Wenn's drauf ankommt!
-          </p>
-          
-          {/* Features Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            {features.map((feature, index) => (
-              <div key={index} className="flex items-center justify-center gap-3">
-                <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-foreground font-medium">{feature}</span>
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-accent/20">
+      {/* Hero Container */}
+      <div className="hero-content">
+        <div className="container mx-auto px-6 py-20">
+          <div className="max-w-6xl mx-auto">
+            
+            {/* Main Content Container */}
+            <div className="text-center mb-16">
+              {/* Company Name - hidden on small screens */}
+              <p className="text-lg text-muted-foreground mb-6 hidden sm:block font-medium tracking-wide">
+                Steinbock & Partner
+              </p>
+              
+              {/* Main Headline */}
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-8 leading-tight">
+                Rechtsanwälte und Steuerberater
+              </h1>
+              
+              {/* Subtitle */}
+              <p className="text-xl md:text-3xl text-foreground font-semibold mb-16 max-w-4xl mx-auto">
+                Ein starkes Team. Wenn's drauf ankommt!
+              </p>
+              
+              {/* Features Grid - USP Section */}
+              <div className="home-hero-usp mb-20">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                  {features.map((feature, index) => (
+                    <div key={index} className="flex items-center justify-center gap-4 p-6 bg-card/50 rounded-lg backdrop-blur-sm border border-border/20 hover:bg-card/80 transition-all duration-300">
+                      <CheckIcon />
+                      <span className="text-foreground font-semibold text-lg">{feature}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))}
-          </div>
-          
-          {/* Rating Section */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-semibold text-foreground">Ausgezeichnet</h3>
-            
-            {/* Stars */}
-            <div className="flex justify-center gap-1 mb-2">
-              {[...Array(5)].map((_, index) => (
-                <Star 
-                  key={index} 
-                  className="w-6 h-6 fill-yellow-400 text-yellow-400" 
-                />
-              ))}
+              
+              {/* Rating Section */}
+              <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-10 border border-border/20 max-w-2xl mx-auto">
+                <div className="space-y-6">
+                  {/* "Ausgezeichnet" Heading */}
+                  <div>
+                    <h3 className="text-2xl font-bold text-foreground mb-6">Ausgezeichnet</h3>
+                  </div>
+                  
+                  {/* Stars Container */}
+                  <div className="flex justify-center gap-2 mb-6">
+                    {[...Array(5)].map((_, index) => (
+                      <StarIcon key={index} />
+                    ))}
+                  </div>
+                  
+                  {/* Reviews Count */}
+                  <div>
+                    <p className="text-xl font-bold text-foreground">974+ Bewertungen</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            
-            {/* Reviews Count */}
-            <p className="text-muted-foreground font-medium">974+ Bewertungen</p>
           </div>
         </div>
       </div>
