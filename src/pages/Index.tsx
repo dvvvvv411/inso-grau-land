@@ -3,6 +3,7 @@ import partnerImage from "../assets/partner-team.png";
 import Header from "../components/Header";
 import { Button } from "../components/ui/button";
 import PracticeAreasCarousel from "../components/PracticeAreasCarousel";
+import NewsCarousel from "../components/NewsCarousel";
 
 const Index = () => {
   const features = [
@@ -182,6 +183,24 @@ const Index = () => {
 
           {/* Practice Areas Carousel */}
           <PracticeAreasCarousel />
+        </div>
+      </div>
+
+      {/* News Section */}
+      <div className="py-20 bg-white">
+        <div className="w-full max-w-7xl mx-auto px-8">
+          {/* Section Title */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+              <span className="text-[#004595]">News</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+              Die wichtigsten Rechts-News und Entwicklungen von unserer Kanzlei im Überblick
+            </p>
+          </div>
+
+          {/* News Carousel */}
+          <NewsCarousel />
         </div>
       </div>
     </div>
