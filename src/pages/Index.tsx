@@ -99,9 +99,9 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Right Column - Image (50%) with 20% margin */}
-            <div className="relative flex items-center justify-end pr-[10%]">
-              <div className="w-[90%] h-[650px] shadow-2xl overflow-hidden relative">
+            {/* Right Column - Image (50%) with reduced margin - 20% wider */}
+            <div className="relative flex items-center justify-end pr-[5%]">
+              <div className="w-[95%] h-[650px] shadow-2xl overflow-hidden relative">
                 <img 
                   src={heroImage} 
                   alt="Professionelle Anwaltskanzlei - Steinbock & Partner"
