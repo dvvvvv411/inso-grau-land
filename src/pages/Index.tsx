@@ -223,7 +223,7 @@ const Index = () => {
             </div>
 
             {/* Right Column - Modernized Content */}
-            <div className="space-y-8">
+            <div className="space-y-8 h-full flex flex-col justify-center">
               {/* Title */}
               <div className="space-y-4">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
@@ -234,8 +234,8 @@ const Index = () => {
                 </p>
               </div>
 
-              {/* Modern Features Grid */}
-              <div className="space-y-4">
+              {/* Compact Features Grid - 2 columns */}
+              <div className="grid grid-cols-2 gap-3">
                 {[
                   "digitale Kanzlei",
                   "Homeoffice", 
@@ -243,20 +243,20 @@ const Index = () => {
                   "moderne Arbeitsplätze",
                   "junges und dynamisches Team"
                 ].map((feature, index) => (
-                  <div key={index} className="flex items-center gap-4 p-4 bg-white rounded-xl border border-gray-200/50 hover:bg-gray-50 hover:shadow-lg transition-all duration-300 group">
-                    <div className="p-2 bg-[#004595]/10 rounded-full group-hover:bg-[#004595]/20 transition-colors">
+                  <div key={index} className="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200/50 hover:bg-gray-50 hover:shadow-md transition-all duration-300 group">
+                    <div className="p-1 bg-[#004595]/10 rounded-full group-hover:bg-[#004595]/20 transition-colors flex-shrink-0">
                       <CheckIcon />
                     </div>
-                    <span className="text-foreground font-semibold text-lg">{feature}</span>
+                    <span className="text-foreground font-medium text-sm">{feature}</span>
                   </div>
                 ))}
               </div>
 
               {/* Modern CTA Button */}
-              <div className="pt-6">
+              <div className="pt-4">
                 <Button 
                   size="lg" 
-                  className="w-full sm:w-auto bg-[#004595] text-white hover:bg-[#003366] font-bold px-12 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-xl hover:scale-105 group"
+                  className="w-full bg-[#004595] text-white hover:bg-[#003366] font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 hover:shadow-xl hover:scale-105 group"
                   asChild
                 >
                   <a href="https://www.steinbock-partner.de/stellenangebote/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
