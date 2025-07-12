@@ -145,13 +145,6 @@ const PracticeAreasCarousel = () => {
           })}
         </div>
       </div>
-
-      {/* Progress Info */}
-      <div className="text-center mt-8">
-        <p className="text-sm text-muted-foreground">
-          {currentIndex + 1} - {Math.min(currentIndex + cardsPerView, practiceAreas.length)} von {practiceAreas.length} Bereichen
-        </p>
-      </div>
     </div>
   );
 };

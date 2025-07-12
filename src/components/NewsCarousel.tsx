@@ -164,13 +164,6 @@ const NewsCarousel = () => {
           ))}
         </div>
       </div>
-
-      {/* Progress Info */}
-      <div className="text-center mt-8">
-        <p className="text-sm text-muted-foreground">
-          {currentIndex + 1} - {Math.min(currentIndex + cardsPerView, newsArticles.length)} von {newsArticles.length} News-Artikeln
-        </p>
-      </div>
     </div>
   );
 };
