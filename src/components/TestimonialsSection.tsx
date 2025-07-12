@@ -137,10 +137,14 @@ const TestimonialsSection = () => {
           </div>
 
           {/* Testimonial Selection List - Scrollable (2/5 width) */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 flex flex-col h-full">
             <h3 className="text-lg font-bold text-foreground mb-4">Weitere Bewertungen</h3>
             
-            <div className="space-y-3 max-h-80 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+            <div className="space-y-3 max-h-48 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-blue-300 scrollbar-track-blue-50 hover:scrollbar-thumb-blue-400 transition-colors duration-200 rounded-lg"
+                 style={{
+                   scrollbarWidth: 'thin',
+                   scrollbarColor: '#93c5fd #eff6ff'
+                 }}>
               {testimonials.map((testimonial) => (
                 <Card 
                   key={testimonial.id}
