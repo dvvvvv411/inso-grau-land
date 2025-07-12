@@ -132,7 +132,7 @@ const NewsCarousel = () => {
                   className="block h-full"
                 >
                   {/* Image - 50% */}
-                  <div className="h-48 overflow-hidden">
+                  <div className="h-64 overflow-hidden">
                     <img 
                       src={article.image} 
                       alt={article.title}
@@ -141,19 +141,19 @@ const NewsCarousel = () => {
                   </div>
 
                   {/* Content - 50% */}
-                  <CardContent className="p-6 h-48 flex flex-col">
+                  <CardContent className="p-6 h-64 flex flex-col">
                     {/* Title */}
-                    <h3 className="text-lg font-bold text-foreground mb-3 group-hover:text-[#004595] transition-colors duration-300 line-clamp-2">
+                    <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-[#004595] transition-colors duration-300 line-clamp-3 leading-tight">
                       {article.title}
                     </h3>
 
                     {/* Excerpt */}
-                    <p className="text-muted-foreground text-sm leading-relaxed flex-grow line-clamp-4 mb-4">
+                    <p className="text-muted-foreground text-sm leading-relaxed flex-grow line-clamp-5 mb-4">
                       {article.excerpt}
                     </p>
 
                     {/* Read More Link */}
-                    <div className="flex items-center text-[#004595] text-sm font-medium group-hover:text-[#004595]/80 transition-colors duration-300">
+                    <div className="flex items-center text-[#004595] text-sm font-medium group-hover:text-[#004595]/80 transition-colors duration-300 mt-auto">
                       <span>Weiterlesen</span>
                       <ExternalLink className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
                     </div>
