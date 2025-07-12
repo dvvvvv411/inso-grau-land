@@ -2,6 +2,7 @@ import heroImage from "../assets/law-firm-hero.jpg";
 import partnerImage from "../assets/partner-team.png";
 import Header from "../components/Header";
 import { Button } from "../components/ui/button";
+import PracticeAreasCarousel from "../components/PracticeAreasCarousel";
 
 const Index = () => {
   const features = [
@@ -116,30 +117,30 @@ const Index = () => {
         </div>
       </div>
 
-      {/* About Section - Same height as Hero Section */}
-      <div className="h-[650px]" style={{ backgroundColor: '#004595' }}>
-        <div className="w-full max-w-7xl mx-auto px-8 h-full flex flex-col justify-center pt-16">
-          {/* Section Title - More spacing from top */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center mb-12 leading-tight max-w-4xl mx-auto mt-8">
+      {/* About Section - Fixed height with proper overflow handling */}
+      <div className="h-[650px] overflow-hidden" style={{ backgroundColor: '#004595' }}>
+        <div className="w-full max-w-7xl mx-auto px-8 h-full flex flex-col justify-center py-16">
+          {/* Section Title */}
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center mb-12 leading-tight max-w-4xl mx-auto">
             Willkommen bei Steinbock & Partner, einem erfahrenen Team von Anwälten und Steuerexperten.
           </h2>
 
-          {/* Two Column Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center flex-1">
+          {/* Two Column Layout - Fixed height container */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-[400px]">
             
-            {/* Left Column - Image */}
-            <div className="flex justify-center">
-              <div className="w-full max-w-md">
+            {/* Left Column - Image with constrained height */}
+            <div className="flex justify-center h-full">
+              <div className="w-full max-w-md h-full flex items-center">
                 <img 
                   src={partnerImage} 
                   alt="Steinbock & Partner Team"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto max-h-[350px] object-contain"
                 />
               </div>
             </div>
 
             {/* Right Column - Content */}
-            <div className="space-y-6">
+            <div className="space-y-6 h-full flex flex-col justify-center">
               <div className="text-white/90 text-base leading-relaxed space-y-4">
                 <p>
                   Unsere Mission ist es, unseren Klienten eine kompetente und effektive Rechts- und Steuerberatung zu bieten. Wir verstehen, dass rechtliche und steuerliche Angelegenheiten komplex sein können und dass eine gründliche Beratung von entscheidender Bedeutung ist.
@@ -163,6 +164,24 @@ const Index = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Practice Areas Section - Carousel */}
+      <div className="py-20" style={{ backgroundColor: '#f8f9fa' }}>
+        <div className="w-full max-w-7xl mx-auto px-8">
+          {/* Section Title */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+              Unsere <span className="text-[#004595]">Tätigkeitsbereiche</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Kompetente Beratung in allen wichtigen Rechtsbereichen – für Privatpersonen und Unternehmen
+            </p>
+          </div>
+
+          {/* Practice Areas Carousel */}
+          <PracticeAreasCarousel />
         </div>
       </div>
     </div>
