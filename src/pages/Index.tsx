@@ -2,6 +2,7 @@ import heroImage from "../assets/law-firm-hero.jpg";
 import partnerImage from "../assets/partner-team.png";
 import workplaceCollage from "../assets/workplace-collage.jpg";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { Button } from "../components/ui/button";
 import PracticeAreasCarousel from "../components/PracticeAreasCarousel";
 import NewsCarousel from "../components/NewsCarousel";
@@ -275,6 +276,9 @@ const Index = () => {
 
       {/* Testimonials Section */}
       <TestimonialsSection />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
