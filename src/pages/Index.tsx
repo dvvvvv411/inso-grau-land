@@ -187,7 +187,7 @@ const Index = () => {
       </div>
 
       {/* News Section */}
-      <div className="py-20 bg-white">
+      <div className="py-20" style={{ backgroundColor: '#f8f9fa' }}>
         <div className="w-full max-w-7xl mx-auto px-8">
           {/* Section Title */}
           <div className="text-center mb-16">
