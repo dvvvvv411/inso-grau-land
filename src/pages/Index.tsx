@@ -209,55 +209,73 @@ const Index = () => {
       {/* Stellenangebote Section */}
       <div className="py-20" style={{ backgroundColor: '#f8f9fa' }}>
         <div className="w-full max-w-7xl mx-auto px-8">
-          {/* Single Column Layout */}
-          <div className="max-w-4xl mx-auto text-center space-y-12">
+          {/* Two Column Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
-            {/* Title */}
-            <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-                <span className="text-[#004595]">Stellenangebote</span>
-              </h2>
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                Gemeinsam kommen wir weiter. Sie mit uns. Wir mit Ihnen. Finden und erleben Sie Arbeits- und Ausbildungsplätze mit Zukunft.
-              </p>
+            {/* Left Column - Image */}
+            <div className="flex justify-center">
+              <div className="w-full max-w-lg">
+                <img 
+                  src={workplaceCollage} 
+                  alt="Bildercollage Arbeitsplatz"
+                  className="w-full h-auto rounded-2xl shadow-lg"
+                />
+              </div>
             </div>
 
-            {/* Modern Features Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { icon: "💻", text: "digitale Kanzlei" },
-                { icon: "🏠", text: "Homeoffice" },
-                { icon: "⏰", text: "flexible Arbeitszeiten" },
-                { icon: "🖥️", text: "moderne Arbeitsplätze" },
-                { icon: "👥", text: "junges und dynamisches Team" }
-              ].map((feature, index) => (
-                <div key={index} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
-                  <div className="flex flex-col items-center text-center space-y-3">
-                    <div className="text-3xl group-hover:scale-110 transition-transform duration-300">
-                      {feature.icon}
-                    </div>
-                    <span className="text-foreground font-semibold text-base">
-                      {feature.text}
-                    </span>
-                  </div>
+            {/* Right Column - Content */}
+            <div className="space-y-8">
+              {/* Title */}
+              <div className="space-y-4">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+                  <span className="text-[#004595]">Stellenangebote</span>
+                </h2>
+                <p className="text-xl text-muted-foreground leading-relaxed">
+                  Gemeinsam kommen wir weiter. Sie mit uns. Wir mit Ihnen. Finden und erleben Sie Arbeits- und Ausbildungsplätze mit Zukunft.
+                </p>
+              </div>
+
+              {/* Award Badge */}
+              <div className="flex justify-center lg:justify-start">
+                <div className="w-48">
+                  <img 
+                    src={employerAward} 
+                    alt="Auszeichnung Arbeitgeber"
+                    className="w-full h-auto"
+                  />
                 </div>
-              ))}
-            </div>
+              </div>
 
-            {/* Modern CTA Button */}
-            <div className="pt-8">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-[#004595] to-[#0056b3] text-white hover:from-[#003366] hover:to-[#004080] font-semibold px-12 py-4 text-lg rounded-full transition-all duration-300 hover:shadow-xl hover:scale-105 group"
-                asChild
-              >
-                <a href="https://www.steinbock-partner.de/stellenangebote/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
-                  Zu den Stellenangeboten
-                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </a>
-              </Button>
+              {/* Features Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[
+                  "digitale Kanzlei",
+                  "Homeoffice", 
+                  "flexible Arbeitszeiten",
+                  "moderne Arbeitsplätze",
+                  "junges und dynamisches Team"
+                ].map((feature, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <div className="flex-shrink-0">
+                      <CheckIcon />
+                    </div>
+                    <span className="text-foreground font-medium">{feature}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA Button */}
+              <div className="pt-4">
+                <Button 
+                  size="lg" 
+                  className="bg-[#004595] text-white hover:bg-[#003366] font-semibold px-8 py-3 text-base rounded-lg transition-all duration-300 hover:shadow-lg"
+                  asChild
+                >
+                  <a href="https://www.steinbock-partner.de/stellenangebote/" target="_blank" rel="noopener noreferrer">
+                    Zu den Stellenangeboten
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
