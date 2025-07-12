@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import { Button } from "../components/ui/button";
 import PracticeAreasCarousel from "../components/PracticeAreasCarousel";
 import NewsCarousel from "../components/NewsCarousel";
+import TestimonialsSection from "../components/TestimonialsSection";
 
 const Index = () => {
   const features = [
@@ -271,6 +272,9 @@ const Index = () => {
           </div>
         </div>
       </div>
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
     </div>
   );
 };
