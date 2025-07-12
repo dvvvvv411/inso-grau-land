@@ -1,3 +1,5 @@
+import heroImage from "../assets/law-firm-hero.jpg";
+
 const Index = () => {
   const features = [
     "20+ Jahre Erfahrung",
@@ -38,30 +40,33 @@ const Index = () => {
       {/* Hero Container */}
       <div className="hero-content">
         <div className="container mx-auto px-6 py-20">
-          <div className="max-w-6xl mx-auto">
+          {/* 2/3 - 1/3 Layout Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 min-h-[80vh] items-center">
             
-            {/* Main Content Container */}
-            <div className="text-center mb-16">
+            {/* Left Column - Content (2/3) */}
+            <div className="lg:col-span-2 space-y-12">
+              
               {/* Company Name - hidden on small screens */}
-              <p className="text-lg text-muted-foreground mb-6 hidden sm:block font-medium tracking-wide">
+              <p className="text-lg text-muted-foreground hidden sm:block font-medium tracking-wide">
                 Steinbock & Partner
               </p>
               
-              {/* Main Headline */}
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-8 leading-tight">
-                Rechtsanwälte und Steuerberater
-              </h1>
-              
-              {/* Subtitle */}
-              <p className="text-xl md:text-3xl text-foreground font-semibold mb-16 max-w-4xl mx-auto">
-                Ein starkes Team. Wenn's drauf ankommt!
-              </p>
+              {/* Main Headlines */}
+              <div className="space-y-6">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
+                  Rechtsanwälte und Steuerberater
+                </h1>
+                
+                <p className="text-xl md:text-2xl lg:text-3xl text-foreground font-semibold">
+                  Ein starkes Team. Wenn's drauf ankommt!
+                </p>
+              </div>
               
               {/* Features Grid - USP Section */}
-              <div className="home-hero-usp mb-20">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+              <div className="home-hero-usp">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {features.map((feature, index) => (
-                    <div key={index} className="flex items-center justify-center gap-4 p-6 bg-card/50 rounded-lg backdrop-blur-sm border border-border/20 hover:bg-card/80 transition-all duration-300">
+                    <div key={index} className="flex items-center gap-4 p-4 bg-card/50 rounded-lg backdrop-blur-sm border border-border/20 hover:bg-card/80 transition-all duration-300">
                       <CheckIcon />
                       <span className="text-foreground font-semibold text-lg">{feature}</span>
                     </div>
@@ -70,25 +75,34 @@ const Index = () => {
               </div>
               
               {/* Rating Section */}
-              <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-10 border border-border/20 max-w-2xl mx-auto">
+              <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 border border-border/20 max-w-md">
                 <div className="space-y-6">
                   {/* "Ausgezeichnet" Heading */}
-                  <div>
-                    <h3 className="text-2xl font-bold text-foreground mb-6">Ausgezeichnet</h3>
-                  </div>
+                  <h3 className="text-xl font-bold text-foreground">Ausgezeichnet</h3>
                   
                   {/* Stars Container */}
-                  <div className="flex justify-center gap-2 mb-6">
+                  <div className="flex gap-2">
                     {[...Array(5)].map((_, index) => (
                       <StarIcon key={index} />
                     ))}
                   </div>
                   
                   {/* Reviews Count */}
-                  <div>
-                    <p className="text-xl font-bold text-foreground">974+ Bewertungen</p>
-                  </div>
+                  <p className="text-lg font-bold text-foreground">974+ Bewertungen</p>
                 </div>
+              </div>
+            </div>
+            
+            {/* Right Column - Image (1/3) */}
+            <div className="lg:col-span-1 h-full">
+              <div className="relative h-full min-h-[500px] lg:min-h-[600px] rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={heroImage} 
+                  alt="Professionelle Anwaltskanzlei - Steinbock & Partner"
+                  className="w-full h-full object-cover"
+                />
+                {/* Overlay for better text contrast if needed */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
             </div>
           </div>
