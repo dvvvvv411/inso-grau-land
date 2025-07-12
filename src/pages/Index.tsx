@@ -46,8 +46,8 @@ const Index = () => {
       {/* Optimized Hero Container - Fixed 650px Height */}
       <div className="hero-content" style={{ backgroundColor: '#ebf4ff' }}>
         <div className="w-full max-w-7xl mx-auto">
-          {/* 50/50 Layout - Fixed Height */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 h-[650px]">
+          {/* 50/50 Layout - Increased Height */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 h-[800px]">
             
             {/* Left Column - Content (50%) */}
             <div className="flex flex-col justify-center space-y-8 px-8 lg:px-12">
@@ -101,7 +101,7 @@ const Index = () => {
             
             {/* Right Column - Image (50%) with reduced margin - 20% wider */}
             <div className="relative flex items-center justify-end pr-[5%]">
-              <div className="w-[95%] h-[650px] shadow-2xl overflow-hidden relative">
+              <div className="w-[95%] h-[800px] shadow-2xl overflow-hidden relative">
                 <img 
                   src={heroImage} 
                   alt="Professionelle Anwaltskanzlei - Steinbock & Partner"
