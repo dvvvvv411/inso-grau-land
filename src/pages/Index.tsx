@@ -1,7 +1,6 @@
 import heroImage from "../assets/law-firm-hero.jpg";
 import partnerImage from "../assets/partner-team.png";
 import workplaceCollage from "../assets/workplace-collage.jpg";
-import employerAward from "../assets/employer-award.jpg";
 import Header from "../components/Header";
 import { Button } from "../components/ui/button";
 import PracticeAreasCarousel from "../components/PracticeAreasCarousel";
@@ -209,7 +208,7 @@ const Index = () => {
       {/* Stellenangebote Section */}
       <div className="py-20" style={{ backgroundColor: '#f8f9fa' }}>
         <div className="w-full max-w-7xl mx-auto px-8">
-          {/* Two Column Layout */}
+          {/* Two Column Layout - Equal Widths */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
             {/* Left Column - Image */}
@@ -223,7 +222,7 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Right Column - Content */}
+            {/* Right Column - Modernized Content */}
             <div className="space-y-8">
               {/* Title */}
               <div className="space-y-4">
@@ -235,19 +234,8 @@ const Index = () => {
                 </p>
               </div>
 
-              {/* Award Badge */}
-              <div className="flex justify-center lg:justify-start">
-                <div className="w-48">
-                  <img 
-                    src={employerAward} 
-                    alt="Auszeichnung Arbeitgeber"
-                    className="w-full h-auto"
-                  />
-                </div>
-              </div>
-
-              {/* Features Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Modern Features Grid */}
+              <div className="space-y-4">
                 {[
                   "digitale Kanzlei",
                   "Homeoffice", 
@@ -255,24 +243,27 @@ const Index = () => {
                   "moderne Arbeitsplätze",
                   "junges und dynamisches Team"
                 ].map((feature, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <div className="flex-shrink-0">
+                  <div key={index} className="flex items-center gap-4 p-4 bg-white rounded-xl border border-gray-200/50 hover:bg-gray-50 hover:shadow-lg transition-all duration-300 group">
+                    <div className="p-2 bg-[#004595]/10 rounded-full group-hover:bg-[#004595]/20 transition-colors">
                       <CheckIcon />
                     </div>
-                    <span className="text-foreground font-medium">{feature}</span>
+                    <span className="text-foreground font-semibold text-lg">{feature}</span>
                   </div>
                 ))}
               </div>
 
-              {/* CTA Button */}
-              <div className="pt-4">
+              {/* Modern CTA Button */}
+              <div className="pt-6">
                 <Button 
                   size="lg" 
-                  className="bg-[#004595] text-white hover:bg-[#003366] font-semibold px-8 py-3 text-base rounded-lg transition-all duration-300 hover:shadow-lg"
+                  className="w-full sm:w-auto bg-[#004595] text-white hover:bg-[#003366] font-bold px-12 py-6 text-lg rounded-xl transition-all duration-300 hover:shadow-xl hover:scale-105 group"
                   asChild
                 >
-                  <a href="https://www.steinbock-partner.de/stellenangebote/" target="_blank" rel="noopener noreferrer">
-                    Zu den Stellenangeboten
+                  <a href="https://www.steinbock-partner.de/stellenangebote/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
+                    <span>Zu den Stellenangeboten</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
                   </a>
                 </Button>
               </div>
