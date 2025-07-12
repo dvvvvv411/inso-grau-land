@@ -1,5 +1,7 @@
 import heroImage from "../assets/law-firm-hero.jpg";
+import partnerImage from "../assets/partner-team.png";
 import Header from "../components/Header";
+import { Button } from "../components/ui/button";
 
 const Index = () => {
   const features = [
@@ -108,6 +110,56 @@ const Index = () => {
                 {/* Professional overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#004595]/10 to-transparent"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* About Section */}
+      <div className="py-20" style={{ backgroundColor: '#004595' }}>
+        <div className="w-full max-w-7xl mx-auto px-8">
+          {/* Section Title */}
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-16 leading-tight max-w-5xl mx-auto">
+            Willkommen bei Steinbock & Partner, einem erfahrenen Team von Anwälten und Steuerexperten.
+          </h2>
+
+          {/* Two Column Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            
+            {/* Left Column - Image */}
+            <div className="flex justify-center">
+              <div className="w-full max-w-lg">
+                <img 
+                  src={partnerImage} 
+                  alt="Steinbock & Partner Team"
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Right Column - Content */}
+            <div className="space-y-8">
+              <div className="text-white/90 text-lg leading-relaxed space-y-6">
+                <p>
+                  Unsere Mission ist es, unseren Klienten eine kompetente und effektive Rechts- und Steuerberatung zu bieten. Wir verstehen, dass rechtliche und steuerliche Angelegenheiten komplex sein können und dass eine gründliche Beratung von entscheidender Bedeutung ist.
+                </p>
+                <p>
+                  Deshalb sind wir bestrebt, für jeden Klienten eine maßgeschneiderte Lösung zu finden, die seine individuellen Bedürfnisse erfüllt. Wir setzen uns engagiert für die Rechte unserer Klienten ein und arbeiten hart, um ihre Interessen zu schützen.
+                </p>
+                <p>
+                  Lassen Sie uns gemeinsam eine Lösung für Ihre rechtlichen und steuerlichen Herausforderungen finden.
+                </p>
+              </div>
+
+              {/* CTA Button */}
+              <div className="pt-4">
+                <Button 
+                  size="lg" 
+                  className="bg-white text-[#004595] hover:bg-gray-100 font-semibold px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:shadow-lg"
+                >
+                  Mehr über Steinbock & Partner
+                </Button>
               </div>
             </div>
           </div>
