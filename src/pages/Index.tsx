@@ -2,7 +2,6 @@ import heroImage from "../assets/law-firm-hero.jpg";
 import partnerImage from "../assets/partner-team.png";
 import Header from "../components/Header";
 import { Button } from "../components/ui/button";
-import { Briefcase, Building, Home, Key, Calculator, FileText, Heart } from "lucide-react";
 
 const Index = () => {
   const features = [
@@ -163,77 +162,6 @@ const Index = () => {
                 </Button>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Tätigkeitsbereiche Section */}
-      <div className="py-20 bg-gray-100">
-        <div className="w-full max-w-7xl mx-auto px-8">
-          {/* Section Title */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Unsere Tätigkeitsbereiche
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Wir bieten umfassende Rechts- und Steuerberatung in verschiedenen Fachbereichen
-            </p>
-          </div>
-
-          {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {[
-              { name: "Arbeitsrecht", icon: Briefcase, description: "Umfassende Beratung in allen arbeitsrechtlichen Angelegenheiten" },
-              { name: "Insolvenzrecht", icon: Building, description: "Professionelle Unterstützung bei Insolvenzverfahren" },
-              { name: "Immobilienrecht", icon: Home, description: "Rechtssichere Abwicklung Ihrer Immobiliengeschäfte" },
-              { name: "Mietrecht", icon: Key, description: "Kompetente Beratung für Mieter und Vermieter" },
-              { name: "Steuerrecht", icon: Calculator, description: "Optimale steuerliche Gestaltung und Beratung" },
-              { name: "Vertragsrecht", icon: FileText, description: "Sichere Vertragsgestaltung und -prüfung" },
-              { name: "Erbrecht", icon: Heart, description: "Vorsorge und Nachlassregelung professionell gestaltet" }
-            ].map((service, index) => {
-              const IconComponent = service.icon;
-              return (
-                <div 
-                  key={index}
-                  className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-200 hover:border-[#004595]/20 cursor-pointer"
-                >
-                  {/* Icon */}
-                  <div className="mb-6 flex justify-center">
-                    <div className="w-16 h-16 bg-[#004595]/10 rounded-2xl flex items-center justify-center group-hover:bg-[#004595] transition-colors duration-300">
-                      <IconComponent className="w-8 h-8 text-[#004595] group-hover:text-white transition-colors duration-300" />
-                    </div>
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="text-xl font-bold text-foreground mb-4 text-center group-hover:text-[#004595] transition-colors duration-300">
-                    {service.name}
-                  </h3>
-
-                  {/* Description */}
-                  <p className="text-muted-foreground text-center text-sm leading-relaxed">
-                    {service.description}
-                  </p>
-
-                  {/* Hover Indicator */}
-                  <div className="mt-6 flex justify-center">
-                    <div className="w-8 h-1 bg-gray-200 rounded-full group-hover:bg-[#004595] transition-colors duration-300"></div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          {/* CTA Section */}
-          <div className="text-center mt-16">
-            <p className="text-lg text-muted-foreground mb-8">
-              Haben Sie Fragen zu einem unserer Tätigkeitsbereiche?
-            </p>
-            <Button 
-              size="lg" 
-              className="bg-[#004595] hover:bg-[#003875] text-white font-semibold px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:shadow-lg"
-            >
-              Beratungstermin vereinbaren
-            </Button>
           </div>
         </div>
       </div>
