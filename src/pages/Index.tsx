@@ -226,8 +226,8 @@ const Index = () => {
             <div className="bg-gray-100 rounded-2xl shadow-lg p-8 h-full flex flex-col justify-center space-y-8">
               {/* Title - Centered */}
               <div className="space-y-4 text-center">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-                  <span className="text-[#004595]">Stellenangebote</span>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#002d4a]">
+                  Stellenangebote
                 </h2>
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   Gemeinsam kommen wir weiter. Sie mit uns. Wir mit Ihnen. Finden und erleben Sie Arbeits- und Ausbildungsplätze mit Zukunft.
