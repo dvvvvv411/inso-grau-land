@@ -234,8 +234,8 @@ const Index = () => {
                 </p>
               </div>
 
-              {/* Compact Features Grid - 2 columns */}
-              <div className="grid grid-cols-2 gap-3">
+              {/* Flexible Features Grid - 2 rows */}
+              <div className="flex flex-wrap gap-3 justify-center">
                 {[
                   "digitale Kanzlei",
                   "Homeoffice", 
@@ -243,11 +243,11 @@ const Index = () => {
                   "moderne Arbeitsplätze",
                   "junges und dynamisches Team"
                 ].map((feature, index) => (
-                  <div key={index} className="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200/50 hover:bg-gray-50 hover:shadow-md transition-all duration-300 group">
+                  <div key={index} className="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200/50 hover:bg-gray-50 hover:shadow-md transition-all duration-300 group flex-shrink-0">
                     <div className="p-1 bg-[#004595]/10 rounded-full group-hover:bg-[#004595]/20 transition-colors flex-shrink-0">
                       <CheckIcon />
                     </div>
-                    <span className="text-foreground font-medium text-sm">{feature}</span>
+                    <span className="text-foreground font-medium text-sm whitespace-nowrap">{feature}</span>
                   </div>
                 ))}
               </div>
