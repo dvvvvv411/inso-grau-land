@@ -224,8 +224,8 @@ const Index = () => {
 
             {/* Right Column - Modernized Content */}
             <div className="space-y-8 h-full flex flex-col justify-center">
-              {/* Title */}
-              <div className="space-y-4">
+              {/* Title - Centered */}
+              <div className="space-y-4 text-center">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
                   <span className="text-[#004595]">Stellenangebote</span>
                 </h2>
