@@ -1,5 +1,7 @@
 import heroImage from "../assets/law-firm-hero.jpg";
 import partnerImage from "../assets/partner-team.png";
+import workplaceCollage from "../assets/workplace-collage.jpg";
+import employerAward from "../assets/employer-award.jpg";
 import Header from "../components/Header";
 import { Button } from "../components/ui/button";
 import PracticeAreasCarousel from "../components/PracticeAreasCarousel";
@@ -201,6 +203,81 @@ const Index = () => {
 
           {/* News Carousel */}
           <NewsCarousel />
+        </div>
+      </div>
+
+      {/* Stellenangebote Section */}
+      <div className="py-20" style={{ backgroundColor: '#f8f9fa' }}>
+        <div className="w-full max-w-7xl mx-auto px-8">
+          {/* Two Column Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            
+            {/* Left Column - Image */}
+            <div className="flex justify-center">
+              <div className="w-full max-w-lg">
+                <img 
+                  src={workplaceCollage} 
+                  alt="Bildercollage Arbeitsplatz"
+                  className="w-full h-auto rounded-2xl shadow-lg"
+                />
+              </div>
+            </div>
+
+            {/* Right Column - Content */}
+            <div className="space-y-8">
+              {/* Title */}
+              <div className="space-y-4">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+                  <span className="text-[#004595]">Stellenangebote</span>
+                </h2>
+                <p className="text-xl text-muted-foreground leading-relaxed">
+                  Gemeinsam kommen wir weiter. Sie mit uns. Wir mit Ihnen. Finden und erleben Sie Arbeits- und Ausbildungsplätze mit Zukunft.
+                </p>
+              </div>
+
+              {/* Award Badge */}
+              <div className="flex justify-center lg:justify-start">
+                <div className="w-48">
+                  <img 
+                    src={employerAward} 
+                    alt="Auszeichnung Arbeitgeber"
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+
+              {/* Features Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[
+                  "digitale Kanzlei",
+                  "Homeoffice", 
+                  "flexible Arbeitszeiten",
+                  "moderne Arbeitsplätze",
+                  "junges und dynamisches Team"
+                ].map((feature, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <div className="flex-shrink-0">
+                      <CheckIcon />
+                    </div>
+                    <span className="text-foreground font-medium">{feature}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA Button */}
+              <div className="pt-4">
+                <Button 
+                  size="lg" 
+                  className="bg-[#004595] text-white hover:bg-[#003366] font-semibold px-8 py-3 text-base rounded-lg transition-all duration-300 hover:shadow-lg"
+                  asChild
+                >
+                  <a href="https://www.steinbock-partner.de/stellenangebote/" target="_blank" rel="noopener noreferrer">
+                    Zu den Stellenangeboten
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
