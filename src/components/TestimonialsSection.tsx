@@ -97,7 +97,7 @@ const TestimonialsSection = () => {
           
           {/* Featured Testimonial - Compact (3/5 width) */}
           <div className="lg:col-span-3">
-            <Card className="p-6 bg-gradient-to-br from-blue-50 to-white border border-blue-100 shadow-lg hover:shadow-xl transition-all duration-500">
+            <Card className="p-6 h-full bg-gradient-to-br from-blue-50 to-white border border-blue-100 shadow-lg hover:shadow-xl transition-all duration-500">
               <div className="space-y-4">
                 
                 {/* Header with Client Info */}
@@ -136,63 +136,65 @@ const TestimonialsSection = () => {
             </Card>
           </div>
 
-          {/* Testimonial Selection List - Scrollable (2/5 width) */}
-          <div className="lg:col-span-2">
+          {/* Testimonial Selection List - Same Height (2/5 width) */}
+          <div className="lg:col-span-2 flex flex-col">
             <h3 className="text-lg font-bold text-foreground mb-4">Weitere Bewertungen</h3>
             
-            <div className="space-y-3 max-h-80 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
-              {testimonials.map((testimonial) => (
-                <Card 
-                  key={testimonial.id}
-                  className={`p-3 cursor-pointer transition-all duration-300 hover:shadow-md ${
-                    selectedTestimonial.id === testimonial.id 
-                      ? 'bg-[#004595] text-white ring-2 ring-[#004595]' 
-                      : 'bg-gray-50 hover:bg-gray-100'
-                  }`}
-                  onClick={() => setSelectedTestimonial(testimonial)}
-                >
-                  <div className="flex items-center gap-3">
-                    <img 
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-10 h-10 rounded-full object-cover flex-shrink-0"
-                    />
-                    
-                    <div className="flex-1 min-w-0">
-                      <h4 className={`font-semibold text-sm truncate ${
-                        selectedTestimonial.id === testimonial.id ? 'text-white' : 'text-foreground'
-                      }`}>
-                        {testimonial.name}
-                      </h4>
-                      <p className={`text-xs truncate ${
-                        selectedTestimonial.id === testimonial.id ? 'text-blue-100' : 'text-muted-foreground'
-                      }`}>
-                        {testimonial.company}
-                      </p>
+            <Card className="flex-1 p-4 bg-gray-50 border border-gray-200">
+              <div className="h-full overflow-y-auto space-y-3 pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                {testimonials.map((testimonial) => (
+                  <Card 
+                    key={testimonial.id}
+                    className={`p-3 cursor-pointer transition-all duration-300 hover:shadow-md ${
+                      selectedTestimonial.id === testimonial.id 
+                        ? 'bg-[#004595] text-white ring-2 ring-[#004595]' 
+                        : 'bg-white hover:bg-gray-100'
+                    }`}
+                    onClick={() => setSelectedTestimonial(testimonial)}
+                  >
+                    <div className="flex items-center gap-3">
+                      <img 
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        className="w-10 h-10 rounded-full object-cover flex-shrink-0"
+                      />
                       
-                      {/* Small Rating */}
-                      <div className="flex gap-0.5 mt-1">
-                        {[...Array(testimonial.rating)].map((_, index) => (
-                          <svg key={index} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 26" height="10" width="10">
-                            <g clipPath="url(#clip0_1276_8372)">
-                              <path 
-                                fill="#FFCC00" 
-                                d="M13 20.2642L6.47172 24.1952C6.28453 24.3122 6.08564 24.3648 5.87505 24.3531C5.66446 24.3414 5.47727 24.2771 5.31348 24.1601C5.14969 24.0431 5.02684 23.891 4.94495 23.7038C4.86305 23.5166 4.8455 23.306 4.8923 23.072L6.61211 15.6312L0.855997 10.6122C0.668806 10.4484 0.557661 10.267 0.522563 10.0681C0.487465 9.86924 0.493315 9.6762 0.540112 9.48901C0.58691 9.30182 0.692205 9.14388 0.855997 9.01518C1.01979 8.88649 1.21868 8.81044 1.45267 8.78704L9.06899 8.12017L12.0172 1.10052C12.1108 0.889929 12.2512 0.731987 12.4384 0.626692C12.6256 0.521397 12.8128 0.46875 13 0.46875C13.1872 0.46875 13.3744 0.521397 13.5616 0.626692C13.7488 0.731987 13.8892 0.889929 13.9828 1.10052L16.931 8.12017L24.5473 8.78704C24.7813 8.81044 24.9802 8.88649 25.144 9.01518C25.3078 9.14388 25.4131 9.30182 25.4599 9.48901C25.5067 9.6762 25.5125 9.86924 25.4774 10.0681C25.4423 10.267 25.3312 10.4484 25.144 10.6122L19.3879 15.6312L21.1077 23.072C21.1545 23.306 21.137 23.5166 21.0551 23.7038C20.9732 23.891 20.8503 24.0431 20.6865 24.1601C20.5227 24.2771 20.3355 24.3414 20.125 24.3531C19.9144 24.3648 19.7155 24.3122 19.5283 24.1952L13 20.2642Z"
-                              />
-                            </g>
-                            <defs>
-                              <clipPath id="clip0_1276_8372">
-                                <rect transform="translate(0.5 0.46875)" fill="white" height="25" width="25"></rect>
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        ))}
+                      <div className="flex-1 min-w-0">
+                        <h4 className={`font-semibold text-sm truncate ${
+                          selectedTestimonial.id === testimonial.id ? 'text-white' : 'text-foreground'
+                        }`}>
+                          {testimonial.name}
+                        </h4>
+                        <p className={`text-xs truncate ${
+                          selectedTestimonial.id === testimonial.id ? 'text-blue-100' : 'text-muted-foreground'
+                        }`}>
+                          {testimonial.company}
+                        </p>
+                        
+                        {/* Small Rating */}
+                        <div className="flex gap-0.5 mt-1">
+                          {[...Array(testimonial.rating)].map((_, index) => (
+                            <svg key={index} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 26" height="10" width="10">
+                              <g clipPath="url(#clip0_1276_8372)">
+                                <path 
+                                  fill="#FFCC00" 
+                                  d="M13 20.2642L6.47172 24.1952C6.28453 24.3122 6.08564 24.3648 5.87505 24.3531C5.66446 24.3414 5.47727 24.2771 5.31348 24.1601C5.14969 24.0431 5.02684 23.891 4.94495 23.7038C4.86305 23.5166 4.8455 23.306 4.8923 23.072L6.61211 15.6312L0.855997 10.6122C0.668806 10.4484 0.557661 10.267 0.522563 10.0681C0.487465 9.86924 0.493315 9.6762 0.540112 9.48901C0.58691 9.30182 0.692205 9.14388 0.855997 9.01518C1.01979 8.88649 1.21868 8.81044 1.45267 8.78704L9.06899 8.12017L12.0172 1.10052C12.1108 0.889929 12.2512 0.731987 12.4384 0.626692C12.6256 0.521397 12.8128 0.46875 13 0.46875C13.1872 0.46875 13.3744 0.521397 13.5616 0.626692C13.7488 0.731987 13.8892 0.889929 13.9828 1.10052L16.931 8.12017L24.5473 8.78704C24.7813 8.81044 24.9802 8.88649 25.144 9.01518C25.3078 9.14388 25.4131 9.30182 25.4599 9.48901C25.5067 9.6762 25.5125 9.86924 25.4774 10.0681C25.4423 10.267 25.3312 10.4484 25.144 10.6122L19.3879 15.6312L21.1077 23.072C21.1545 23.306 21.137 23.5166 21.0551 23.7038C20.9732 23.891 20.8503 24.0431 20.6865 24.1601C20.5227 24.2771 20.3355 24.3414 20.125 24.3531C19.9144 24.3648 19.7155 24.3122 19.5283 24.1952L13 20.2642Z"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1276_8372">
+                                  <rect transform="translate(0.5 0.46875)" fill="white" height="25" width="25"></rect>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          ))}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Card>
-              ))}
-            </div>
+                  </Card>
+                ))}
+              </div>
+            </Card>
           </div>
         </div>
       </div>
