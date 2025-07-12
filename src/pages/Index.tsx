@@ -118,9 +118,9 @@ const Index = () => {
 
       {/* About Section - Same height as Hero Section */}
       <div className="h-[650px]" style={{ backgroundColor: '#004595' }}>
-        <div className="w-full max-w-7xl mx-auto px-8 h-full flex flex-col justify-center">
-          {/* Section Title */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center mb-12 leading-tight max-w-4xl mx-auto">
+        <div className="w-full max-w-7xl mx-auto px-8 h-full flex flex-col justify-center pt-16">
+          {/* Section Title - More spacing from top */}
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center mb-12 leading-tight max-w-4xl mx-auto mt-8">
             Willkommen bei Steinbock & Partner, einem erfahrenen Team von Anwälten und Steuerexperten.
           </h2>
 
