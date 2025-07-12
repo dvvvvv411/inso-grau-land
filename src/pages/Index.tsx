@@ -41,71 +41,76 @@ const Index = () => {
       {/* Header */}
       <Header />
       
-      {/* Hero Container - Fixed 650px Height */}
-      <div className="hero-content">
-        <div className="w-full">
+      {/* Optimized Hero Container - Fixed 650px Height */}
+      <div className="hero-content bg-gradient-to-r from-background via-background to-accent/10">
+        <div className="w-full max-w-7xl mx-auto">
           {/* 50/50 Layout - Fixed Height */}
           <div className="grid grid-cols-1 lg:grid-cols-2 h-[650px]">
             
             {/* Left Column - Content (50%) */}
-            <div className="flex flex-col justify-center space-y-8 px-8 max-w-[700px] mx-auto">
+            <div className="flex flex-col justify-center space-y-8 px-8 lg:px-12">
               
-              {/* Company Name - hidden on small screens */}
-              <p className="text-lg text-muted-foreground hidden sm:block font-medium tracking-wide">
-                Steinbock & Partner
-              </p>
+              {/* Company Name */}
+              <div className="space-y-2">
+                <p className="text-lg text-muted-foreground font-medium tracking-wide uppercase">
+                  Steinbock & Partner
+                </p>
+                <div className="w-16 h-1 bg-[#004595] rounded"></div>
+              </div>
               
               {/* Main Headlines */}
               <div className="space-y-6">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                  Rechtsanwälte und Steuerberater
+                  Rechtsanwälte und <span className="text-[#004595]">Steuerberater</span>
                 </h1>
                 
-                <p className="text-xl md:text-2xl text-foreground font-semibold">
+                <p className="text-xl md:text-2xl text-muted-foreground font-medium leading-relaxed">
                   Ein starkes Team. Wenn's drauf ankommt!
                 </p>
               </div>
               
               {/* Features Grid - USP Section */}
               <div className="home-hero-usp">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-4">
                   {features.map((feature, index) => (
-                    <div key={index} className="flex items-center gap-3 p-4 bg-card/50 rounded-lg backdrop-blur-sm border border-border/20 hover:bg-card/80 transition-all duration-300 shadow-lg">
-                      <CheckIcon />
-                      <span className="text-foreground font-semibold text-base">{feature}</span>
+                    <div key={index} className="flex items-center gap-3 p-4 bg-white/80 backdrop-blur-sm rounded-xl border border-gray-200/50 hover:bg-white hover:shadow-lg transition-all duration-300 group">
+                      <div className="p-1 bg-[#004595]/10 rounded-full group-hover:bg-[#004595]/20 transition-colors">
+                        <CheckIcon />
+                      </div>
+                      <span className="text-foreground font-semibold text-sm lg:text-base">{feature}</span>
                     </div>
                   ))}
                 </div>
               </div>
               
               {/* Rating Section */}
-              <div className="bg-card/30 backdrop-blur-sm rounded-xl p-6 border border-border/20 max-w-sm shadow-xl">
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50 max-w-sm shadow-lg">
                 <div className="space-y-4">
-                  {/* "Ausgezeichnet" Heading */}
                   <h3 className="text-lg font-bold text-foreground">Ausgezeichnet</h3>
                   
-                  {/* Stars Container */}
                   <div className="flex gap-1">
                     {[...Array(5)].map((_, index) => (
                       <StarIcon key={index} />
                     ))}
                   </div>
                   
-                  {/* Reviews Count */}
                   <p className="text-base font-bold text-foreground">974+ Bewertungen</p>
                 </div>
               </div>
             </div>
             
-            {/* Right Column - Image (50%) Full Width to Edge */}
-            <div className="relative">
-              <img 
-                src={heroImage} 
-                alt="Professionelle Anwaltskanzlei - Steinbock & Partner"
-                className="w-full h-[650px] object-cover"
-              />
-              {/* Overlay for better visual depth */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+            {/* Right Column - Image (50%) with 20% margin */}
+            <div className="relative flex items-center justify-end pr-[10%]">
+              <div className="w-[90%] h-[650px] shadow-2xl overflow-hidden relative">
+                <img 
+                  src={heroImage} 
+                  alt="Professionelle Anwaltskanzlei - Steinbock & Partner"
+                  className="w-full h-full object-cover"
+                />
+                {/* Professional overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#004595]/10 to-transparent"></div>
+              </div>
             </div>
           </div>
         </div>
