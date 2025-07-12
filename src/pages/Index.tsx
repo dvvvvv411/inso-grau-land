@@ -41,14 +41,14 @@ const Index = () => {
       {/* Header */}
       <Header />
       
-      {/* Hero Container - Equal Sections */}
+      {/* Hero Container - Fixed 650px Height */}
       <div className="hero-content">
-        <div className="w-full max-w-[1400px] mx-auto px-8 py-24">
-          {/* 50/50 Layout Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 min-h-[85vh] items-center">
+        <div className="w-full">
+          {/* 50/50 Layout - Fixed Height */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 h-[650px]">
             
             {/* Left Column - Content (50%) */}
-            <div className="space-y-10">
+            <div className="flex flex-col justify-center space-y-8 px-8 max-w-[700px] mx-auto">
               
               {/* Company Name - hidden on small screens */}
               <p className="text-lg text-muted-foreground hidden sm:block font-medium tracking-wide">
@@ -61,53 +61,51 @@ const Index = () => {
                   Rechtsanwälte und Steuerberater
                 </h1>
                 
-                <p className="text-xl md:text-2xl lg:text-3xl text-foreground font-semibold">
+                <p className="text-xl md:text-2xl text-foreground font-semibold">
                   Ein starkes Team. Wenn's drauf ankommt!
                 </p>
               </div>
               
               {/* Features Grid - USP Section */}
               <div className="home-hero-usp">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {features.map((feature, index) => (
-                    <div key={index} className="flex items-center gap-4 p-5 bg-card/50 rounded-xl backdrop-blur-sm border border-border/20 hover:bg-card/80 transition-all duration-300 shadow-lg">
+                    <div key={index} className="flex items-center gap-3 p-4 bg-card/50 rounded-lg backdrop-blur-sm border border-border/20 hover:bg-card/80 transition-all duration-300 shadow-lg">
                       <CheckIcon />
-                      <span className="text-foreground font-semibold text-lg">{feature}</span>
+                      <span className="text-foreground font-semibold text-base">{feature}</span>
                     </div>
                   ))}
                 </div>
               </div>
               
               {/* Rating Section */}
-              <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 border border-border/20 max-w-md shadow-xl">
-                <div className="space-y-5">
+              <div className="bg-card/30 backdrop-blur-sm rounded-xl p-6 border border-border/20 max-w-sm shadow-xl">
+                <div className="space-y-4">
                   {/* "Ausgezeichnet" Heading */}
-                  <h3 className="text-xl font-bold text-foreground">Ausgezeichnet</h3>
+                  <h3 className="text-lg font-bold text-foreground">Ausgezeichnet</h3>
                   
                   {/* Stars Container */}
-                  <div className="flex gap-2">
+                  <div className="flex gap-1">
                     {[...Array(5)].map((_, index) => (
                       <StarIcon key={index} />
                     ))}
                   </div>
                   
                   {/* Reviews Count */}
-                  <p className="text-lg font-bold text-foreground">974+ Bewertungen</p>
+                  <p className="text-base font-bold text-foreground">974+ Bewertungen</p>
                 </div>
               </div>
             </div>
             
-            {/* Right Column - Image (50%) */}
-            <div className="flex justify-center items-center">
-              <div className="relative w-[650px] h-[650px] rounded-3xl overflow-hidden shadow-2xl">
-                <img 
-                  src={heroImage} 
-                  alt="Professionelle Anwaltskanzlei - Steinbock & Partner"
-                  className="w-full h-full object-cover"
-                />
-                {/* Overlay for better visual depth */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-              </div>
+            {/* Right Column - Image (50%) Full Width to Edge */}
+            <div className="relative">
+              <img 
+                src={heroImage} 
+                alt="Professionelle Anwaltskanzlei - Steinbock & Partner"
+                className="w-full h-[650px] object-cover"
+              />
+              {/* Overlay for better visual depth */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
             </div>
           </div>
         </div>
