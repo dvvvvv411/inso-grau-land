@@ -2,31 +2,14 @@ import heroImage from "../assets/law-firm-hero.jpg";
 import partnerImage from "../assets/partner-team.png";
 import Header from "../components/Header";
 import { Button } from "../components/ui/button";
-import { useState } from "react";
-import { ChevronRight, Scale, Building, Home, FileText, Calculator, Gavel, Users, Shield } from "lucide-react";
 
 const Index = () => {
-  const [showAllServices, setShowAllServices] = useState(false);
-  
   const features = [
     "20+ Jahre Erfahrung",
     "9 Standorte", 
     "schnell & kompetent",
     "digitale Kanzlei"
   ];
-
-  const services = [
-    { name: "Arbeitsrecht", icon: Users, description: "Schutz Ihrer Rechte als Arbeitnehmer oder Arbeitgeber" },
-    { name: "Steuerrecht", icon: Calculator, description: "Optimale steuerliche Beratung für Privatpersonen und Unternehmen" },
-    { name: "Immobilienrecht", icon: Building, description: "Rechtssicherheit bei Kauf, Verkauf und Verwaltung von Immobilien" },
-    { name: "Strafrecht", icon: Shield, description: "Kompetente Verteidigung in allen strafrechtlichen Angelegenheiten" },
-    { name: "Mietrecht", icon: Home, description: "Durchsetzung Ihrer Rechte als Mieter oder Vermieter" },
-    { name: "Vertragsrecht", icon: FileText, description: "Sichere Vertragsgestaltung und -prüfung" },
-    { name: "Erbrecht", icon: Scale, description: "Professionelle Nachlassplanung und Testamentserstellung" },
-    { name: "Insolvenzrecht", icon: Gavel, description: "Begleitung durch schwierige finanzielle Situationen" }
-  ];
-
-  const displayedServices = showAllServices ? services : services.slice(0, 4);
 
   // Custom checkmark SVG from the original (blue color #004595)
   const CheckIcon = () => (
@@ -179,68 +162,6 @@ const Index = () => {
                 </Button>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Services Section - Gray Background */}
-      <div className="py-20" style={{ backgroundColor: '#f8f9fa' }}>
-        <div className="w-full max-w-7xl mx-auto px-8">
-          {/* Section Title */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              Unsere <span className="text-[#004595]">Tätigkeitsbereiche</span>
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Kompetente Rechtsberatung in allen wichtigen Bereichen – 
-              von Arbeitsrecht bis Erbrecht stehen wir Ihnen zur Seite.
-            </p>
-          </div>
-
-          {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-12">
-            {displayedServices.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <div
-                  key={service.name}
-                  className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-xl hover:border-[#004595]/30 transition-all duration-300 group hover:-translate-y-1"
-                  style={{
-                    animationDelay: `${index * 150}ms`,
-                    animation: showAllServices ? 'none' : 'fade-in 0.6s ease-out forwards'
-                  }}
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-[#004595]/10 rounded-lg group-hover:bg-[#004595]/20 transition-colors duration-300">
-                      <Icon className="w-6 h-6 text-[#004595]" />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-[#004595] transition-colors">
-                        {service.name}
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed mb-4">
-                        {service.description}
-                      </p>
-                      <div className="flex items-center text-[#004595] font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                        <span className="text-sm">Mehr erfahren</span>
-                        <ChevronRight className="w-4 h-4 ml-1" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Show More/Less Button */}
-          <div className="text-center">
-            <Button 
-              onClick={() => setShowAllServices(!showAllServices)}
-              size="lg"
-              className="bg-[#004595] hover:bg-[#004595]/90 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg"
-            >
-              {showAllServices ? 'Weniger anzeigen' : `Alle ${services.length - 4} weiteren Bereiche anzeigen`}
-            </Button>
           </div>
         </div>
       </div>
