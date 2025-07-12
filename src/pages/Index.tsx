@@ -41,48 +41,48 @@ const Index = () => {
       {/* Header */}
       <Header />
       
-      {/* Hero Container - Much Wider */}
+      {/* Hero Container - Equal Sections */}
       <div className="hero-content">
         <div className="w-full max-w-[1400px] mx-auto px-8 py-24">
-          {/* 2/3 - 1/3 Layout Grid - Wider */}
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 min-h-[85vh] items-center">
+          {/* 50/50 Layout Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 min-h-[85vh] items-center">
             
-            {/* Left Column - Content (3/5 = 60%) */}
-            <div className="lg:col-span-3 space-y-12">
+            {/* Left Column - Content (50%) */}
+            <div className="space-y-10">
               
               {/* Company Name - hidden on small screens */}
-              <p className="text-xl text-muted-foreground hidden sm:block font-medium tracking-wide">
+              <p className="text-lg text-muted-foreground hidden sm:block font-medium tracking-wide">
                 Steinbock & Partner
               </p>
               
               {/* Main Headlines */}
-              <div className="space-y-8">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground leading-tight">
+              <div className="space-y-6">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                   Rechtsanwälte und Steuerberater
                 </h1>
                 
-                <p className="text-2xl md:text-3xl lg:text-4xl text-foreground font-semibold">
+                <p className="text-xl md:text-2xl lg:text-3xl text-foreground font-semibold">
                   Ein starkes Team. Wenn's drauf ankommt!
                 </p>
               </div>
               
               {/* Features Grid - USP Section */}
               <div className="home-hero-usp">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {features.map((feature, index) => (
-                    <div key={index} className="flex items-center gap-6 p-6 bg-card/50 rounded-xl backdrop-blur-sm border border-border/20 hover:bg-card/80 transition-all duration-300 shadow-lg">
+                    <div key={index} className="flex items-center gap-4 p-5 bg-card/50 rounded-xl backdrop-blur-sm border border-border/20 hover:bg-card/80 transition-all duration-300 shadow-lg">
                       <CheckIcon />
-                      <span className="text-foreground font-semibold text-xl">{feature}</span>
+                      <span className="text-foreground font-semibold text-lg">{feature}</span>
                     </div>
                   ))}
                 </div>
               </div>
               
               {/* Rating Section */}
-              <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-10 border border-border/20 max-w-lg shadow-xl">
-                <div className="space-y-6">
+              <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-8 border border-border/20 max-w-md shadow-xl">
+                <div className="space-y-5">
                   {/* "Ausgezeichnet" Heading */}
-                  <h3 className="text-2xl font-bold text-foreground">Ausgezeichnet</h3>
+                  <h3 className="text-xl font-bold text-foreground">Ausgezeichnet</h3>
                   
                   {/* Stars Container */}
                   <div className="flex gap-2">
@@ -92,14 +92,14 @@ const Index = () => {
                   </div>
                   
                   {/* Reviews Count */}
-                  <p className="text-xl font-bold text-foreground">974+ Bewertungen</p>
+                  <p className="text-lg font-bold text-foreground">974+ Bewertungen</p>
                 </div>
               </div>
             </div>
             
-            {/* Right Column - Image (2/5 = 40%) */}
-            <div className="lg:col-span-2 h-full">
-              <div className="relative h-full min-h-[600px] lg:min-h-[700px] rounded-3xl overflow-hidden shadow-2xl">
+            {/* Right Column - Image (50%) */}
+            <div className="flex justify-center items-center">
+              <div className="relative w-[650px] h-[650px] rounded-3xl overflow-hidden shadow-2xl">
                 <img 
                   src={heroImage} 
                   alt="Professionelle Anwaltskanzlei - Steinbock & Partner"
