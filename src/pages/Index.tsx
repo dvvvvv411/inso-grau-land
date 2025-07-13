@@ -48,9 +48,17 @@ const Index = () => {
       {/* Header */}
       <Header />
       
-      {/* Optimized Hero Container - Fixed 650px Height */}
-      <div className="hero-content" style={{ backgroundColor: '#ebf4ff' }}>
-        <div className="w-full max-w-7xl mx-auto">
+      {/* Optimized Hero Container - Enhanced with visual effects */}
+      <div className="hero-content relative overflow-hidden" style={{ backgroundColor: '#ebf4ff' }}>
+        {/* Animated background effects */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-blue-200/40 rounded-full blur-xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-40 h-40 bg-blue-300/30 rounded-full blur-2xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-blue-100/50 rounded-full blur-lg animate-pulse delay-500"></div>
+        </div>
+        {/* Gradient overlay for depth */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-transparent to-blue-100/30"></div>
+        <div className="w-full max-w-7xl mx-auto relative z-10">
           {/* 50/50 Layout - Increased Height */}
           <div className="grid grid-cols-1 lg:grid-cols-2 h-[800px]">
             
@@ -104,17 +112,25 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Right Column - Image (50%) with reduced margin - 20% wider */}
+            {/* Right Column - Image (50%) with enhanced shadow effects */}
             <div className="relative flex items-center justify-end pr-[5%]">
-              <div className="w-[95%] h-[800px] shadow-2xl overflow-hidden relative">
-                <img 
-                  src={heroImage} 
-                  alt="Professionelle Anwaltskanzlei - Steinbock & Partner"
-                  className="w-full h-full object-cover"
-                />
-                {/* Professional overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#004595]/10 to-transparent"></div>
+              <div className="w-[95%] h-[800px] overflow-hidden relative transform hover:scale-[1.02] transition-transform duration-700 ease-out">
+                {/* Multiple layered shadows for depth */}
+                <div className="absolute inset-0 bg-black/20 blur-3xl transform translate-x-4 translate-y-4 rounded-lg"></div>
+                <div className="absolute inset-0 bg-blue-600/30 blur-2xl transform translate-x-2 translate-y-2 rounded-lg"></div>
+                <div className="absolute inset-0 bg-black/30 blur-xl transform translate-x-1 translate-y-1 rounded-lg"></div>
+                
+                {/* Main image container with rounded corners and shadow */}
+                <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl ring-1 ring-black/10">
+                  <img 
+                    src={heroImage} 
+                    alt="Professionelle Anwaltskanzlei - Steinbock & Partner"
+                    className="w-full h-full object-cover"
+                  />
+                  {/* Professional overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#004595]/10 to-transparent"></div>
+                </div>
               </div>
             </div>
           </div>
