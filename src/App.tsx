@@ -23,6 +23,10 @@ import Insolvenzantrag from "./pages/Insolvenzantrag";
 import Privatinsolvenz from "./pages/Privatinsolvenz";
 import RechtsgebieteGrundstuecksrecht from "./pages/RechtsgebieteGrundstuecksrecht";
 import GrundstuecksrechtAZ from "./pages/GrundstuecksrechtAZ";
+import RechtsgebieteKaufrecht from "./pages/RechtsgebieteKaufrecht";
+import KaufrechtAZ from "./pages/KaufrechtAZ";
+import KaufrechtAutokauf from "./pages/KaufrechtAutokauf";
+import KaufrechtInternetversandhandel from "./pages/KaufrechtInternetversandhandel";
 import GrundstuecksrechtNachgenehmigung from "./pages/GrundstuecksrechtNachgenehmigung";
 import GrundstuecksrechtUnberechtigteParkplatznutzung from "./pages/GrundstuecksrechtUnberechtigteParkplatznutzung";
 import NotFound from "./pages/NotFound";
@@ -54,8 +58,12 @@ const App = () => (
           <Route path="/insolvenzrecht/forderungsanmeldung-widerspruch-eigentumsvorbehalt/" element={<ForderungsanmeldungWiderspruchEigentumsvorbehalt />} />
           <Route path="/insolvenzrecht/insolvenzantrag/" element={<Insolvenzantrag />} />
           <Route path="/insolvenzrecht/privatinsolvenz/" element={<Privatinsolvenz />} />
-          <Route path="/rechtsgebiete/Grundstuecksrecht" element={<RechtsgebieteGrundstuecksrecht />} />
-          <Route path="/grundstuecksrecht/a-z/" element={<GrundstuecksrechtAZ />} />
+            <Route path="/rechtsgebiete/Grundstuecksrecht" element={<RechtsgebieteGrundstuecksrecht />} />
+            <Route path="/grundstuecksrecht/a-z/" element={<GrundstuecksrechtAZ />} />
+            <Route path="/rechtsgebiete/Kaufrecht" element={<RechtsgebieteKaufrecht />} />
+            <Route path="/kaufrecht/a-z/" element={<KaufrechtAZ />} />
+            <Route path="/kaufrecht/autokauf-und-gewaehrleistung/" element={<KaufrechtAutokauf />} />
+            <Route path="/kaufrecht/internetversandhandel/" element={<KaufrechtInternetversandhandel />} />
           <Route path="/grundstuecksrecht/nachgenehmigung/" element={<GrundstuecksrechtNachgenehmigung />} />
           <Route path="/grundstuecksrecht/unberechtigte-parkplatznutzung/" element={<GrundstuecksrechtUnberechtigteParkplatznutzung />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

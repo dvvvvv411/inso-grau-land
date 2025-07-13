@@ -73,6 +73,7 @@ const Header = () => {
                         const isDownloads = menu.title === "Kanzlei" && item === "Downloads";
                         const isInsolvenzrecht = menu.title === "Rechtsgebiete" && item === "Insolvenzrecht";
                         const isGrundstuecksrecht = menu.title === "Rechtsgebiete" && item === "Grundstücksrecht";
+                        const isKaufrecht = menu.title === "Rechtsgebiete" && item === "Kaufrecht";
                         
                         if (isUeberUns) {
                           return (
@@ -131,6 +132,19 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/rechtsgebiete/Grundstuecksrecht"
+                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isKaufrecht) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/rechtsgebiete/Kaufrecht"
                               className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
                               onClick={closeDropdowns}
                             >
@@ -192,6 +206,7 @@ const Header = () => {
                         const isDownloads = menu.title === "Kanzlei" && item === "Downloads";
                         const isInsolvenzrecht = menu.title === "Rechtsgebiete" && item === "Insolvenzrecht";
                         const isGrundstuecksrecht = menu.title === "Rechtsgebiete" && item === "Grundstücksrecht";
+                        const isKaufrecht = menu.title === "Rechtsgebiete" && item === "Kaufrecht";
                         
                         if (isUeberUns) {
                           return (
@@ -245,18 +260,31 @@ const Header = () => {
                           );
                         }
                         
-                        if (isGrundstuecksrecht) {
-                          return (
-                            <Link
-                              key={itemIndex}
-                              to="/rechtsgebiete/Grundstuecksrecht"
-                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
-                              onClick={closeDropdowns}
-                            >
-                              {item}
-                            </Link>
-                          );
-                        }
+                         if (isGrundstuecksrecht) {
+                           return (
+                             <Link
+                               key={itemIndex}
+                               to="/rechtsgebiete/Grundstuecksrecht"
+                               className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                               onClick={closeDropdowns}
+                             >
+                               {item}
+                             </Link>
+                           );
+                         }
+                         
+                         if (isKaufrecht) {
+                           return (
+                             <Link
+                               key={itemIndex}
+                               to="/rechtsgebiete/Kaufrecht"
+                               className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                               onClick={closeDropdowns}
+                             >
+                               {item}
+                             </Link>
+                           );
+                         }
                         
                         return (
                           <a
