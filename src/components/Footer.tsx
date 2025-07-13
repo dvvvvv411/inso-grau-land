@@ -107,7 +107,7 @@ const Footer = () => {
               <img 
                 src="https://i.imgur.com/8Pk1t7j.png" 
                 alt="Auszeichnung" 
-                className="w-24 h-24 object-contain"
+                className="object-contain"
               />
             </div>
             <h3 className="text-xl font-bold text-white mb-6">Folgen Sie uns</h3>
