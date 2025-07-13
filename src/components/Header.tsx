@@ -18,10 +18,6 @@ const Header = () => {
     {
       title: "Steuerberatung",
       items: ["Unternehmenssteuern", "Privatsteuern", "Steuerplanung", "Jahresabschluss"]
-    },
-    {
-      title: "Kontakt",
-      items: ["Standorte", "Terminvereinbarung", "Anfahrt", "Notfallkontakt"]
     }
   ];
 
@@ -312,7 +308,14 @@ const Header = () => {
               </div>
             ))}
 
-            {/* Stellenangebote as direct link */}
+            {/* Direct navigation links */}
+            <Link
+              to="/kontakt"
+              className="px-4 py-3 rounded-lg hover:bg-blue-600/80 transition-all duration-200 font-medium text-white"
+              onClick={closeDropdowns}
+            >
+              Kontakt
+            </Link>
             <Link
               to="/stellenangebote"
               className="px-4 py-3 rounded-lg hover:bg-blue-600/80 transition-all duration-200 font-medium text-white"
@@ -593,7 +596,14 @@ const Header = () => {
                 </div>
               ))}
 
-              {/* Stellenangebote as direct link in mobile */}
+              {/* Direct links in mobile */}
+              <Link
+                to="/kontakt"
+                className="block px-4 py-3 rounded-lg hover:bg-blue-600/80 transition-colors font-medium"
+                onClick={closeDropdowns}
+              >
+                Kontakt
+              </Link>
               <Link
                 to="/stellenangebote"
                 className="block px-4 py-3 rounded-lg hover:bg-blue-600/80 transition-colors font-medium"

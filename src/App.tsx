@@ -60,6 +60,7 @@ import SteuerberatungPrivatsteuern from "./pages/SteuerberatungPrivatsteuern";
 import SteuerberatungSteuerplanung from "./pages/SteuerberatungSteuerplanung";
 import SteuerberatungJahresabschluss from "./pages/SteuerberatungJahresabschluss";
 import Stellenangebote from "./pages/Stellenangebote";
+import Kontakt from "./pages/Kontakt";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -128,6 +129,7 @@ const App = () => (
           <Route path="/steuerberatung/steuerplanung" element={<SteuerberatungSteuerplanung />} />
           <Route path="/steuerberatung/jahresabschluss" element={<SteuerberatungJahresabschluss />} />
           <Route path="/stellenangebote" element={<Stellenangebote />} />
+          <Route path="/kontakt" element={<Kontakt />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
