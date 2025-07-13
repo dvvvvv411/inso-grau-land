@@ -55,6 +55,10 @@ import RechtsgebieteWettbewerbsrecht from "./pages/RechtsgebieteWettbewerbsrecht
 import WettbewerbsrechtAZ from "./pages/WettbewerbsrechtAZ";
 import WettbewerbsrechtEmailWerbung from "./pages/WettbewerbsrechtEmailWerbung";
 import WettbewerbsrechtWerbenachrichten from "./pages/WettbewerbsrechtWerbenachrichten";
+import SteuerberatungUnternehmenssteuern from "./pages/SteuerberatungUnternehmenssteuern";
+import SteuerberatungPrivatsteuern from "./pages/SteuerberatungPrivatsteuern";
+import SteuerberatungSteuerplanung from "./pages/SteuerberatungSteuerplanung";
+import SteuerberatungJahresabschluss from "./pages/SteuerberatungJahresabschluss";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -118,6 +122,10 @@ const App = () => (
           <Route path="/wettbewerbsrecht/a-z/" element={<WettbewerbsrechtAZ />} />
           <Route path="/wettbewerbsrecht/ist-eine-e-mail-werbung-zulaessig/" element={<WettbewerbsrechtEmailWerbung />} />
           <Route path="/wettbewerbsrecht/werbenachrichten/" element={<WettbewerbsrechtWerbenachrichten />} />
+          <Route path="/steuerberatung/unternehmenssteuern" element={<SteuerberatungUnternehmenssteuern />} />
+          <Route path="/steuerberatung/privatsteuern" element={<SteuerberatungPrivatsteuern />} />
+          <Route path="/steuerberatung/steuerplanung" element={<SteuerberatungSteuerplanung />} />
+          <Route path="/steuerberatung/jahresabschluss" element={<SteuerberatungJahresabschluss />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

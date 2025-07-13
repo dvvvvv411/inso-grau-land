@@ -80,6 +80,10 @@ const Header = () => {
                         const isVertragsrecht = menu.title === "Rechtsgebiete" && item === "Vertragsrecht";
                         const isVerwaltungsrecht = menu.title === "Rechtsgebiete" && item === "Verwaltungsrecht";
                         const isWettbewerbsrecht = menu.title === "Rechtsgebiete" && item === "Wettbewerbsrecht";
+                        const isUnternehmenssteuern = menu.title === "Steuerberatung" && item === "Unternehmenssteuern";
+                        const isPrivatsteuern = menu.title === "Steuerberatung" && item === "Privatsteuern";
+                        const isSteuerplanung = menu.title === "Steuerberatung" && item === "Steuerplanung";
+                        const isJahresabschluss = menu.title === "Steuerberatung" && item === "Jahresabschluss";
                         
                         if (isUeberUns) {
                           return (
@@ -237,6 +241,58 @@ const Header = () => {
                             );
                           }
                         
+                        if (isUnternehmenssteuern) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/steuerberatung/unternehmenssteuern"
+                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isPrivatsteuern) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/steuerberatung/privatsteuern"
+                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isSteuerplanung) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/steuerberatung/steuerplanung"
+                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isJahresabschluss) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/steuerberatung/jahresabschluss"
+                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
                         return (
                           <a
                             key={itemIndex}
@@ -297,6 +353,10 @@ const Header = () => {
                         const isVertragsrecht = menu.title === "Rechtsgebiete" && item === "Vertragsrecht";
                         const isVerwaltungsrecht = menu.title === "Rechtsgebiete" && item === "Verwaltungsrecht";
                         const isWettbewerbsrecht = menu.title === "Rechtsgebiete" && item === "Wettbewerbsrecht";
+                        const isUnternehmenssteuern = menu.title === "Steuerberatung" && item === "Unternehmenssteuern";
+                        const isPrivatsteuern = menu.title === "Steuerberatung" && item === "Privatsteuern";
+                        const isSteuerplanung = menu.title === "Steuerberatung" && item === "Steuerplanung";
+                        const isJahresabschluss = menu.title === "Steuerberatung" && item === "Jahresabschluss";
                         
                         if (isUeberUns) {
                           return (
@@ -453,6 +513,58 @@ const Header = () => {
                               </Link>
                             );
                           }
+                        
+                        if (isUnternehmenssteuern) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/steuerberatung/unternehmenssteuern"
+                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isPrivatsteuern) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/steuerberatung/privatsteuern"
+                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isSteuerplanung) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/steuerberatung/steuerplanung"
+                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isJahresabschluss) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/steuerberatung/jahresabschluss"
+                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
                         
                         return (
                           <a
