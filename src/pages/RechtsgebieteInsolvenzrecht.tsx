@@ -25,13 +25,11 @@ const RechtsgebieteInsolvenzrecht = () => {
         <div className="max-w-7xl mx-auto">
           {/* Hero Image */}
           <div className="mb-12">
-            <div 
-              className="w-full h-64 md:h-80 rounded-lg shadow-lg relative bg-cover bg-center"
-              style={{
-                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.6), rgba(0, 86, 179, 0.4)), url('/lovable-uploads/15349153-a75f-48a5-a7a1-3060dddde8cb.png')`
-              }}
-            >
-            </div>
+            <img 
+              src="/lovable-uploads/15349153-a75f-48a5-a7a1-3060dddde8cb.png"
+              alt="Insolvenzrecht Team"
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+            />
           </div>
 
           {/* Article Text */}

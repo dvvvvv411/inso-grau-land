@@ -25,13 +25,11 @@ const RechtsgebieteVerwaltungsrecht = () => {
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <div 
-              className="w-full h-64 md:h-80 rounded-lg shadow-lg relative bg-cover bg-center"
-              style={{
-                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.6), rgba(0, 86, 179, 0.4)), url('/lovable-uploads/ceed31b4-65ae-4203-807b-9a69c2bc01a1.png')`
-              }}
-            >
-            </div>
+            <img 
+              src="/lovable-uploads/ceed31b4-65ae-4203-807b-9a69c2bc01a1.png" 
+              alt="Team Verwaltungsrecht" 
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
+            />
           </div>
           
           <div className="mb-12">

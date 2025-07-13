@@ -25,13 +25,11 @@ const RechtsgebieteGrundstuecksrecht = () => {
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <div 
-              className="w-full h-64 md:h-80 rounded-lg shadow-lg relative bg-cover bg-center"
-              style={{
-                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.6), rgba(0, 86, 179, 0.4)), url('/lovable-uploads/be3e4c30-b54a-47ce-b256-f0c9bdf74f64.png')`
-              }}
-            >
-            </div>
+            <img 
+              src="/lovable-uploads/be3e4c30-b54a-47ce-b256-f0c9bdf74f64.png" 
+              alt="Anwalt für Grundstücksrecht" 
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
+            />
           </div>
           
           <div className="mb-12">

@@ -25,13 +25,11 @@ const RechtsgebieteSozialrecht = () => {
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <div 
-              className="w-full h-64 md:h-80 rounded-lg shadow-lg relative bg-cover bg-center"
-              style={{
-                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.6), rgba(0, 86, 179, 0.4)), url('/lovable-uploads/6e3e40b9-401f-4bbd-b08d-0ad16e3c7827.png')`
-              }}
-            >
-            </div>
+            <img 
+              src="/lovable-uploads/6e3e40b9-401f-4bbd-b08d-0ad16e3c7827.png" 
+              alt="Sozialrecht Team" 
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
+            />
           </div>
           
           <div className="mb-12">

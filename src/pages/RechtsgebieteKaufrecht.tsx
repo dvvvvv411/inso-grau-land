@@ -25,13 +25,11 @@ const RechtsgebieteKaufrecht = () => {
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <div 
-              className="w-full h-64 md:h-80 rounded-lg shadow-lg relative bg-cover bg-center"
-              style={{
-                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.6), rgba(0, 86, 179, 0.4)), url('/lovable-uploads/9c6ffd77-bb56-4025-a2a2-0f079995c484.png')`
-              }}
-            >
-            </div>
+            <img 
+              src="/lovable-uploads/9c6ffd77-bb56-4025-a2a2-0f079995c484.png" 
+              alt="Team Kaufrecht" 
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
+            />
           </div>
           
           <div className="mb-12">
