@@ -14,7 +14,7 @@ const newsArticles = [
   {
     title: "20 % Schadensersatz gegenüber der Bank bei Kreditkartenmissbrauch",
     excerpt: "Das Oberlandesgericht (OLG) Dresden hat am 5. Mai 2025 (Az. 8 U 1482/24) ein bedeutendes Urteil…",
-    link: "https://www.steinbock-partner.de/it-recht/20-schadensersatz-gegenueber-der-bank-bei-kreditkartenmissbrauch/",
+    link: "/news/20-schadensersatz-gegenueber-der-bank-bei-kreditkartenmissbrauch",
     image: newsImage1
   },
   {
@@ -126,9 +126,12 @@ const NewsCarousel = () => {
             >
               <Card className="h-full bg-white border border-gray-200/50 hover:border-[#004595]/30 hover:shadow-xl transition-all duration-300 group cursor-pointer overflow-hidden">
                 <a 
-                  href={article.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                  href={article.link.startsWith('http') ? article.link : undefined}
+                  {...(article.link.startsWith('/') ? {} : { target: "_blank", rel: "noopener noreferrer" })}
+                  onClick={article.link.startsWith('/') ? (e) => {
+                    e.preventDefault();
+                    window.location.href = article.link;
+                  } : undefined}
                   className="block h-full"
                 >
                   {/* Image - 50% */}
