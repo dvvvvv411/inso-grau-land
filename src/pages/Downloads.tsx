@@ -70,10 +70,15 @@ const Downloads = () => {
                 className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 p-6 border border-gray-200 hover:border-[#004595]/20 group cursor-pointer"
               >
                 <div className="flex items-center justify-between">
-                  {/* Title */}
-                  <h3 className="text-base font-medium text-foreground leading-tight flex-1 pr-4">
-                    {item.title}
-                  </h3>
+                  {/* Title and Size */}
+                  <div className="flex-1 pr-4">
+                    <h3 className="text-base font-medium text-foreground leading-tight">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      {item.size}
+                    </p>
+                  </div>
                   
                   {/* Download Icon */}
                   <div className="flex-shrink-0">
