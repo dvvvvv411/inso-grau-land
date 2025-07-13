@@ -115,8 +115,8 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Right Column - Mobile Optimized Image */}
-            <div className="relative flex items-center justify-center px-4 md:justify-end md:pr-[5%] order-first lg:order-last">
+            {/* Right Column - Desktop Only Image */}
+            <div className="hidden lg:flex relative items-center justify-center px-4 md:justify-end md:pr-[5%] order-first lg:order-last">
               <div className="w-full max-w-sm md:max-w-md lg:w-[95%] h-64 md:h-96 lg:h-[800px] overflow-hidden relative transform hover:scale-[1.02] transition-transform duration-700 ease-out">
                 {/* Responsive layered shadows */}
                 <div className="hidden md:block absolute inset-0 bg-black/20 blur-3xl transform translate-x-4 translate-y-4 rounded-lg"></div>
