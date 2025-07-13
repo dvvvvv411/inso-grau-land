@@ -48,10 +48,10 @@ const VerwaltungsrechtZwangsgeldandrohung = () => {
 
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  Steinbock & Partner – Ihr kompetenter Ansprechpartner im Verwaltungsrecht
+                  Heß & Partner – Ihr kompetenter Ansprechpartner im Verwaltungsrecht
                 </h2>
                 <p className="mb-4">
-                  Haben auch Sie einen behördlichen Bescheid vom Landratsamt oder Ihrer Gemeinde bekommen? Eventuell sogar mit einer Zwangsgeldandrohung? Dann zögern Sie nicht, uns zu kontaktieren. Wir von der Kanzlei Steinbock & Partner prüfen umfassend und sofort, ob ein Vorgehen gegen den Bescheid Erfolgsaussichten hat, und reichen für Sie einen Eilantrag bzw. eine Klage ein.
+                  Haben auch Sie einen behördlichen Bescheid vom Landratsamt oder Ihrer Gemeinde bekommen? Eventuell sogar mit einer Zwangsgeldandrohung? Dann zögern Sie nicht, uns zu kontaktieren. Wir von der Kanzlei Heß & Partner prüfen umfassend und sofort, ob ein Vorgehen gegen den Bescheid Erfolgsaussichten hat, und reichen für Sie einen Eilantrag bzw. eine Klage ein.
                 </p>
                 <p className="mb-4">
                   Als mittelständische Kanzlei mit mehreren Niederlassungen bieten wir genügend Ressourcen, um Ihren Fall jederzeit umfassend betreuen zu können. Möchten Sie uns direkt kontaktieren, um einen Termin zu vereinbaren oder uns sonst eine Frage zu stellen, freuen wir uns auf Ihre Kontaktaufnahme. Vereinbaren Sie für Ihr Anliegen einfach ein Gespräch, das dank unserer technischen Ausstattung auch telefonisch oder online durchgeführt werden kann. Darüber hinaus können Sie auch gerne unseren kostenlosen „Rückruf-Service" nutzen.

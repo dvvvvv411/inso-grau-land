@@ -124,18 +124,18 @@ const NewsArticle1 = () => {
               <p className="mb-4">
                 Sollten auch Sie von einem Kreditkartenbetrug betroffen sein, können Sie sich direkt und unkompliziert über unsere digitale Mandatsannahme – abrufbar unter{" "}
                 <a 
-                  href="https://dima.steinbock-partner.de/allgemeine-mandatsannahme" 
+                  href="https://dima.hess-partner-berlin.de/allgemeine-mandatsannahme" 
                   className="text-[#004595] hover:underline font-medium"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://dima.steinbock-partner.de/allgemeine-mandatsannahme
+                  https://dima.hess-partner-berlin.de/allgemeine-mandatsannahme
                 </a>
                 {" "}– vertrauensvoll an uns wenden.
               </p>
               
               <p>
-                Alternativ können Sie uns jedoch auch direkt kontaktieren, um einen persönlichen oder auch einen Telefon-Termin zu vereinbaren oder um uns sonstige Fragen zu stellen. Als Full Service-Kanzlei deckt die Beratung von Steinbock & Partner nicht nur die gesamte Bandbreite des IT-Rechts sowie Datenschutzrechts ab, sondern auch die Vertretung von Mandanten in Gerichtsverfahren.
+                Alternativ können Sie uns jedoch auch direkt kontaktieren, um einen persönlichen oder auch einen Telefon-Termin zu vereinbaren oder um uns sonstige Fragen zu stellen. Als Full Service-Kanzlei deckt die Beratung von Heß & Partner nicht nur die gesamte Bandbreite des IT-Rechts sowie Datenschutzrechts ab, sondern auch die Vertretung von Mandanten in Gerichtsverfahren.
               </p>
             </div>
           </div>

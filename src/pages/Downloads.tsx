@@ -45,7 +45,7 @@ const Downloads = () => {
       
       <StandardHero
         title="Downloads"
-        description="Die Rechte an dieser Website und an den enthaltenen Inhalten liegen bei Steinbock & Partner. Besucher der Webseite dürfen gerne Dateien oder Inhalte herunterladen, nutzen und weiter übertragen. Urheberrechtsvermerke dürfen allerdings nicht entfernt werden. Eine gewerbliche Nutzung ohne unsere vorherige Zustimmung ist nicht erlaubt."
+        description="Die Rechte an dieser Website und an den enthaltenen Inhalten liegen bei Heß & Partner. Besucher der Webseite dürfen gerne Dateien oder Inhalte herunterladen, nutzen und weiter übertragen. Urheberrechtsvermerke dürfen allerdings nicht entfernt werden. Eine gewerbliche Nutzung ohne unsere vorherige Zustimmung ist nicht erlaubt."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Downloads" }

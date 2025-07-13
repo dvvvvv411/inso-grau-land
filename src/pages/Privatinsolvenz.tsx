@@ -77,7 +77,7 @@ const Privatinsolvenz = () => {
             </div>
 
             <h2 className="text-2xl font-bold text-foreground mt-12 mb-6">
-              Steinbock & Partner – Ihr kompetenter Ansprechpartner bei Fragen zur Privatinsolvenz
+              Heß & Partner – Ihr kompetenter Ansprechpartner bei Fragen zur Privatinsolvenz
             </h2>
 
             <p className="mb-6">

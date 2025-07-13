@@ -62,7 +62,7 @@ const SozialrechtSchwerbehinderung = () => {
 
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Steinbock & Partner – Ihr kompetenter Ansprechpartner in allen sozialrechtlichen Fragen
+              Heß & Partner – Ihr kompetenter Ansprechpartner in allen sozialrechtlichen Fragen
             </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>

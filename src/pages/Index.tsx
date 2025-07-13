@@ -11,10 +11,10 @@ import TestimonialsSection from "../components/TestimonialsSection";
 
 const Index = () => {
   const features = [
-    "20+ Jahre Erfahrung",
-    "9 Standorte", 
+    "5 Jahre Erfahrung",
+    "Berlin Mitte", 
     "schnell & kompetent",
-    "digitale Kanzlei"
+    "moderne Kanzlei"
   ];
 
   // Custom checkmark SVG from the original (blue color #004595)
@@ -69,7 +69,7 @@ const Index = () => {
               {/* Company Name */}
               <div className="space-y-2">
                 <p className="text-lg text-muted-foreground font-medium tracking-wide uppercase">
-                  Steinbock & Partner
+                  Heß & Partner
                 </p>
                 <div className="w-16 h-1 bg-[#004595] rounded"></div>
               </div>
@@ -125,7 +125,7 @@ const Index = () => {
                 <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl ring-1 ring-black/10">
                   <img 
                     src={heroImage} 
-                    alt="Professionelle Anwaltskanzlei - Steinbock & Partner"
+                    alt="Professionelle Anwaltskanzlei - Heß & Partner"
                     className="w-full h-full object-cover"
                   />
                   {/* Professional overlay */}
@@ -143,7 +143,7 @@ const Index = () => {
         <div className="w-full max-w-7xl mx-auto px-8 h-full flex flex-col justify-center py-16">
           {/* Section Title */}
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center mb-12 leading-tight max-w-4xl mx-auto">
-            Willkommen bei Steinbock & Partner, einem erfahrenen Team von Anwälten und Steuerexperten.
+            Willkommen bei Heß & Partner, einem erfahrenen Team von Anwälten und Steuerexperten in Berlin.
           </h2>
 
           {/* Two Column Layout - Equal columns */}
@@ -154,7 +154,7 @@ const Index = () => {
               <div className="w-full max-w-xl h-full flex items-center">
                 <img 
                   src={partnerImage} 
-                  alt="Steinbock & Partner Team"
+                  alt="Heß & Partner Team"
                   className="w-full h-auto max-h-[500px] object-contain"
                 />
               </div>
@@ -170,7 +170,7 @@ const Index = () => {
                   Deshalb sind wir bestrebt, für jeden Klienten eine maßgeschneiderte Lösung zu finden, die seine individuellen Bedürfnisse erfüllt. Wir setzen uns engagiert für die Rechte unserer Klienten ein und arbeiten hart, um ihre Interessen zu schützen.
                 </p>
                 <p>
-                  Lassen Sie uns gemeinsam eine Lösung für Ihre rechtlichen und steuerlichen Herausforderungen finden.
+                  Als Berliner Kanzlei verstehen wir die besonderen Herausforderungen der Hauptstadt und bieten maßgeschneiderte Lösungen für Ihre rechtlichen und steuerlichen Anliegen.
                 </p>
               </div>
 
@@ -181,7 +181,7 @@ const Index = () => {
                   className="bg-white text-[#004595] hover:bg-gray-100 font-semibold px-6 py-3 text-base rounded-lg transition-all duration-300 hover:shadow-lg"
                   asChild
                 >
-                  <Link to="/ueber-uns">Mehr über Steinbock & Partner</Link>
+                  <Link to="/ueber-uns">Mehr über Heß & Partner</Link>
                 </Button>
               </div>
             </div>
@@ -257,10 +257,10 @@ const Index = () => {
               {/* Flexible Features Grid - 2 rows */}
               <div className="flex flex-wrap gap-3 justify-center">
                 {[
-                  "digitale Kanzlei",
+                  "moderne Kanzlei",
                   "Homeoffice", 
                   "flexible Arbeitszeiten",
-                  "moderne Arbeitsplätze",
+                  "Berlin Mitte",
                   "junges und dynamisches Team"
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200/50 hover:bg-gray-50 hover:shadow-md transition-all duration-300 group flex-shrink-0">

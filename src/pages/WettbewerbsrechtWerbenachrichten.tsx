@@ -94,7 +94,7 @@ const WettbewerbsrechtWerbenachrichten = () => {
                   Wie können wir Ihnen helfen?
                 </h2>
                 <p className="mb-4">
-                  Wir als Rechtsanwältinnen und Rechtsanwälte der Kanzlei Steinbock & Partner beschäftigen uns natürlich deutlich häufiger mit den Fragen, welche Werbung abgemahnt werden kann und wie eine solche Abmahnung aussehen muss. Diese Expertise stellen wir Ihnen selbstverständlich gerne zur Verfügung.
+                  Wir als Rechtsanwältinnen und Rechtsanwälte der Kanzlei Heß & Partner beschäftigen uns natürlich deutlich häufiger mit den Fragen, welche Werbung abgemahnt werden kann und wie eine solche Abmahnung aussehen muss. Diese Expertise stellen wir Ihnen selbstverständlich gerne zur Verfügung.
                 </p>
                 <p className="mb-4">
                   Als mittelständische Kanzlei mit mehreren Niederlassungen bieten wir genügend Ressourcen, um Ihren Fall jederzeit umfassend betreuen zu können. Möchten Sie uns direkt kontaktieren, um einen Termin zu vereinbaren oder uns sonst eine Frage zu stellen, freuen wir uns auf Ihre Kontaktaufnahme. Vereinbaren Sie für Ihr Anliegen einfach ein Gespräch, das dank unserer technischen Ausstattung auch telefonisch oder online durchgeführt werden kann. Darüber hinaus können Sie auch gerne unseren kostenlosen „Rückruf-Service" nutzen.

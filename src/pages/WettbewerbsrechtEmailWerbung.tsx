@@ -127,10 +127,10 @@ const WettbewerbsrechtEmailWerbung = () => {
 
                 <div className="bg-blue-50 border border-blue-200 p-6 rounded-lg mt-8">
                   <p className="mb-4">
-                    Sollten auch Sie von etwaigen unzulässigen E-Mail-Werbungen oder Abmahnungen betroffen sein, können Sie sich direkt und unkompliziert über unsere digitale Mandatsannahme – abrufbar unter https://dima.steinbock-partner.de/allgemeine-mandatsannahme – vertrauensvoll an uns wenden. Lesen Sie auch hier, wie Sie bei unerwünschten Span-Mails Schadensersatz verlangen können.
+                    Sollten auch Sie von etwaigen unzulässigen E-Mail-Werbungen oder Abmahnungen betroffen sein, können Sie sich direkt und unkompliziert über unsere digitale Mandatsannahme – abrufbar unter https://dima.hess-partner-berlin.de/allgemeine-mandatsannahme – vertrauensvoll an uns wenden. Lesen Sie auch hier, wie Sie bei unerwünschten Span-Mails Schadensersatz verlangen können.
                   </p>
                   <p>
-                    Alternativ können Sie uns jedoch auch direkt kontaktieren, um einen persönlichen oder auch einen Telefon-Termin zu vereinbaren oder um uns sonstige Fragen zu stellen. Als Full Service-Kanzlei deckt die Beratung von Steinbock & Partner nicht nur die gesamte Bandbreite des Wettbewerbsrechts ab, sondern auch die Vertretung von Mandanten in Gerichtsverfahren.
+                    Alternativ können Sie uns jedoch auch direkt kontaktieren, um einen persönlichen oder auch einen Telefon-Termin zu vereinbaren oder um uns sonstige Fragen zu stellen. Als Full Service-Kanzlei deckt die Beratung von Heß & Partner nicht nur die gesamte Bandbreite des Wettbewerbsrechts ab, sondern auch die Vertretung von Mandanten in Gerichtsverfahren.
                   </p>
                 </div>
               </div>

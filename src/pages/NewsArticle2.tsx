@@ -112,10 +112,10 @@ const NewsArticle2 = () => {
               <p>
                 Für die Einschätzung sämtlicher datenschutzrelevanter Informationen stehen wir Ihnen unkompliziert und vertrauensvoll per E-Mail unter{" "}
                 <a 
-                  href="mailto:info@steinbock-partner.de" 
+                  href="mailto:info@hess-partner-berlin.de" 
                   className="text-[#004595] hover:underline font-medium"
                 >
-                  info@steinbock-partner.de
+                  info@hess-partner-berlin.de
                 </a>
                 {" "}oder telefonisch zur Verfügung.
               </p>

@@ -19,7 +19,7 @@ const TestimonialsSection = () => {
       company: "Weber Industries GmbH",
       position: "Geschäftsführer",
       rating: 5,
-      text: "Steinbock & Partner hat uns in einer komplexen Unternehmensumstrukturierung hervorragend beraten. Die professionelle Betreuung und das tiefe Verständnis für steuerrechtliche Fragen haben uns enorm geholfen. Absolute Empfehlung!",
+      text: "Heß & Partner hat uns in einer komplexen Unternehmensumstrukturierung hervorragend beraten. Die professionelle Betreuung und das tiefe Verständnis für steuerrechtliche Fragen haben uns enorm geholfen. Absolute Empfehlung!",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
     },
     {
@@ -28,7 +28,7 @@ const TestimonialsSection = () => {
       company: "TechStart Solutions",
       position: "Gründerin",
       rating: 5,
-      text: "Als Start-up brauchten wir zuverlässige rechtliche Beratung von Anfang an. Das Team von Steinbock & Partner hat uns mit ihrer Expertise und schnellen Reaktionszeit beeindruckt. Wir fühlen uns bestens aufgehoben.",
+      text: "Als Start-up brauchten wir zuverlässige rechtliche Beratung von Anfang an. Das Team von Heß & Partner hat uns mit ihrer Expertise und schnellen Reaktionszeit beeindruckt. Wir fühlen uns bestens aufgehoben.",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
     },
     {
@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
       company: "Hoffmann Immobilien",
       position: "Inhaber",
       rating: 5,
-      text: "Bei unserem Immobilienprojekt war die rechtliche Absicherung entscheidend. Steinbock & Partner hat uns durch alle Vertragsverhandlungen begleitet und dabei stets unsere Interessen im Blick behalten. Top Service!",
+      text: "Bei unserem Immobilienprojekt war die rechtliche Absicherung entscheidend. Heß & Partner hat uns durch alle Vertragsverhandlungen begleitet und dabei stets unsere Interessen im Blick behalten. Top Service!",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
     },
     {
@@ -46,7 +46,7 @@ const TestimonialsSection = () => {
       company: "Schneider Consulting",
       position: "Partnerin",
       rating: 5,
-      text: "Die steuerrechtliche Beratung durch Steinbock & Partner ist außergewöhnlich kompetent. Komplexe Sachverhalte werden verständlich erklärt und praktikable Lösungen entwickelt. Ein vertrauensvoller Partner für unser Unternehmen.",
+      text: "Die steuerrechtliche Beratung durch Heß & Partner ist außergewöhnlich kompetent. Komplexe Sachverhalte werden verständlich erklärt und praktikable Lösungen entwickelt. Ein vertrauensvoller Partner für unser Unternehmen.",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
     },
     {
@@ -55,7 +55,7 @@ const TestimonialsSection = () => {
       company: "Klein Automotive",
       position: "Geschäftsführer",
       rating: 5,
-      text: "In unserem Rechtsstreit haben die Anwälte von Steinbock & Partner mit strategischem Geschick und fundiertem Fachwissen einen erfolgreichen Ausgang erreicht. Professionell, zuverlässig und ergebnisorientiert.",
+      text: "In unserem Rechtsstreit haben die Anwälte von Heß & Partner mit strategischem Geschick und fundiertem Fachwissen einen erfolgreichen Ausgang erreicht. Professionell, zuverlässig und ergebnisorientiert.",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
     }
   ];

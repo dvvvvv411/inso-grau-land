@@ -13,7 +13,7 @@ const RechtsgebieteVertragsrecht = () => {
       
       <StandardHero
         title="Vertragsrecht"
-        description="Die Rechtsanwälte und Fachanwälte von Steinbock & Partner sind Fachleute für Vertragsfragen und Vertragstexte aller Art. Wenn Sie eine Vertragsformulierung benötigen, einen Vertrag auf seine Folgen prüfen lassen wollen oder Vertragskonflikte bestehen, sind unsere Anwälte für Vertragsrecht für Sie da."
+        description="Die Rechtsanwälte und Fachanwälte von Heß & Partner sind Fachleute für Vertragsfragen und Vertragstexte aller Art. Wenn Sie eine Vertragsformulierung benötigen, einen Vertrag auf seine Folgen prüfen lassen wollen oder Vertragskonflikte bestehen, sind unsere Anwälte für Vertragsrecht für Sie da."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Rechtsgebiete", href: "/" },
@@ -41,7 +41,7 @@ const RechtsgebieteVertragsrecht = () => {
             </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                Die Rechtsanwälte von Steinbock & Partner sind Fachleute, wenn es um Verträge, Vertragsklauseln und vertragliche Ansprüche geht:
+                Die Rechtsanwälte von Heß & Partner sind Fachleute, wenn es um Verträge, Vertragsklauseln und vertragliche Ansprüche geht:
               </p>
               <ul className="space-y-4 ml-6">
                 <li className="list-disc">
@@ -102,7 +102,7 @@ const RechtsgebieteVertragsrecht = () => {
                 Nicht nur die Vertragsgestaltung selbst profitiert von vertragsrechtlichem Fachwissen. Das gilt auch für Vertragsverhandlungen.
               </p>
               <p>
-                Um ein optimales Verhandlungsergebnis zu gewährleisten, müssen die rechtlichen Rahmenbedingungen und die eigene Situation analysiert werden. Wo liegen die eigenen Interessen, welche Ziele verfolgt der Vertragspartner? Welchen Spielraum an Zugeständnissen räumt man ein, wo zieht man die Grenze? Welche späteren Konflikte sind möglich, wie lässt sich eine Lösung vorwegnehmen? Die Anwälte von Steinbock & Partner begleiten Ihre Vertragsverhandlungen mit viel Erfahrung und dem Blick für die Praxis.
+                Um ein optimales Verhandlungsergebnis zu gewährleisten, müssen die rechtlichen Rahmenbedingungen und die eigene Situation analysiert werden. Wo liegen die eigenen Interessen, welche Ziele verfolgt der Vertragspartner? Welchen Spielraum an Zugeständnissen räumt man ein, wo zieht man die Grenze? Welche späteren Konflikte sind möglich, wie lässt sich eine Lösung vorwegnehmen? Die Anwälte von Heß & Partner begleiten Ihre Vertragsverhandlungen mit viel Erfahrung und dem Blick für die Praxis.
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
