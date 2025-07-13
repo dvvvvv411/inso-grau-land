@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import PracticeAreasCarousel from "../components/PracticeAreasCarousel";
 import NewsCarousel from "../components/NewsCarousel";
 import TestimonialsSection from "../components/TestimonialsSection";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 const Index = () => {
   const features = [
@@ -43,6 +44,8 @@ const Index = () => {
       </defs>
     </svg>
   );
+
+  useDocumentTitle("Heß & Partner - Ihre Rechtsexperten in Berlin Mitte");
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-accent/20 pt-20">
