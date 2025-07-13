@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, Scale, Home, Briefcase, Building, Calculator, FileText, Heart, Shield } from "lucide-react";
+import { ChevronLeft, ChevronRight, Scale, Home, Briefcase, Building, Calculator, FileText, Users, Gavel } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 
 const practiceAreas = [
   {
-    title: "Arbeitsrecht",
-    icon: Briefcase,
-    description: "Umfassende Beratung bei arbeitsrechtlichen Streitigkeiten und Vertragsgestaltung"
+    title: "Grundstücksrecht",
+    icon: Building,
+    description: "Rechtliche Begleitung bei Grundstücksangelegenheiten und Immobilientransaktionen"
   },
   {
     title: "Insolvenzrecht", 
@@ -15,14 +15,19 @@ const practiceAreas = [
     description: "Kompetente Unterstützung bei Insolvenzverfahren und Sanierungsmaßnahmen"
   },
   {
-    title: "Immobilienrecht",
-    icon: Building,
-    description: "Rechtliche Begleitung bei Immobilienkäufen, -verkäufen und Vermietungen"
+    title: "Kaufrecht",
+    icon: Briefcase,
+    description: "Beratung bei Kaufverträgen und gewährleistungsrechtlichen Ansprüchen"
   },
   {
-    title: "Mietrecht",
+    title: "Maklerrecht",
     icon: Home,
-    description: "Beratung für Mieter und Vermieter bei allen mietrechtlichen Angelegenheiten"
+    description: "Rechtliche Unterstützung rund um Maklerverträge und Provisionsansprüche"
+  },
+  {
+    title: "Sozialrecht",
+    icon: Users,
+    description: "Vertretung vor Sozialgerichten und bei sozialrechtlichen Angelegenheiten"
   },
   {
     title: "Steuerrecht",
@@ -35,14 +40,14 @@ const practiceAreas = [
     description: "Vertragsgestaltung und -prüfung für alle Arten von Rechtsgeschäften"
   },
   {
-    title: "Erbrecht",
-    icon: Heart,
-    description: "Testamentsgestaltung und Beratung bei Erbschaftsangelegenheiten"
+    title: "Verwaltungsrecht",
+    icon: Building,
+    description: "Vertretung gegenüber Behörden und in verwaltungsrechtlichen Verfahren"
   },
   {
-    title: "Strafrecht",
-    icon: Shield,
-    description: "Verteidigung in Strafverfahren und präventive Rechtsberatung"
+    title: "Wettbewerbsrecht",
+    icon: Gavel,
+    description: "Schutz vor unlauterem Wettbewerb und wettbewerbsrechtliche Beratung"
   }
 ];
 

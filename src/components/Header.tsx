@@ -13,7 +13,7 @@ const Header = () => {
     },
     {
       title: "Rechtsgebiete", 
-      items: ["Arbeitsrecht", "Insolvenzrecht", "Immobilienrecht", "Mietrecht", "Steuerrecht", "Vertragsrecht", "Erbrecht", "Strafrecht"]
+      items: ["Grundstücksrecht", "Insolvenzrecht", "Kaufrecht", "Maklerrecht", "Sozialrecht", "Steuerrecht", "Vertragsrecht", "Verwaltungsrecht", "Wettbewerbsrecht"]
     },
     {
       title: "Steuerberatung",
