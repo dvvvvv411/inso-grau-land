@@ -43,8 +43,14 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="text-2xl font-bold tracking-wide">
-            <span className="text-white">Anwalts</span><span className="text-blue-200">kanzlei</span>
+          <div className="flex items-center">
+            <Link to="/">
+              <img 
+                src="/lovable-uploads/88fbd551-e951-4bd1-ac03-317ed47b6bec.png"
+                alt="Kanzlei Logo"
+                className="h-12 w-auto"
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation Menu */}

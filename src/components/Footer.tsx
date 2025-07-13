@@ -67,9 +67,9 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="mb-6">
               <img 
-                src="https://www.steinbock-partner.de/wp-content/uploads/2023/05/Steinbock_Partner_Logo.png"
-                alt="Steinbock & Partner - Logo"
-                className="h-12 w-auto brightness-0 invert"
+                src="/lovable-uploads/88fbd551-e951-4bd1-ac03-317ed47b6bec.png"
+                alt="Kanzlei Logo"
+                className="h-12 w-auto"
               />
             </div>
             <p className="text-blue-100 leading-relaxed mb-4">
