@@ -155,7 +155,7 @@ const Index = () => {
                 <img 
                   src={partnerImage} 
                   alt="Steinbock & Partner Team"
-                  className="w-full h-auto max-h-[350px] object-contain"
+                  className="w-full h-auto max-h-[500px] object-contain"
                 />
               </div>
             </div>
