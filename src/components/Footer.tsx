@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   const footerMenuItems = [
     { name: 'Impressum', href: '/impressum' },
-    { name: 'Datenschutz', href: '/datenschutz' }
+    { name: 'Datenschutz', href: '/datenschutz' },
+    { name: 'AGBs', href: '/agbs' }
   ];
 
   const kanzleiLinks = [
