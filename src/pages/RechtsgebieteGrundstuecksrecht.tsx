@@ -23,7 +23,7 @@ const RechtsgebieteGrundstuecksrecht = () => {
 
       {/* Main Content */}
       <section className="py-16 px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <img 
               src="https://www.steinbock-partner.de/wp-content/uploads/2023/06/team-grundstuecksrecht.jpg" 

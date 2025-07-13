@@ -22,7 +22,7 @@ const RechtsgebieteInsolvenzrecht = () => {
 
       {/* Article Content */}
       <article className="py-20 px-4 flex-grow">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {/* Hero Image */}
           <div className="mb-12">
             <img 
