@@ -1,16 +1,17 @@
 import { Facebook, Instagram, Youtube, Linkedin, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const locations = [
-    { name: 'Würzburg', href: '/standort/wuerzburg' },
-    { name: 'München', href: '/standort/muenchen' },
-    { name: 'Bad Kissingen', href: '/standort/bad-kissingen' },
-    { name: 'Bamberg', href: '/standort/bamberg' },
-    { name: 'Gerbrunn', href: '/standort/gerbrunn' },
-    { name: 'Gotha', href: '/standort/gotha' },
-    { name: 'Kürnach', href: '/standort/kuernach' },
-    { name: 'Randersacker', href: '/standort/randersacker' },
-    { name: 'Rottendorf', href: '/standort/rottendorf' }
+    { name: 'Würzburg', href: '/kontakt' },
+    { name: 'München', href: '/kontakt' },
+    { name: 'Bad Kissingen', href: '/kontakt' },
+    { name: 'Bamberg', href: '/kontakt' },
+    { name: 'Gerbrunn', href: '/kontakt' },
+    { name: 'Gotha', href: '/kontakt' },
+    { name: 'Kürnach', href: '/kontakt' },
+    { name: 'Randersacker', href: '/kontakt' },
+    { name: 'Rottendorf', href: '/kontakt' }
   ];
 
   const footerMenuItems = [
@@ -75,12 +76,12 @@ const Footer = () => {
             <p className="text-blue-100 leading-relaxed mb-4">
               Eine starke Unterstützung, wann immer Sie sie brauchen. Komplette Rechts- und Steuerberatung für Ihre Bedürfnisse.
             </p>
-            <a 
-              href="/kanzlei-news/iso-9001-zertifizierung" 
+            <Link 
+              to="/news" 
               className="text-blue-200 hover:text-white underline text-sm transition-colors duration-200"
             >
               Zertifiziert nach DIN EN ISO 9001:2015
-            </a>
+            </Link>
           </div>
 
           {/* Locations Section */}
@@ -88,13 +89,13 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white mb-6">Standorte</h3>
             <div className="grid grid-cols-1 gap-2">
               {locations.map((location) => (
-                <a
+                <Link
                   key={location.name}
-                  href={location.href}
+                  to={location.href}
                   className="text-blue-100 hover:text-white transition-colors duration-200 text-sm py-1"
                 >
                   {location.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -128,13 +129,13 @@ const Footer = () => {
             {/* Footer Menu */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-6">
               {footerMenuItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   className="text-blue-100 hover:text-white transition-colors duration-200 text-sm"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
 

@@ -139,7 +139,7 @@ const Header = () => {
                           return (
                             <Link
                               key={itemIndex}
-                              to="/rechtsgebiete/Grundstuecksrecht"
+                              to="/rechtsgebiete/grundstuecksrecht"
                               className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
                               onClick={closeDropdowns}
                             >
@@ -152,7 +152,7 @@ const Header = () => {
                           return (
                             <Link
                               key={itemIndex}
-                              to="/rechtsgebiete/Kaufrecht"
+                              to="/rechtsgebiete/kaufrecht"
                               className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
                               onClick={closeDropdowns}
                             >
@@ -178,7 +178,7 @@ const Header = () => {
                           return (
                             <Link
                               key={itemIndex}
-                              to="/rechtsgebiete/Sozialrecht"
+                              to="/rechtsgebiete/sozialrecht"
                               className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
                               onClick={closeDropdowns}
                             >
@@ -204,7 +204,7 @@ const Header = () => {
                             return (
                               <Link
                                 key={itemIndex}
-                                to="/rechtsgebiete/Vertragsrecht"
+                                to="/rechtsgebiete/vertragsrecht"
                                 className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
                                 onClick={closeDropdowns}
                               >
@@ -217,7 +217,7 @@ const Header = () => {
                             return (
                               <Link
                                 key={itemIndex}
-                                to="/rechtsgebiete/Verwaltungsrecht"
+                                to="/rechtsgebiete/verwaltungsrecht"
                                 className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
                                 onClick={closeDropdowns}
                               >
@@ -230,7 +230,7 @@ const Header = () => {
                             return (
                               <Link
                                 key={itemIndex}
-                                to="/rechtsgebiete/Wettbewerbsrecht"
+                                to="/rechtsgebiete/wettbewerbsrecht"
                                 className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
                                 onClick={closeDropdowns}
                               >
@@ -424,31 +424,31 @@ const Header = () => {
                           );
                         }
                         
-                        if (isGrundstuecksrecht) {
-                          return (
-                            <Link
-                              key={itemIndex}
-                              to="/rechtsgebiete/Grundstuecksrecht"
-                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
-                              onClick={closeDropdowns}
-                            >
-                              {item}
-                            </Link>
-                          );
-                        }
+                         if (isGrundstuecksrecht) {
+                           return (
+                             <Link
+                               key={itemIndex}
+                               to="/rechtsgebiete/grundstuecksrecht"
+                               className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
+                               onClick={closeDropdowns}
+                             >
+                               {item}
+                             </Link>
+                           );
+                         }
                         
-                        if (isKaufrecht) {
-                          return (
-                            <Link
-                              key={itemIndex}
-                              to="/rechtsgebiete/Kaufrecht"
-                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
-                              onClick={closeDropdowns}
-                            >
-                              {item}
-                            </Link>
-                          );
-                        }
+                         if (isKaufrecht) {
+                           return (
+                             <Link
+                               key={itemIndex}
+                               to="/rechtsgebiete/kaufrecht"
+                               className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
+                               onClick={closeDropdowns}
+                             >
+                               {item}
+                             </Link>
+                           );
+                         }
                         
                         if (isMaklerrecht) {
                           return (
@@ -463,18 +463,18 @@ const Header = () => {
                           );
                         }
                         
-                        if (isSozialrecht) {
-                          return (
-                            <Link
-                              key={itemIndex}
-                              to="/rechtsgebiete/Sozialrecht"
-                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
-                              onClick={closeDropdowns}
-                            >
-                              {item}
-                            </Link>
-                          );
-                        }
+                         if (isSozialrecht) {
+                           return (
+                             <Link
+                               key={itemIndex}
+                               to="/rechtsgebiete/sozialrecht"
+                               className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
+                               onClick={closeDropdowns}
+                             >
+                               {item}
+                             </Link>
+                           );
+                         }
                         
                           if (isSteuerrecht) {
                             return (
@@ -489,44 +489,44 @@ const Header = () => {
                             );
                           }
 
-                          if (isVertragsrecht) {
-                            return (
-                              <Link
-                                key={itemIndex}
-                                to="/rechtsgebiete/Vertragsrecht"
-                                className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
-                                onClick={closeDropdowns}
-                              >
-                                {item}
-                              </Link>
-                            );
-                          }
+                           if (isVertragsrecht) {
+                             return (
+                               <Link
+                                 key={itemIndex}
+                                 to="/rechtsgebiete/vertragsrecht"
+                                 className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
+                                 onClick={closeDropdowns}
+                               >
+                                 {item}
+                               </Link>
+                             );
+                           }
 
-                          if (isVerwaltungsrecht) {
-                            return (
-                              <Link
-                                key={itemIndex}
-                                to="/rechtsgebiete/Verwaltungsrecht"
-                                className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
-                                onClick={closeDropdowns}
-                              >
-                                {item}
-                              </Link>
-                            );
-                          }
+                           if (isVerwaltungsrecht) {
+                             return (
+                               <Link
+                                 key={itemIndex}
+                                 to="/rechtsgebiete/verwaltungsrecht"
+                                 className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
+                                 onClick={closeDropdowns}
+                               >
+                                 {item}
+                               </Link>
+                             );
+                           }
 
-                          if (isWettbewerbsrecht) {
-                            return (
-                              <Link
-                                key={itemIndex}
-                                to="/rechtsgebiete/Wettbewerbsrecht"
-                                className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
-                                onClick={closeDropdowns}
-                              >
-                                {item}
-                              </Link>
-                            );
-                          }
+                           if (isWettbewerbsrecht) {
+                             return (
+                               <Link
+                                 key={itemIndex}
+                                 to="/rechtsgebiete/wettbewerbsrecht"
+                                 className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
+                                 onClick={closeDropdowns}
+                               >
+                                 {item}
+                               </Link>
+                             );
+                           }
                         
                         if (isUnternehmenssteuern) {
                           return (

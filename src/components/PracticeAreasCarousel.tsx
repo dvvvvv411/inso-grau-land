@@ -2,52 +2,62 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight, Scale, Home, Briefcase, Building, Calculator, FileText, Users, Gavel } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 const practiceAreas = [
   {
     title: "Grundstücksrecht",
     icon: Building,
-    description: "Rechtliche Begleitung bei Grundstücksangelegenheiten und Immobilientransaktionen"
+    description: "Rechtliche Begleitung bei Grundstücksangelegenheiten und Immobilientransaktionen",
+    link: "/rechtsgebiete/grundstuecksrecht"
   },
   {
     title: "Insolvenzrecht", 
     icon: Calculator,
-    description: "Kompetente Unterstützung bei Insolvenzverfahren und Sanierungsmaßnahmen"
+    description: "Kompetente Unterstützung bei Insolvenzverfahren und Sanierungsmaßnahmen",
+    link: "/rechtsgebiete/insolvenzrecht"
   },
   {
     title: "Kaufrecht",
     icon: Briefcase,
-    description: "Beratung bei Kaufverträgen und gewährleistungsrechtlichen Ansprüchen"
+    description: "Beratung bei Kaufverträgen und gewährleistungsrechtlichen Ansprüchen",
+    link: "/rechtsgebiete/kaufrecht"
   },
   {
     title: "Maklerrecht",
     icon: Home,
-    description: "Rechtliche Unterstützung rund um Maklerverträge und Provisionsansprüche"
+    description: "Rechtliche Unterstützung rund um Maklerverträge und Provisionsansprüche",
+    link: "/rechtsgebiete/maklerrecht"
   },
   {
     title: "Sozialrecht",
     icon: Users,
-    description: "Vertretung vor Sozialgerichten und bei sozialrechtlichen Angelegenheiten"
+    description: "Vertretung vor Sozialgerichten und bei sozialrechtlichen Angelegenheiten",
+    link: "/rechtsgebiete/sozialrecht"
   },
   {
     title: "Steuerrecht",
     icon: FileText,
-    description: "Professionelle Steuerberatung für Privatpersonen und Unternehmen"
+    description: "Professionelle Steuerberatung für Privatpersonen und Unternehmen",
+    link: "/rechtsgebiete/steuerrecht"
   },
   {
     title: "Vertragsrecht",
     icon: Scale,
-    description: "Vertragsgestaltung und -prüfung für alle Arten von Rechtsgeschäften"
+    description: "Vertragsgestaltung und -prüfung für alle Arten von Rechtsgeschäften",
+    link: "/rechtsgebiete/vertragsrecht"
   },
   {
     title: "Verwaltungsrecht",
     icon: Building,
-    description: "Vertretung gegenüber Behörden und in verwaltungsrechtlichen Verfahren"
+    description: "Vertretung gegenüber Behörden und in verwaltungsrechtlichen Verfahren",
+    link: "/rechtsgebiete/verwaltungsrecht"
   },
   {
     title: "Wettbewerbsrecht",
     icon: Gavel,
-    description: "Schutz vor unlauterem Wettbewerb und wettbewerbsrechtliche Beratung"
+    description: "Schutz vor unlauterem Wettbewerb und wettbewerbsrechtliche Beratung",
+    link: "/rechtsgebiete/wettbewerbsrecht"
   }
 ];
 
@@ -122,29 +132,31 @@ const PracticeAreasCarousel = () => {
                 className="flex-shrink-0 px-4"
                 style={{ width: `${100 / cardsPerView}%` }}
               >
-                <Card className="h-full bg-white border border-gray-200/50 hover:border-[#004595]/30 hover:shadow-xl transition-all duration-300 group cursor-pointer">
-                  <CardContent className="p-8 text-center h-full flex flex-col">
-                    {/* Icon */}
-                    <div className="mb-6 mx-auto">
-                      <div className="w-16 h-16 bg-[#004595]/10 rounded-2xl flex items-center justify-center group-hover:bg-[#004595]/20 transition-colors duration-300">
-                        <Icon className="w-8 h-8 text-[#004595]" />
+                <Link to={area.link} className="h-full block">
+                  <Card className="h-full bg-white border border-gray-200/50 hover:border-[#004595]/30 hover:shadow-xl transition-all duration-300 group cursor-pointer">
+                    <CardContent className="p-8 text-center h-full flex flex-col">
+                      {/* Icon */}
+                      <div className="mb-6 mx-auto">
+                        <div className="w-16 h-16 bg-[#004595]/10 rounded-2xl flex items-center justify-center group-hover:bg-[#004595]/20 transition-colors duration-300">
+                          <Icon className="w-8 h-8 text-[#004595]" />
+                        </div>
                       </div>
-                    </div>
 
-                    {/* Title */}
-                    <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-[#004595] transition-colors duration-300">
-                      {area.title}
-                    </h3>
+                      {/* Title */}
+                      <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-[#004595] transition-colors duration-300">
+                        {area.title}
+                      </h3>
 
-                    {/* Description */}
-                    <p className="text-muted-foreground leading-relaxed flex-grow">
-                      {area.description}
-                    </p>
+                      {/* Description */}
+                      <p className="text-muted-foreground leading-relaxed flex-grow">
+                        {area.description}
+                      </p>
 
-                    {/* Hover Accent Bar */}
-                    <div className="mt-6 w-0 h-1 bg-[#004595] rounded-full mx-auto group-hover:w-12 transition-all duration-300"></div>
-                  </CardContent>
-                </Card>
+                      {/* Hover Accent Bar */}
+                      <div className="mt-6 w-0 h-1 bg-[#004595] rounded-full mx-auto group-hover:w-12 transition-all duration-300"></div>
+                    </CardContent>
+                  </Card>
+                </Link>
               </div>
             );
           })}

@@ -4,6 +4,7 @@ import workplaceCollage from "../assets/workplace-collage.jpg";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Button } from "../components/ui/button";
+import { Link } from "react-router-dom";
 import PracticeAreasCarousel from "../components/PracticeAreasCarousel";
 import NewsCarousel from "../components/NewsCarousel";
 import TestimonialsSection from "../components/TestimonialsSection";
@@ -178,8 +179,9 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   className="bg-white text-[#004595] hover:bg-gray-100 font-semibold px-6 py-3 text-base rounded-lg transition-all duration-300 hover:shadow-lg"
+                  asChild
                 >
-                  Mehr über Steinbock & Partner
+                  <Link to="/ueber-uns">Mehr über Steinbock & Partner</Link>
                 </Button>
               </div>
             </div>
@@ -277,12 +279,12 @@ const Index = () => {
                   className="w-full bg-[#004595] text-white hover:bg-[#003366] font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 hover:shadow-xl hover:scale-105 group"
                   asChild
                 >
-                  <a href="https://www.steinbock-partner.de/stellenangebote/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3">
+                  <Link to="/stellenangebote" className="flex items-center justify-center gap-3">
                     <span>Zu den Stellenangeboten</span>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>
