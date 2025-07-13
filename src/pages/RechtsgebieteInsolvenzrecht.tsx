@@ -28,7 +28,7 @@ const RechtsgebieteInsolvenzrecht = () => {
             <div 
               className="w-full h-64 md:h-80 rounded-lg shadow-lg relative bg-cover bg-center"
               style={{
-                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.8), rgba(0, 86, 179, 0.6)), url('/lovable-uploads/15349153-a75f-48a5-a7a1-3060dddde8cb.png')`
+                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.3), rgba(255, 255, 255, 0.1), rgba(0, 86, 179, 0.2)), url('/lovable-uploads/15349153-a75f-48a5-a7a1-3060dddde8cb.png')`
               }}
             >
             </div>

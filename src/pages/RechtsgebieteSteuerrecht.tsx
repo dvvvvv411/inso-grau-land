@@ -28,7 +28,7 @@ const RechtsgebieteSteuerrecht = () => {
             <div 
               className="w-full h-64 md:h-80 rounded-lg shadow-lg relative bg-cover bg-center"
               style={{
-                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.8), rgba(0, 86, 179, 0.6)), url('/lovable-uploads/fadea5fe-d754-4949-9dce-10414d7c1be9.png')`
+                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.3), rgba(255, 255, 255, 0.1), rgba(0, 86, 179, 0.2)), url('/lovable-uploads/fadea5fe-d754-4949-9dce-10414d7c1be9.png')`
               }}
             >
             </div>
