@@ -12,7 +12,7 @@ import { Textarea } from "../components/ui/textarea";
 import { Checkbox } from "../components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "../components/ui/form";
-import { useToast } from "../hooks/use-toast";
+import { useToast } from "@/hooks/use-toast";
 import contactOfficeImage from "../assets/contact-office.jpg";
 
 const formSchema = z.object({
