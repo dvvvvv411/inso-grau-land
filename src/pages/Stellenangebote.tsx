@@ -90,7 +90,7 @@ const Stellenangebote = () => {
                   <Briefcase className="w-5 h-5 text-blue-600" />
                   Rechtsanwalt (m/w/d) - Wirtschaftsrecht
                 </CardTitle>
-                <CardDescription>Vollzeit | Unbefristet | Hamburg</CardDescription>
+                <CardDescription>Vollzeit | Unbefristet | Berlin</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
@@ -111,7 +111,7 @@ const Stellenangebote = () => {
                   <Briefcase className="w-5 h-5 text-blue-600" />
                   Steuerberater (m/w/d)
                 </CardTitle>
-                <CardDescription>Vollzeit | Unbefristet | Hamburg</CardDescription>
+                <CardDescription>Vollzeit | Unbefristet | Berlin</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
@@ -132,7 +132,7 @@ const Stellenangebote = () => {
                   <Briefcase className="w-5 h-5 text-blue-600" />
                   Rechtsanwaltsfachangestellte (m/w/d)
                 </CardTitle>
-                <CardDescription>Vollzeit | Unbefristet | Hamburg</CardDescription>
+                <CardDescription>Vollzeit | Unbefristet | Berlin</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
@@ -153,7 +153,7 @@ const Stellenangebote = () => {
                   <Briefcase className="w-5 h-5 text-blue-600" />
                   Praktikant Rechtswissenschaften (m/w/d)
                 </CardTitle>
-                <CardDescription>3-6 Monate | Befristet | Hamburg</CardDescription>
+                <CardDescription>3-6 Monate | Befristet | Berlin</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
@@ -231,7 +231,7 @@ const Stellenangebote = () => {
                     <Input
                       id="phone"
                       type="tel"
-                      placeholder="+49 40 123456789"
+                      placeholder="+49 30 123456789"
                       className="pl-10"
                       value={formData.phone}
                       onChange={(e) => handleInputChange("phone", e.target.value)}

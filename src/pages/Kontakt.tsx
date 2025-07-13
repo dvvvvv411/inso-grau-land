@@ -236,7 +236,7 @@ const Kontakt = () => {
                         <FormItem>
                           <FormLabel>Telefonnummer *</FormLabel>
                           <FormControl>
-                            <Input placeholder="+49 123 456789" {...field} />
+                            <Input placeholder="+49 30 123456789" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>

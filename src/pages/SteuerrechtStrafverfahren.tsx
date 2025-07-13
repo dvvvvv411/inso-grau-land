@@ -145,7 +145,7 @@ const SteuerrechtStrafverfahren = () => {
             </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                In steuerstrafrechtlichen Fragestellungen sind wir gerne mit unserem interdisziplinären Team kompetent an Ihrer Seite. Unsere Rechtsanwältin für Steuerrecht Elisa Härder und unsere Steuerberater arbeiten dafür Hand in Hand mit unserem Rechtsanwalt für Strafrecht und Strafverteidiger Manuel Hemm.
+                In steuerstrafrechtlichen Fragestellungen sind wir gerne mit unserem interdisziplinären Team kompetent an Ihrer Seite. Unsere Rechtsanwälte für Steuerrecht und unsere Steuerberater arbeiten dafür Hand in Hand mit unserem erfahrenen Team für Strafrecht und Strafverteidigung.
               </p>
               <p>
                 Über ein Pauschalhonorar oder ein Stundenhonorar wird individuell mit Ihnen und abhängig von der rechtlichen Fragestellung, der Schwierigkeit und dem Umfang Ihrer Angelegenheit in einem gemeinsamen Beratungsgespräch entschieden.
