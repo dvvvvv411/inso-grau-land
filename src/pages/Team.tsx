@@ -7,6 +7,18 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Users } from "lucide-react";
 
 const Team = () => {
+  // Mapping für Rechtsgebiete zu URLs
+  const rechtsgebietUrls: { [key: string]: string } = {
+    "Insolvenzrecht": "/rechtsgebiete/insolvenzrecht",
+    "Steuerrecht": "/rechtsgebiete/steuerrecht", 
+    "Grundstücksrecht": "/rechtsgebiete/grundstuecksrecht",
+    "Kaufrecht": "/rechtsgebiete/kaufrecht",
+    "Maklerrecht": "/rechtsgebiete/maklerrecht",
+    "Sozialrecht": "/rechtsgebiete/sozialrecht",
+    "Vertragsrecht": "/rechtsgebiete/vertragsrecht",
+    "Verwaltungsrecht": "/rechtsgebiete/verwaltungsrecht",
+    "Wettbewerbsrecht": "/rechtsgebiete/wettbewerbsrecht"
+  };
   const teamMembers = [
     {
       id: 1,
@@ -98,12 +110,13 @@ const Team = () => {
                     <p className="text-sm text-gray-500 font-medium">Spezialisierung:</p>
                     <div className="flex flex-wrap gap-2">
                       {member.areas.map((area, areaIndex) => (
-                        <span
+                        <Link
                           key={areaIndex}
-                          className="inline-block px-3 py-2 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 text-sm font-medium rounded-full border border-blue-200 hover:from-blue-100 hover:to-blue-200 transition-all duration-200 transform hover:scale-105"
+                          to={rechtsgebietUrls[area] || "#"}
+                          className="inline-block px-3 py-2 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 text-sm font-medium rounded-full border border-blue-200 hover:from-blue-100 hover:to-blue-200 transition-all duration-200 transform hover:scale-105 cursor-pointer hover:shadow-md"
                         >
                           {area}
-                        </span>
+                        </Link>
                       ))}
                     </div>
                   </div>
