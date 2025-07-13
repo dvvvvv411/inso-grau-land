@@ -21,6 +21,10 @@ import Insolvenzanfechtung from "./pages/Insolvenzanfechtung";
 import ForderungsanmeldungWiderspruchEigentumsvorbehalt from "./pages/ForderungsanmeldungWiderspruchEigentumsvorbehalt";
 import Insolvenzantrag from "./pages/Insolvenzantrag";
 import Privatinsolvenz from "./pages/Privatinsolvenz";
+import RechtsgebieteGrundstuecksrecht from "./pages/RechtsgebieteGrundstuecksrecht";
+import GrundstuecksrechtAZ from "./pages/GrundstuecksrechtAZ";
+import GrundstuecksrechtNachgenehmigung from "./pages/GrundstuecksrechtNachgenehmigung";
+import GrundstuecksrechtUnberechtigteParkplatznutzung from "./pages/GrundstuecksrechtUnberechtigteParkplatznutzung";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -50,6 +54,10 @@ const App = () => (
           <Route path="/insolvenzrecht/forderungsanmeldung-widerspruch-eigentumsvorbehalt/" element={<ForderungsanmeldungWiderspruchEigentumsvorbehalt />} />
           <Route path="/insolvenzrecht/insolvenzantrag/" element={<Insolvenzantrag />} />
           <Route path="/insolvenzrecht/privatinsolvenz/" element={<Privatinsolvenz />} />
+          <Route path="/rechtsgebiete/Grundstuecksrecht" element={<RechtsgebieteGrundstuecksrecht />} />
+          <Route path="/grundstuecksrecht/a-z/" element={<GrundstuecksrechtAZ />} />
+          <Route path="/grundstuecksrecht/nachgenehmigung/" element={<GrundstuecksrechtNachgenehmigung />} />
+          <Route path="/grundstuecksrecht/unberechtigte-parkplatznutzung/" element={<GrundstuecksrechtUnberechtigteParkplatznutzung />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
