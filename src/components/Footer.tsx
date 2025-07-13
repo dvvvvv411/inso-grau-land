@@ -80,7 +80,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/96cce04b-471a-447f-af2e-9200112168b8.png" 
                 alt="Auszeichnung" 
-                className="object-contain w-104 h-auto"
+                className="object-contain w-[26rem] h-auto"
               />
             </div>
           </div>
