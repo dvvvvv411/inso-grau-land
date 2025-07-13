@@ -15,48 +15,48 @@ const TestimonialsSection = () => {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      name: "Dr. Markus Weber",
-      company: "Weber Industries GmbH",
-      position: "Geschäftsführer",
+      name: "Lennart Siebenmorgen",
+      company: "",
+      position: "",
       rating: 5,
-      text: "Die Expertise von Heß & Partner bei unserer Unternehmensumstrukturierung war außergewöhnlich. Strategisches Denken gepaart mit präziser Umsetzung - genau was wir brauchten. Absolut empfehlenswert!",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
+      text: "Die rechtliche Unterstützung war über jeden Zweifel erhaben. In meinem komplexen Fall haben sie nicht nur den Überblick behalten, sondern aktiv nach Lösungen gesucht, wo andere längst aufgegeben hätten. Großartige Arbeit!",
+      image: "/lovable-uploads/2a1a247b-c32b-475d-8df8-c4c0a88e9b0c.png"
     },
     {
       id: 2,
-      name: "Sandra Müller",
-      company: "TechStart Solutions",
-      position: "Gründerin",
+      name: "Friederike von Hardenfels",
+      company: "",
+      position: "",
       rating: 5,
-      text: "Von der Gründungsberatung bis zur Expansion - Heß & Partner war der ideale Partner für unser Start-up. Agile Beratung mit Weitblick und immer ein offenes Ohr für unsere Herausforderungen.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
+      text: "Dr. Heß ist ein außergewöhnlicher Anwalt – fachlich brillant, strategisch scharf und zugleich menschlich absolut angenehm. Er hat sich mit beeindruckender Gründlichkeit in meinen Fall eingearbeitet und dabei stets das große Ganze im Blick behalten. Ein echter Fels in der Brandung!",
+      image: "/lovable-uploads/d53c73d6-7522-47fe-9f86-4becc780b6ec.png"
     },
     {
       id: 3,
-      name: "Thomas Hoffmann",
-      company: "Hoffmann Immobilien",
-      position: "Inhaber",
+      name: "Albrecht Kronenberg",
+      company: "",
+      position: "",
       rating: 5,
-      text: "Komplexe Immobilienprojekte erfordern juristische Präzision. Heß & Partner navigierte uns sicher durch alle rechtlichen Herausforderungen und schützte dabei konsequent unsere Interessen. Erstklassige Beratung!",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
+      text: "Ich habe selten eine Kanzlei erlebt, die mit solcher Präzision und strategischem Weitblick agiert. Die juristische Beratung war nicht nur fachlich exzellent, sondern auch menschlich auf Augenhöhe. Mein Anliegen wurde bis ins Detail verstanden – das schafft Vertrauen.",
+      image: "/lovable-uploads/1f12239c-78f4-4890-938f-a5f85430fd4d.png"
     },
     {
       id: 4,
-      name: "Marina Schneider",
-      company: "Schneider Consulting",
-      position: "Partnerin",
+      name: "Thilo Bernbruch",
+      company: "",
+      position: "",
       rating: 5,
-      text: "Steueroptimierung auf höchstem Niveau - Heß & Partner macht komplexe Sachverhalte verständlich und entwickelt maßgeschneiderte Lösungen. Ein echter Mehrwert für unsere Unternehmensführung.",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
+      text: "Herr Dr. Heß hat mich mit seiner ruhigen, analytischen Art vollkommen überzeugt. Er nimmt sich Zeit, hört wirklich zu und liefert dann punktgenaue juristische Einschätzungen. Besonders in stressigen Situationen war seine souveräne Haltung für mich Gold wert. Ein Anwalt, wie man ihn sich wünscht.",
+      image: "/lovable-uploads/c66c5011-3e4c-4916-9b5f-dcbb4706ab77.png"
     },
     {
       id: 5,
-      name: "Robert Klein",
-      company: "Klein Automotive",
-      position: "Geschäftsführer",
+      name: "Benedikt Falkenried",
+      company: "",
+      position: "",
       rating: 5,
-      text: "Prozessführung auf Spitzenniveau - Heß & Partner kombiniert strategisches Denken mit juristischer Brillanz. Der erfolgreiche Ausgang unseres komplexen Rechtsstreits spricht für sich.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
+      text: "Diese Kanzlei vereint Expertise mit echter Verlässlichkeit. Ich habe mich selten so gut beraten gefühlt. Besonders die analytische Herangehensweise hat mir imponiert – jede Entscheidung wurde nachvollziehbar erklärt und transparent umgesetzt.",
+      image: "/lovable-uploads/9fcb2666-2a40-4fb3-b71c-daf8c1c693cf.png"
     }
   ];
 
@@ -113,8 +113,12 @@ const TestimonialsSection = () => {
                   <div className="flex-1 space-y-2">
                     <div>
                       <h3 className="text-xl font-bold text-foreground">{selectedTestimonial.name}</h3>
-                      <p className="text-base text-[#004595] font-semibold">{selectedTestimonial.position}</p>
-                      <p className="text-sm text-muted-foreground">{selectedTestimonial.company}</p>
+                      {selectedTestimonial.position && (
+                        <p className="text-base text-[#004595] font-semibold">{selectedTestimonial.position}</p>
+                      )}
+                      {selectedTestimonial.company && (
+                        <p className="text-sm text-muted-foreground">{selectedTestimonial.company}</p>
+                      )}
                     </div>
                     
                     {/* Rating Stars */}
@@ -169,11 +173,13 @@ const TestimonialsSection = () => {
                         }`}>
                           {testimonial.name}
                         </h4>
-                        <p className={`text-xs truncate ${
-                          selectedTestimonial.id === testimonial.id ? 'text-blue-100' : 'text-muted-foreground'
-                        }`}>
-                          {testimonial.company}
-                        </p>
+                        {testimonial.company && (
+                          <p className={`text-xs truncate ${
+                            selectedTestimonial.id === testimonial.id ? 'text-blue-100' : 'text-muted-foreground'
+                          }`}>
+                            {testimonial.company}
+                          </p>
+                        )}
                         
                         {/* Small Rating */}
                         <div className="flex gap-0.5 mt-1">
