@@ -27,7 +27,7 @@ const Footer = () => {
     <footer className="bg-[#004595] text-white">
       <div className="w-full max-w-7xl mx-auto px-8 py-16">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="mb-6">
@@ -73,15 +73,17 @@ const Footer = () => {
               ))}
             </div>
           </div>
-        </div>
 
-        {/* Award Image Section */}
-        <div className="mb-12 flex justify-center">
-          <img 
-            src="https://i.imgur.com/8Pk1t7j.png" 
-            alt="Auszeichnung" 
-            className="object-contain"
-          />
+          {/* Award Image Section - 4th Column */}
+          <div className="lg:col-span-1">
+            <div className="flex justify-center lg:justify-start">
+              <img 
+                src="https://i.imgur.com/8Pk1t7j.png" 
+                alt="Auszeichnung" 
+                className="object-contain"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Footer Bottom */}
