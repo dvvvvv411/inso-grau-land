@@ -48,7 +48,7 @@ const InsolvenzrechtAZ = () => {
                 className="block border border-gray-200 rounded-lg p-6 hover:border-[#004595] hover:shadow-md transition-all duration-200"
               >
                 <div className="flex items-center space-x-4">
-                  <Badge variant="default" className="w-12 h-12 rounded-xl text-lg font-bold flex items-center justify-center shrink-0">
+                  <Badge variant="default" className="w-12 h-12 rounded-xl text-lg font-bold flex items-center justify-center shrink-0 bg-[#004595] text-white hover:bg-[#003875]">
                     {topic.letter}
                   </Badge>
                   <div>

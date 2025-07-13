@@ -49,7 +49,7 @@ const GrundstuecksrechtAZ = () => {
                   to={entry.path}
                   className="flex items-center p-6 hover:bg-blue-50 transition-colors group"
                 >
-                  <Badge variant="default" className="w-12 h-12 rounded-xl text-lg font-bold flex items-center justify-center shrink-0 mr-4 group-hover:bg-primary/90 transition-colors">
+                  <Badge variant="default" className="w-12 h-12 rounded-xl text-lg font-bold flex items-center justify-center shrink-0 mr-4 bg-[#004595] text-white hover:bg-[#003875] transition-colors">
                     {entry.letter}
                   </Badge>
                   <div className="flex-1">
