@@ -2,6 +2,7 @@ import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { Badge } from "@/components/ui/badge";
 
 const InsolvenzrechtAZ = () => {
   const topics = [
@@ -47,9 +48,9 @@ const InsolvenzrechtAZ = () => {
                 className="block border border-gray-200 rounded-lg p-6 hover:border-[#004595] hover:shadow-md transition-all duration-200"
               >
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-[#004595] text-white rounded-lg flex items-center justify-center font-bold text-xl">
+                  <Badge variant="default" className="w-12 h-12 rounded-xl text-lg font-bold flex items-center justify-center shrink-0">
                     {topic.letter}
-                  </div>
+                  </Badge>
                   <div>
                     <h3 className="text-lg font-semibold text-foreground hover:text-[#004595] transition-colors">
                       {topic.title}
