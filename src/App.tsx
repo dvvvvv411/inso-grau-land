@@ -31,6 +31,11 @@ import RechtsgebieteMaklerrecht from "./pages/RechtsgebieteMaklerrecht";
 import MaklerrechtAZ from "./pages/MaklerrechtAZ";
 import MaklerrechtInformationen from "./pages/MaklerrechtInformationen";
 import MaklerrechtProbleme from "./pages/MaklerrechtProbleme";
+import RechtsgebieteSozialrecht from "./pages/RechtsgebieteSozialrecht";
+import SozialrechtAZ from "./pages/SozialrechtAZ";
+import SozialrechtSchwerbehinderung from "./pages/SozialrechtSchwerbehinderung";
+import SozialrechtRechtsschutz from "./pages/SozialrechtRechtsschutz";
+import SozialrechtUnfallversicherung from "./pages/SozialrechtUnfallversicherung";
 import GrundstuecksrechtNachgenehmigung from "./pages/GrundstuecksrechtNachgenehmigung";
 import GrundstuecksrechtUnberechtigteParkplatznutzung from "./pages/GrundstuecksrechtUnberechtigteParkplatznutzung";
 import NotFound from "./pages/NotFound";
@@ -72,6 +77,11 @@ const App = () => (
             <Route path="/maklerrecht/a-z/" element={<MaklerrechtAZ />} />
             <Route path="/maklerrecht/rechtliche-informationen-fuer-makler/" element={<MaklerrechtInformationen />} />
             <Route path="/maklerrecht/probleme-mit-dem-makler-immobilien-versicherungsvertrag/" element={<MaklerrechtProbleme />} />
+            <Route path="/rechtsgebiete/Sozialrecht" element={<RechtsgebieteSozialrecht />} />
+            <Route path="/sozialrecht/a-z/" element={<SozialrechtAZ />} />
+            <Route path="/sozialrecht/anerkennung-schwerbehinderung-hochstufung/" element={<SozialrechtSchwerbehinderung />} />
+            <Route path="/sozialrecht/einstweiliger-rechtsschutz-zu-gunsten-einer-lebensverlaengernden-therapie/" element={<SozialrechtRechtsschutz />} />
+            <Route path="/sozialrecht/gesetzliche-unfallversicherung/" element={<SozialrechtUnfallversicherung />} />
           <Route path="/grundstuecksrecht/nachgenehmigung/" element={<GrundstuecksrechtNachgenehmigung />} />
           <Route path="/grundstuecksrecht/unberechtigte-parkplatznutzung/" element={<GrundstuecksrechtUnberechtigteParkplatznutzung />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

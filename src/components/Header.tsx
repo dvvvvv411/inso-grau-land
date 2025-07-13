@@ -75,6 +75,7 @@ const Header = () => {
                         const isGrundstuecksrecht = menu.title === "Rechtsgebiete" && item === "Grundstücksrecht";
                         const isKaufrecht = menu.title === "Rechtsgebiete" && item === "Kaufrecht";
                         const isMaklerrecht = menu.title === "Rechtsgebiete" && item === "Maklerrecht";
+                        const isSozialrecht = menu.title === "Rechtsgebiete" && item === "Sozialrecht";
                         
                         if (isUeberUns) {
                           return (
@@ -167,6 +168,19 @@ const Header = () => {
                           );
                         }
                         
+                        if (isSozialrecht) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/rechtsgebiete/Sozialrecht"
+                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
                         return (
                           <a
                             key={itemIndex}
@@ -222,6 +236,7 @@ const Header = () => {
                         const isGrundstuecksrecht = menu.title === "Rechtsgebiete" && item === "Grundstücksrecht";
                         const isKaufrecht = menu.title === "Rechtsgebiete" && item === "Kaufrecht";
                         const isMaklerrecht = menu.title === "Rechtsgebiete" && item === "Maklerrecht";
+                        const isSozialrecht = menu.title === "Rechtsgebiete" && item === "Sozialrecht";
                         
                         if (isUeberUns) {
                           return (
@@ -306,6 +321,19 @@ const Header = () => {
                              <Link
                                key={itemIndex}
                                to="/rechtsgebiete/maklerrecht"
+                               className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                               onClick={closeDropdowns}
+                             >
+                               {item}
+                             </Link>
+                           );
+                         }
+                         
+                         if (isSozialrecht) {
+                           return (
+                             <Link
+                               key={itemIndex}
+                               to="/rechtsgebiete/Sozialrecht"
                                className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
                                onClick={closeDropdowns}
                              >
