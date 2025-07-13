@@ -9,6 +9,7 @@ import News from "./pages/News";
 import NewsArticle1 from "./pages/NewsArticle1";
 import NewsArticle2 from "./pages/NewsArticle2";
 import NewsArticle3 from "./pages/NewsArticle3";
+import NewsArticle4 from "./pages/NewsArticle4";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/news/20-schadensersatz-gegenueber-der-bank-bei-kreditkartenmissbrauch" element={<NewsArticle1 />} />
           <Route path="/news/meldefristen-beim-datenschutzvorfall" element={<NewsArticle2 />} />
           <Route path="/news/bargeschaeft-insolvenz" element={<NewsArticle3 />} />
+          <Route path="/news/datenuebertragung" element={<NewsArticle4 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

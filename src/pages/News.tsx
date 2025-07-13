@@ -32,7 +32,7 @@ const newsArticles = [
   {
     title: "Datenübertragung bedeutet Kontrollverlust",
     excerpt: "Erfolg vor dem Bundesarbeitsgericht: Mitarbeiter wehrt sich gegen Datenübertragung in die USA Hintergrund der Entscheidung des…",
-    link: "https://www.steinbock-partner.de/rechts-news/datenuebertragung/",
+    link: "/news/datenuebertragung",
     image: newsImage4
   },
   {
