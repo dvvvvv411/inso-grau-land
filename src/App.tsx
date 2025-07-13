@@ -47,6 +47,10 @@ import GrundstuecksrechtUnberechtigteParkplatznutzung from "./pages/Grundstuecks
 import RechtsgebieteVertragsrecht from "./pages/RechtsgebieteVertragsrecht";
 import VertragsrechtAZ from "./pages/VertragsrechtAZ";
 import VertragsrechtTaeuschung from "./pages/VertragsrechtTaeuschung";
+import RechtsgebieteVerwaltungsrecht from "./pages/RechtsgebieteVerwaltungsrecht";
+import VerwaltungsrechtAZ from "./pages/VerwaltungsrechtAZ";
+import VerwaltungsrechtZwangsgeldandrohung from "./pages/VerwaltungsrechtZwangsgeldandrohung";
+import VerwaltungsrechtImpfpflicht from "./pages/VerwaltungsrechtImpfpflicht";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -102,6 +106,10 @@ const App = () => (
           <Route path="/rechtsgebiete/Vertragsrecht" element={<RechtsgebieteVertragsrecht />} />
           <Route path="/vertragsrecht/a-z/" element={<VertragsrechtAZ />} />
           <Route path="/vertragsrecht/taeuschung/" element={<VertragsrechtTaeuschung />} />
+          <Route path="/rechtsgebiete/Verwaltungsrecht" element={<RechtsgebieteVerwaltungsrecht />} />
+          <Route path="/verwaltungsrecht/a-z/" element={<VerwaltungsrechtAZ />} />
+          <Route path="/verwaltungsrecht/zwangsgeldandrohung/" element={<VerwaltungsrechtZwangsgeldandrohung />} />
+          <Route path="/verwaltungsrecht/impfpflicht/" element={<VerwaltungsrechtImpfpflicht />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
