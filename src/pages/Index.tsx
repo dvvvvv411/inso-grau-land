@@ -60,11 +60,11 @@ const Index = () => {
         {/* Gradient overlay for depth */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-transparent to-blue-100/30"></div>
         <div className="w-full max-w-7xl mx-auto relative z-10">
-          {/* Responsive Layout */}
+          {/* Responsive Layout with proper mobile image handling */}
           <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[600px] md:min-h-[700px] lg:h-[800px]">
             
             {/* Left Column - Content (50%) */}
-            <div className="flex flex-col justify-center space-y-6 md:space-y-8 px-4 md:px-8 lg:px-12 py-12 lg:py-0">
+            <div className="flex flex-col justify-center space-y-6 md:space-y-8 px-4 md:px-8 lg:px-12 py-8 lg:py-0 order-last lg:order-first">
               
               {/* Company Name */}
               <div className="space-y-2">
@@ -115,20 +115,21 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Right Column - Mobile Optimized Image */}
-            <div className="relative flex items-center justify-center px-4 md:justify-end md:pr-[5%] order-first lg:order-last">
-              <div className="w-full max-w-sm md:max-w-md lg:w-[95%] h-64 md:h-96 lg:h-[800px] overflow-hidden relative transform hover:scale-[1.02] transition-transform duration-700 ease-out">
-                {/* Responsive layered shadows */}
-                <div className="hidden md:block absolute inset-0 bg-black/20 blur-3xl transform translate-x-4 translate-y-4 rounded-lg"></div>
-                <div className="hidden md:block absolute inset-0 bg-blue-600/30 blur-2xl transform translate-x-2 translate-y-2 rounded-lg"></div>
-                <div className="hidden md:block absolute inset-0 bg-black/30 blur-xl transform translate-x-1 translate-y-1 rounded-lg"></div>
+            {/* Right Column - Mobile Optimized Full Width Image */}
+            <div className="relative flex items-center justify-center order-first lg:order-last">
+              {/* Mobile: Full width image */}
+              <div className="w-full lg:w-[95%] lg:max-w-md xl:w-[95%] h-64 md:h-80 lg:h-[800px] overflow-hidden relative transform hover:scale-[1.02] transition-transform duration-700 ease-out lg:justify-end lg:pr-[5%]">
+                {/* Desktop layered shadows - hidden on mobile */}
+                <div className="hidden lg:block absolute inset-0 bg-black/20 blur-3xl transform translate-x-4 translate-y-4 rounded-lg"></div>
+                <div className="hidden lg:block absolute inset-0 bg-blue-600/30 blur-2xl transform translate-x-2 translate-y-2 rounded-lg"></div>
+                <div className="hidden lg:block absolute inset-0 bg-black/30 blur-xl transform translate-x-1 translate-y-1 rounded-lg"></div>
                 
                 {/* Main image container */}
-                <div className="relative w-full h-full rounded-lg overflow-hidden shadow-xl md:shadow-2xl ring-1 ring-black/10">
+                <div className="relative w-full h-full rounded-none md:rounded-lg lg:rounded-lg overflow-hidden shadow-lg md:shadow-xl lg:shadow-2xl ring-0 md:ring-1 lg:ring-1 ring-black/10">
                   <img 
                     src={heroImage} 
                     alt="Professionelle Anwaltskanzlei - Heß & Partner"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                   {/* Professional overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
