@@ -79,6 +79,7 @@ const Header = () => {
                         const isSteuerrecht = menu.title === "Rechtsgebiete" && item === "Steuerrecht";
                         const isVertragsrecht = menu.title === "Rechtsgebiete" && item === "Vertragsrecht";
                         const isVerwaltungsrecht = menu.title === "Rechtsgebiete" && item === "Verwaltungsrecht";
+                        const isWettbewerbsrecht = menu.title === "Rechtsgebiete" && item === "Wettbewerbsrecht";
                         
                         if (isUeberUns) {
                           return (
@@ -222,6 +223,19 @@ const Header = () => {
                               </Link>
                             );
                           }
+
+                          if (isWettbewerbsrecht) {
+                            return (
+                              <Link
+                                key={itemIndex}
+                                to="/rechtsgebiete/Wettbewerbsrecht"
+                                className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                                onClick={closeDropdowns}
+                              >
+                                {item}
+                              </Link>
+                            );
+                          }
                         
                         return (
                           <a
@@ -282,6 +296,7 @@ const Header = () => {
                         const isSteuerrecht = menu.title === "Rechtsgebiete" && item === "Steuerrecht";
                         const isVertragsrecht = menu.title === "Rechtsgebiete" && item === "Vertragsrecht";
                         const isVerwaltungsrecht = menu.title === "Rechtsgebiete" && item === "Verwaltungsrecht";
+                        const isWettbewerbsrecht = menu.title === "Rechtsgebiete" && item === "Wettbewerbsrecht";
                         
                         if (isUeberUns) {
                           return (
@@ -418,6 +433,19 @@ const Header = () => {
                               <Link
                                 key={itemIndex}
                                 to="/rechtsgebiete/Verwaltungsrecht"
+                                className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                                onClick={closeDropdowns}
+                              >
+                                {item}
+                              </Link>
+                            );
+                          }
+
+                          if (isWettbewerbsrecht) {
+                            return (
+                              <Link
+                                key={itemIndex}
+                                to="/rechtsgebiete/Wettbewerbsrecht"
                                 className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
                                 onClick={closeDropdowns}
                               >

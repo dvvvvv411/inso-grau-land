@@ -51,6 +51,10 @@ import RechtsgebieteVerwaltungsrecht from "./pages/RechtsgebieteVerwaltungsrecht
 import VerwaltungsrechtAZ from "./pages/VerwaltungsrechtAZ";
 import VerwaltungsrechtZwangsgeldandrohung from "./pages/VerwaltungsrechtZwangsgeldandrohung";
 import VerwaltungsrechtImpfpflicht from "./pages/VerwaltungsrechtImpfpflicht";
+import RechtsgebieteWettbewerbsrecht from "./pages/RechtsgebieteWettbewerbsrecht";
+import WettbewerbsrechtAZ from "./pages/WettbewerbsrechtAZ";
+import WettbewerbsrechtEmailWerbung from "./pages/WettbewerbsrechtEmailWerbung";
+import WettbewerbsrechtWerbenachrichten from "./pages/WettbewerbsrechtWerbenachrichten";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -110,6 +114,10 @@ const App = () => (
           <Route path="/verwaltungsrecht/a-z/" element={<VerwaltungsrechtAZ />} />
           <Route path="/verwaltungsrecht/zwangsgeldandrohung/" element={<VerwaltungsrechtZwangsgeldandrohung />} />
           <Route path="/verwaltungsrecht/impfpflicht/" element={<VerwaltungsrechtImpfpflicht />} />
+          <Route path="/rechtsgebiete/Wettbewerbsrecht" element={<RechtsgebieteWettbewerbsrecht />} />
+          <Route path="/wettbewerbsrecht/a-z/" element={<WettbewerbsrechtAZ />} />
+          <Route path="/wettbewerbsrecht/ist-eine-e-mail-werbung-zulaessig/" element={<WettbewerbsrechtEmailWerbung />} />
+          <Route path="/wettbewerbsrecht/werbenachrichten/" element={<WettbewerbsrechtWerbenachrichten />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
