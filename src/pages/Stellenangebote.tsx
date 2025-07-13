@@ -49,51 +49,51 @@ const Stellenangebote = () => {
         breadcrumbs={breadcrumbs}
       />
 
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 lg:py-16">
         {/* Introduction Section */}
-        <div className="mb-16">
+        <div className="mb-8 sm:mb-12 lg:mb-16">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
               Verstärken Sie unser Team
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6 sm:mb-8 px-2">
               Wir sind eine moderne Rechtsanwaltskanzlei mit Fokus auf Wirtschaftsrecht, 
               Steuerberatung und komplexe Rechtsberatung. Unser Team wächst stetig und wir 
               suchen motivierte Fachkräfte, die mit uns gemeinsam erfolgreich sein möchten.
             </p>
-            <div className="grid md:grid-cols-3 gap-8 text-left">
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-lg text-gray-900 mb-3">Moderne Arbeitsplätze</h3>
-                <p className="text-gray-600">State-of-the-art Büroausstattung und flexible Arbeitsmodelle für eine optimale Work-Life-Balance.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 text-left">
+              <div className="bg-blue-50 p-4 sm:p-6 rounded-lg">
+                <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2 sm:mb-3">Moderne Arbeitsplätze</h3>
+                <p className="text-sm sm:text-base text-gray-600">State-of-the-art Büroausstattung und flexible Arbeitsmodelle für eine optimale Work-Life-Balance.</p>
               </div>
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-lg text-gray-900 mb-3">Weiterbildung</h3>
-                <p className="text-gray-600">Kontinuierliche Fortbildungsmöglichkeiten und Unterstützung bei der beruflichen Entwicklung.</p>
+              <div className="bg-blue-50 p-4 sm:p-6 rounded-lg">
+                <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2 sm:mb-3">Weiterbildung</h3>
+                <p className="text-sm sm:text-base text-gray-600">Kontinuierliche Fortbildungsmöglichkeiten und Unterstützung bei der beruflichen Entwicklung.</p>
               </div>
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-lg text-gray-900 mb-3">Teamgeist</h3>
-                <p className="text-gray-600">Ein kollegiales Arbeitsumfeld mit flachen Hierarchien und direkter Kommunikation.</p>
+              <div className="bg-blue-50 p-4 sm:p-6 rounded-lg sm:col-span-2 lg:col-span-1">
+                <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2 sm:mb-3">Teamgeist</h3>
+                <p className="text-sm sm:text-base text-gray-600">Ein kollegiales Arbeitsumfeld mit flachen Hierarchien und direkter Kommunikation.</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Current Openings Section */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+        <div className="mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center px-2">
             Aktuelle Stellenausschreibungen
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Briefcase className="w-5 h-5 text-blue-600" />
-                  Rechtsanwalt (m/w/d) - Wirtschaftsrecht
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
+            <Card className="h-full">
+              <CardHeader className="pb-3">
+                <CardTitle className="flex items-start gap-2 text-lg sm:text-xl leading-tight">
+                  <Briefcase className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>Rechtsanwalt (m/w/d) - Wirtschaftsrecht</span>
                 </CardTitle>
-                <CardDescription>Vollzeit | Unbefristet | Berlin</CardDescription>
+                <CardDescription className="text-sm sm:text-base">Vollzeit | Unbefristet | Berlin</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 mb-4 text-sm sm:text-base leading-relaxed">
                   Wir suchen einen erfahrenen Rechtsanwalt mit Schwerpunkt Wirtschaftsrecht 
                   für unser wachsendes Team. Ideale Kandidaten haben mindestens 3 Jahre Berufserfahrung.
                 </p>
@@ -105,16 +105,16 @@ const Stellenangebote = () => {
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Briefcase className="w-5 h-5 text-blue-600" />
-                  Steuerberater (m/w/d)
+            <Card className="h-full">
+              <CardHeader className="pb-3">
+                <CardTitle className="flex items-start gap-2 text-lg sm:text-xl leading-tight">
+                  <Briefcase className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>Steuerberater (m/w/d)</span>
                 </CardTitle>
-                <CardDescription>Vollzeit | Unbefristet | Berlin</CardDescription>
+                <CardDescription className="text-sm sm:text-base">Vollzeit | Unbefristet | Berlin</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 mb-4 text-sm sm:text-base leading-relaxed">
                   Zur Verstärkung unserer Steuerberatungsabteilung suchen wir einen 
                   qualifizierten Steuerberater mit Expertise in Unternehmenssteuerrecht.
                 </p>
@@ -126,16 +126,16 @@ const Stellenangebote = () => {
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Briefcase className="w-5 h-5 text-blue-600" />
-                  Rechtsanwaltsfachangestellte (m/w/d)
+            <Card className="h-full">
+              <CardHeader className="pb-3">
+                <CardTitle className="flex items-start gap-2 text-lg sm:text-xl leading-tight">
+                  <Briefcase className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>Rechtsanwaltsfachangestellte (m/w/d)</span>
                 </CardTitle>
-                <CardDescription>Vollzeit | Unbefristet | Berlin</CardDescription>
+                <CardDescription className="text-sm sm:text-base">Vollzeit | Unbefristet | Berlin</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 mb-4 text-sm sm:text-base leading-relaxed">
                   Für unser Sekretariat suchen wir eine erfahrene Rechtsanwaltsfachangestellte 
                   zur Unterstützung unserer Anwälte in allen administrativen Belangen.
                 </p>
@@ -147,16 +147,16 @@ const Stellenangebote = () => {
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Briefcase className="w-5 h-5 text-blue-600" />
-                  Praktikant Rechtswissenschaften (m/w/d)
+            <Card className="h-full">
+              <CardHeader className="pb-3">
+                <CardTitle className="flex items-start gap-2 text-lg sm:text-xl leading-tight">
+                  <Briefcase className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span>Praktikant Rechtswissenschaften (m/w/d)</span>
                 </CardTitle>
-                <CardDescription>3-6 Monate | Befristet | Berlin</CardDescription>
+                <CardDescription className="text-sm sm:text-base">3-6 Monate | Befristet | Berlin</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 mb-4 text-sm sm:text-base leading-relaxed">
                   Wir bieten Studierenden der Rechtswissenschaften die Möglichkeit, 
                   praktische Erfahrungen in einer modernen Kanzlei zu sammeln.
                 </p>
@@ -171,20 +171,19 @@ const Stellenangebote = () => {
         </div>
 
         {/* Application Form Section */}
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="md:col-span-2">
-            <Card>
-            <CardHeader className="text-center">
-              <CardTitle className="text-2xl font-bold text-gray-900">
+        <div className="w-full">
+          <Card>
+            <CardHeader className="text-center px-4 sm:px-6">
+              <CardTitle className="text-xl sm:text-2xl font-bold text-gray-900">
                 Bewerbung einreichen
               </CardTitle>
-              <CardDescription className="text-lg">
+              <CardDescription className="text-base sm:text-lg">
                 Senden Sie uns Ihre Bewerbungsunterlagen über das nachfolgende Formular
               </CardDescription>
             </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
+            <CardContent className="px-4 sm:px-6">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name" className="text-sm font-medium">
                       Vollständiger Name *
@@ -195,7 +194,7 @@ const Stellenangebote = () => {
                          id="name"
                          type="text"
                          placeholder="Dein Name"
-                         className="pl-10"
+                         className="pl-10 text-sm sm:text-base"
                          value={formData.name}
                          onChange={(e) => handleInputChange("name", e.target.value)}
                          required
@@ -213,7 +212,7 @@ const Stellenangebote = () => {
                          id="email"
                          type="email"
                          placeholder="Deine Email"
-                         className="pl-10"
+                         className="pl-10 text-sm sm:text-base"
                          value={formData.email}
                          onChange={(e) => handleInputChange("email", e.target.value)}
                          required
@@ -222,7 +221,7 @@ const Stellenangebote = () => {
                   </div>
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-2 sm:col-span-2">
                   <Label htmlFor="phone" className="text-sm font-medium">
                     Telefonnummer
                   </Label>
@@ -232,19 +231,19 @@ const Stellenangebote = () => {
                       id="phone"
                       type="tel"
                       placeholder="+49 30 123456789"
-                      className="pl-10"
+                      className="pl-10 text-sm sm:text-base"
                       value={formData.phone}
                       onChange={(e) => handleInputChange("phone", e.target.value)}
                     />
                   </div>
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-2 sm:col-span-2">
                   <Label htmlFor="areaOfInterest" className="text-sm font-medium">
                     Interessensbereich *
                   </Label>
                   <Select onValueChange={(value) => handleInputChange("areaOfInterest", value)}>
-                    <SelectTrigger>
+                    <SelectTrigger className="text-sm sm:text-base">
                       <SelectValue placeholder="Wählen Sie einen Bereich aus" />
                     </SelectTrigger>
                     <SelectContent>
@@ -257,7 +256,7 @@ const Stellenangebote = () => {
                   </Select>
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-2 sm:col-span-2">
                   <Label htmlFor="message" className="text-sm font-medium">
                     Anschreiben / Nachricht *
                   </Label>
@@ -266,7 +265,7 @@ const Stellenangebote = () => {
                     <Textarea
                       id="message"
                       placeholder="Erzählen Sie uns etwas über sich und Ihre Motivation..."
-                      className="pl-10 min-h-[120px]"
+                      className="pl-10 min-h-[100px] sm:min-h-[120px] text-sm sm:text-base"
                       value={formData.message}
                       onChange={(e) => handleInputChange("message", e.target.value)}
                       required
@@ -274,7 +273,7 @@ const Stellenangebote = () => {
                   </div>
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-2 sm:col-span-2">
                   <Label htmlFor="resume" className="text-sm font-medium">
                     Lebenslauf (PDF) *
                   </Label>
@@ -282,11 +281,11 @@ const Stellenangebote = () => {
                     <div className="flex items-center justify-center w-full">
                       <label
                         htmlFor="resume"
-                        className="flex flex-col items-center justify-center w-full h-24 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors"
+                        className="flex flex-col items-center justify-center w-full h-20 sm:h-24 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors"
                       >
-                        <div className="flex flex-col items-center justify-center pt-5 pb-6">
-                          <Upload className="w-6 h-6 mb-2 text-gray-400" />
-                          <p className="text-sm text-gray-500">
+                        <div className="flex flex-col items-center justify-center py-4">
+                          <Upload className="w-5 h-5 sm:w-6 sm:h-6 mb-1 sm:mb-2 text-gray-400" />
+                          <p className="text-xs sm:text-sm text-gray-500 text-center px-2">
                             {formData.resume ? formData.resume.name : "PDF hochladen oder hier klicken"}
                           </p>
                         </div>
@@ -303,14 +302,14 @@ const Stellenangebote = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <Button type="submit" className="flex-1">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 sm:col-span-2">
+                  <Button type="submit" className="flex-1 text-sm sm:text-base h-10 sm:h-11">
                     Bewerbung absenden
                   </Button>
                   <Button 
                     type="button" 
                     variant="outline" 
-                    className="flex-1"
+                    className="flex-1 text-sm sm:text-base h-10 sm:h-11"
                     onClick={() => setFormData({
                       name: "",
                       email: "",
@@ -324,14 +323,13 @@ const Stellenangebote = () => {
                   </Button>
                 </div>
 
-                <p className="text-xs text-gray-500 text-center">
+                <p className="text-xs sm:text-sm text-gray-500 text-center leading-relaxed sm:col-span-2 px-2">
                   * Pflichtfelder. Ihre Daten werden vertraulich behandelt und nur für die Bearbeitung 
                   Ihrer Bewerbung verwendet.
                 </p>
               </form>
             </CardContent>
           </Card>
-          </div>
         </div>
       </div>
       <Footer />
