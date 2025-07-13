@@ -51,7 +51,7 @@ const newsArticles = [
   {
     title: "eCommerce und Barrierefreiheit",
     excerpt: "Pflicht zur Barrierefreiheit von Webseiten Am 28.06.2025 wird das Barrierefreiheitsstärkungsgesetz (BFSG) in Kraft treten. Das BFSG…",
-    link: "https://www.steinbock-partner.de/rechts-news/ecommerce-und-barrierefreiheit/",
+    link: "/news/ecommerce-und-barrierefreiheit",
     image: newsImage7
   }
 ];
