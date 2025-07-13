@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Upload, Mail, Phone, User, MessageSquare, Briefcase } from "lucide-react";
 import StandardHero from "../components/StandardHero";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
@@ -41,6 +42,7 @@ const Stellenangebote = () => {
 
   return (
     <div className="min-h-screen">
+      <Header />
       <StandardHero
         title="Stellenangebote"
         description="Werden Sie Teil unseres dynamischen Teams und gestalten Sie mit uns die Zukunft der Rechtsberatung."
