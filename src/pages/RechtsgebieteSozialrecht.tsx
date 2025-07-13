@@ -21,22 +21,13 @@ const RechtsgebieteSozialrecht = () => {
             <span className="text-white">Sozialrecht</span>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                Sozialrecht
-              </h1>
-              <p className="text-xl text-blue-100 leading-relaxed">
-                Das Sozialrecht greift in alle Bereiche des Lebens ein und regelt eine breite Vorsorge für verschiedenste Stadien im Leben, wie z.B. bei Alter, Tod, Invalidität, Krankheit und Arbeitsunfall. Hier bietet sich die Möglichkeit, vielen zu helfen, die Hilfe dringend nötig haben.
-              </p>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&h=300" 
-                alt="Sozialrecht Team" 
-                className="rounded-2xl shadow-2xl max-w-md w-full object-cover"
-              />
-            </div>
+          <div>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+              Sozialrecht
+            </h1>
+            <p className="text-xl text-blue-100 leading-relaxed">
+              Das Sozialrecht greift in alle Bereiche des Lebens ein und regelt eine breite Vorsorge für verschiedenste Stadien im Leben, wie z.B. bei Alter, Tod, Invalidität, Krankheit und Arbeitsunfall. Hier bietet sich die Möglichkeit, vielen zu helfen, die Hilfe dringend nötig haben.
+            </p>
           </div>
         </div>
       </section>
@@ -44,7 +35,15 @@ const RechtsgebieteSozialrecht = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="mb-12">
+            <img 
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&h=300" 
+              alt="Sozialrecht Team" 
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
+            />
+          </div>
+          
+          <div className="mb-12">
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
                 Wir vertreten Sie im Sozialrecht unter anderem in den Bereichen der Sozialversicherung, des sozialen Entschädigungsrechts (z.B. Schwerbehindertenrecht), der sozialen Förderung (z.B. Kindergeld) und wir helfen Ihnen dabei, Erwerbsminderungsrenten durchzusetzen oder Ansprüche gegenüber Berufsgenossenschaften geltend zu machen.

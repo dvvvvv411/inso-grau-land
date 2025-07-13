@@ -21,22 +21,13 @@ const RechtsgebieteGrundstuecksrecht = () => {
             <span className="text-white">Grundstücksrecht</span>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                Grundstücksrecht
-              </h1>
-              <p className="text-xl text-blue-100 leading-relaxed">
-                Rechtsanwalt Stegmann berät beim Grundstücksrecht insbesondere bei rechtlichen Fragen und Themen rund um Kauf und Verkauf von Grundstücken und Immobilien. Auch bei Fragen rund um die Belastung von Grundstücken mit Rechten wie z.B. Nießbrauch, Wohnrecht, Wegerecht oder Grundpfandrechten (z.B. Grundschuld, Hypothek) berät er Sie sehr gerne.
-              </p>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <img 
-                src="https://www.steinbock-partner.de/wp-content/uploads/2023/06/team-grundstuecksrecht.jpg" 
-                alt="Anwalt für Grundstücksrecht" 
-                className="rounded-2xl shadow-2xl max-w-md w-full object-cover"
-              />
-            </div>
+          <div>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+              Grundstücksrecht
+            </h1>
+            <p className="text-xl text-blue-100 leading-relaxed">
+              Rechtsanwalt Stegmann berät beim Grundstücksrecht insbesondere bei rechtlichen Fragen und Themen rund um Kauf und Verkauf von Grundstücken und Immobilien. Auch bei Fragen rund um die Belastung von Grundstücken mit Rechten wie z.B. Nießbrauch, Wohnrecht, Wegerecht oder Grundpfandrechten (z.B. Grundschuld, Hypothek) berät er Sie sehr gerne.
+            </p>
           </div>
         </div>
       </section>
@@ -44,7 +35,15 @@ const RechtsgebieteGrundstuecksrecht = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="mb-12">
+            <img 
+              src="https://www.steinbock-partner.de/wp-content/uploads/2023/06/team-grundstuecksrecht.jpg" 
+              alt="Anwalt für Grundstücksrecht" 
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
+            />
+          </div>
+          
+          <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Warum sind wir die richtigen Berater im Grundstücksrecht für Sie?
             </h2>

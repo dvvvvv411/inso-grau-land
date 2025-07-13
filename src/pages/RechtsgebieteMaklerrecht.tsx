@@ -21,22 +21,13 @@ const RechtsgebieteMaklerrecht = () => {
             <span className="text-white">Maklerrecht</span>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                Maklerrecht
-              </h1>
-              <p className="text-xl text-blue-100 leading-relaxed">
-                Der Makler fordert seine Provision ein, aber der Kunde bezahlt nicht? Wie ist eine Maklerklausel zu beurteilen? Muss ein Vorkaufsberechtigter bei Ausübung seines Vorkaufsrechts die Maklerprovision bezahlen? Diese und zahlreiche weitere Rechtsfragen stellen sich im Maklerrecht.
-              </p>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <img 
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&h=300" 
-                alt="Maklerrecht Team" 
-                className="rounded-2xl shadow-2xl max-w-md w-full object-cover"
-              />
-            </div>
+          <div>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+              Maklerrecht
+            </h1>
+            <p className="text-xl text-blue-100 leading-relaxed">
+              Der Makler fordert seine Provision ein, aber der Kunde bezahlt nicht? Wie ist eine Maklerklausel zu beurteilen? Muss ein Vorkaufsberechtigter bei Ausübung seines Vorkaufsrechts die Maklerprovision bezahlen? Diese und zahlreiche weitere Rechtsfragen stellen sich im Maklerrecht.
+            </p>
           </div>
         </div>
       </section>
@@ -44,7 +35,15 @@ const RechtsgebieteMaklerrecht = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="mb-12">
+            <img 
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&h=300" 
+              alt="Maklerrecht Team" 
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
+            />
+          </div>
+          
+          <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Hilfe vom Rechtsanwalt, wenn es zum Rechtsstreit kommt
             </h2>
@@ -58,7 +57,7 @@ const RechtsgebieteMaklerrecht = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Was ist ein Maklervertrag und wie kommt er zustande?
             </h2>
@@ -72,7 +71,7 @@ const RechtsgebieteMaklerrecht = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Wann entsteht der Provisionsanspruch des Maklers?
             </h2>
@@ -89,7 +88,7 @@ const RechtsgebieteMaklerrecht = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Rechtsprechung zum Maklerrecht
             </h2>
@@ -100,7 +99,7 @@ const RechtsgebieteMaklerrecht = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Kompetente Beratung durch unsere Rechtsanwälte für Maklerrecht
             </h2>

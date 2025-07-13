@@ -21,22 +21,13 @@ const RechtsgebieteVerwaltungsrecht = () => {
             <span className="text-white">Verwaltungsrecht</span>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                Verwaltungsrecht
-              </h1>
-              <p className="text-xl text-blue-100 leading-relaxed">
-                Das Verwaltungsrecht ist ein umfassendes und vielseitiges Rechtsgebiet, das sich mit den Interaktionen zwischen Bürgern und staatlichen Institutionen sowie innerhalb der Verwaltung befasst. Als ein zentraler Teil des öffentlichen Rechts bildet es die Grundlage für die Organisation und das Handeln von Verwaltungsbehörden und sorgt dafür, dass staatliche Entscheidungen transparent, gerecht und gesetzeskonform getroffen werden.
-              </p>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <img 
-                src="/api/placeholder/400/300" 
-                alt="Team Verwaltungsrecht" 
-                className="rounded-2xl shadow-2xl max-w-md w-full object-cover"
-              />
-            </div>
+          <div>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+              Verwaltungsrecht
+            </h1>
+            <p className="text-xl text-blue-100 leading-relaxed">
+              Das Verwaltungsrecht ist ein umfassendes und vielseitiges Rechtsgebiet, das sich mit den Interaktionen zwischen Bürgern und staatlichen Institutionen sowie innerhalb der Verwaltung befasst. Als ein zentraler Teil des öffentlichen Rechts bildet es die Grundlage für die Organisation und das Handeln von Verwaltungsbehörden und sorgt dafür, dass staatliche Entscheidungen transparent, gerecht und gesetzeskonform getroffen werden.
+            </p>
           </div>
         </div>
       </section>
@@ -44,7 +35,15 @@ const RechtsgebieteVerwaltungsrecht = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="mb-12">
+            <img 
+              src="/api/placeholder/400/300" 
+              alt="Team Verwaltungsrecht" 
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
+            />
+          </div>
+          
+          <div className="mb-12">
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
                 Ein wichtiger Bestandteil ist das Verwaltungsverfahren, welches den Ablauf und die Form behördlicher Entscheidungen festlegt. Dieses Verfahren schließt vielfältige Handlungen ein, wie die Erteilung von Genehmigungen, Erlaubnissen und Bescheiden. Bürger haben im Rahmen des Verwaltungsrechts die Möglichkeit, gegen Entscheidungen der Behörden vorzugehen, wenn sie das Gefühl haben, dass ihre Rechte verletzt wurden.

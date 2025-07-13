@@ -21,22 +21,13 @@ const RechtsgebieteWettbewerbsrecht = () => {
             <span className="text-white">Wettbewerbsrecht</span>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                Wettbewerbsrecht
-              </h1>
-              <p className="text-xl text-blue-100 leading-relaxed">
-                Unterstützung für rechtskonformes Handeln im Wettbewerbsrecht
-              </p>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <img 
-                src="/api/placeholder/400/300" 
-                alt="IT-Recht Team" 
-                className="rounded-2xl shadow-2xl max-w-md w-full object-cover"
-              />
-            </div>
+          <div>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+              Wettbewerbsrecht
+            </h1>
+            <p className="text-xl text-blue-100 leading-relaxed">
+              Unterstützung für rechtskonformes Handeln im Wettbewerbsrecht
+            </p>
           </div>
         </div>
       </section>
@@ -44,7 +35,15 @@ const RechtsgebieteWettbewerbsrecht = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="mb-12">
+            <img 
+              src="/api/placeholder/400/300" 
+              alt="IT-Recht Team" 
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
+            />
+          </div>
+          
+          <div className="mb-12">
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
                 Es gilt zwar im Wettbewerbsrecht der Grundsatz der Wettbewerbsfreiheit, dies bedeutet jedoch nicht, dass jeder werben kann, wie er möchte. Stets sind die wettbewerbsrechtlichen „Spielregeln" einzuhalten. So gilt z.B. das Verbot irreführender Werbung.

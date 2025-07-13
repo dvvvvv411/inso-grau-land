@@ -21,22 +21,13 @@ const RechtsgebieteVertragsrecht = () => {
             <span className="text-white">Vertragsrecht</span>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                Vertragsrecht
-              </h1>
-              <p className="text-xl text-blue-100 leading-relaxed">
-                Die Rechtsanwälte und Fachanwälte von Steinbock & Partner sind Fachleute für Vertragsfragen und Vertragstexte aller Art. Wenn Sie eine Vertragsformulierung benötigen, einen Vertrag auf seine Folgen prüfen lassen wollen oder Vertragskonflikte bestehen, sind unsere Anwälte für Vertragsrecht für Sie da.
-              </p>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <img 
-                src="/api/placeholder/400/300" 
-                alt="Team Vertragsrecht" 
-                className="rounded-2xl shadow-2xl max-w-md w-full object-cover"
-              />
-            </div>
+          <div>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+              Vertragsrecht
+            </h1>
+            <p className="text-xl text-blue-100 leading-relaxed">
+              Die Rechtsanwälte und Fachanwälte von Steinbock & Partner sind Fachleute für Vertragsfragen und Vertragstexte aller Art. Wenn Sie eine Vertragsformulierung benötigen, einen Vertrag auf seine Folgen prüfen lassen wollen oder Vertragskonflikte bestehen, sind unsere Anwälte für Vertragsrecht für Sie da.
+            </p>
           </div>
         </div>
       </section>
@@ -44,7 +35,15 @@ const RechtsgebieteVertragsrecht = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="mb-12">
+            <img 
+              src="/api/placeholder/400/300" 
+              alt="Team Vertragsrecht" 
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
+            />
+          </div>
+          
+          <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Sie suchen einen Rechtsanwalt für Vertragsrecht?
             </h2>

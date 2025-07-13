@@ -21,22 +21,13 @@ const RechtsgebieteSteuerrecht = () => {
             <span className="text-white">Steuerrecht</span>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                Ihre Rechtsanwälte im Steuerrecht
-              </h1>
-              <p className="text-xl text-blue-100 leading-relaxed">
-                Nicht immer ist es mit der reinen Steuerberatung innerhalb des Steuerrecht getan. Auseinandersetzungen mit dem Finanzamt können ebenso von der unterschiedlichen Rechtsauffassung wie unterschiedlicher Bewertung von Lebenssachverhalten getragen werden.
-              </p>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <img 
-                src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=400&h=300" 
-                alt="Steuerrecht Team" 
-                className="rounded-2xl shadow-2xl max-w-md w-full object-cover"
-              />
-            </div>
+          <div>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+              Ihre Rechtsanwälte im Steuerrecht
+            </h1>
+            <p className="text-xl text-blue-100 leading-relaxed">
+              Nicht immer ist es mit der reinen Steuerberatung innerhalb des Steuerrecht getan. Auseinandersetzungen mit dem Finanzamt können ebenso von der unterschiedlichen Rechtsauffassung wie unterschiedlicher Bewertung von Lebenssachverhalten getragen werden.
+            </p>
           </div>
         </div>
       </section>
@@ -44,7 +35,15 @@ const RechtsgebieteSteuerrecht = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="mb-12">
+            <img 
+              src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=400&h=300" 
+              alt="Steuerrecht Team" 
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
+            />
+          </div>
+          
+          <div className="mb-12">
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
                 In vielen Fällen sind die Auswirkungen aber für die Betroffenen gravierend, wir erinnern an den berühmten deutschen Tennisspieler, dem Gefängnisstrafen drohten und der Millionen nachzahlen musste, weil er falsche Steuererklärungen abgegeben hatte. Es ging im Ergebnis allerdings nicht um komplizierte Rechtsfragen des Steuerrecht, sondern recht einfach um die Frage, ob hier ein Wohnsitz in Deutschland vorlag sowie, ob mehr als die Hälfte der Tage innerhalb eines Kalenderjahres in Deutschland verbracht wurden. Die unbeschränkte Steuerpflicht nach § 1 EStG erlischt ja, wenn man den Wohnsitz in Deutschland aufgibt.
