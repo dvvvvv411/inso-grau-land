@@ -36,6 +36,12 @@ import SozialrechtAZ from "./pages/SozialrechtAZ";
 import SozialrechtSchwerbehinderung from "./pages/SozialrechtSchwerbehinderung";
 import SozialrechtRechtsschutz from "./pages/SozialrechtRechtsschutz";
 import SozialrechtUnfallversicherung from "./pages/SozialrechtUnfallversicherung";
+import RechtsgebieteSteuerrecht from "./pages/RechtsgebieteSteuerrecht";
+import SteuerrechtAZ from "./pages/SteuerrechtAZ";
+import SteuerrechtAnzeigepflicht from "./pages/SteuerrechtAnzeigepflicht";
+import SteuerrechtGestaltungsmissbrauch from "./pages/SteuerrechtGestaltungsmissbrauch";
+import SteuerrechtStrafverfahren from "./pages/SteuerrechtStrafverfahren";
+import SteuerrechtWegzugsbesteuerung from "./pages/SteuerrechtWegzugsbesteuerung";
 import GrundstuecksrechtNachgenehmigung from "./pages/GrundstuecksrechtNachgenehmigung";
 import GrundstuecksrechtUnberechtigteParkplatznutzung from "./pages/GrundstuecksrechtUnberechtigteParkplatznutzung";
 import NotFound from "./pages/NotFound";
@@ -82,6 +88,12 @@ const App = () => (
             <Route path="/sozialrecht/anerkennung-schwerbehinderung-hochstufung/" element={<SozialrechtSchwerbehinderung />} />
             <Route path="/sozialrecht/einstweiliger-rechtsschutz-zu-gunsten-einer-lebensverlaengernden-therapie/" element={<SozialrechtRechtsschutz />} />
             <Route path="/sozialrecht/gesetzliche-unfallversicherung/" element={<SozialrechtUnfallversicherung />} />
+            <Route path="/rechtsgebiete/steuerrecht" element={<RechtsgebieteSteuerrecht />} />
+            <Route path="/steuerrecht/a-z/" element={<SteuerrechtAZ />} />
+            <Route path="/steuerrecht/anzeigepflicht-bei-erbschaft/" element={<SteuerrechtAnzeigepflicht />} />
+            <Route path="/steuerrecht/gestaltungsmissbrauch/" element={<SteuerrechtGestaltungsmissbrauch />} />
+            <Route path="/steuerrecht/steuerstrafverfahren/" element={<SteuerrechtStrafverfahren />} />
+            <Route path="/steuerrecht/Wegzugsbesteuerung/" element={<SteuerrechtWegzugsbesteuerung />} />
           <Route path="/grundstuecksrecht/nachgenehmigung/" element={<GrundstuecksrechtNachgenehmigung />} />
           <Route path="/grundstuecksrecht/unberechtigte-parkplatznutzung/" element={<GrundstuecksrechtUnberechtigteParkplatznutzung />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
