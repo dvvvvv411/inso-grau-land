@@ -155,12 +155,13 @@ const CookieConsent: React.FC = () => {
                       <div className="flex flex-col sm:flex-row gap-2 pt-4 border-t">
                         <Button 
                           onClick={handleAcceptCustom}
+                          variant="blue"
                           className="flex-1"
                         >
                           Auswahl speichern
                         </Button>
                         <Button 
-                          variant="outline" 
+                          variant="blue-outline" 
                           onClick={acceptAll}
                           className="flex-1"
                         >
