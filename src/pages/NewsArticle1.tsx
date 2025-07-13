@@ -1,3 +1,4 @@
+import { ChevronRight } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import newsImage1 from "../assets/news-placeholder-1.jpg";
@@ -9,10 +10,30 @@ const NewsArticle1 = () => {
       
       {/* Blue Hero Section */}
       <section className="bg-[#004595] py-24 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            20 % Schadensersatz gegenüber der Bank bei Kreditkartenmissbrauch
-          </h1>
+        <div className="max-w-4xl mx-auto">
+          {/* Breadcrumb Navigation */}
+          <nav className="flex items-center space-x-2 text-white/80 mb-8">
+            <a 
+              href="/news" 
+              className="hover:text-white transition-colors duration-200 text-sm font-medium"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "/news";
+              }}
+            >
+              News
+            </a>
+            <ChevronRight className="w-4 h-4" />
+            <span className="text-white text-sm font-medium">
+              20 % Schadensersatz gegenüber der Bank bei Kreditkartenmissbrauch
+            </span>
+          </nav>
+          
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              20 % Schadensersatz gegenüber der Bank bei Kreditkartenmissbrauch
+            </h1>
+          </div>
         </div>
       </section>
 
