@@ -28,7 +28,7 @@ const RechtsgebieteKaufrecht = () => {
             <div 
               className="w-full h-64 md:h-80 rounded-lg shadow-lg relative bg-cover bg-center"
               style={{
-                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.3), rgba(255, 255, 255, 0.1), rgba(0, 86, 179, 0.2)), url('/lovable-uploads/9c6ffd77-bb56-4025-a2a2-0f079995c484.png')`
+                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.6), rgba(255, 255, 255, 0.1), rgba(0, 86, 179, 0.4)), url('/lovable-uploads/9c6ffd77-bb56-4025-a2a2-0f079995c484.png')`
               }}
             >
             </div>

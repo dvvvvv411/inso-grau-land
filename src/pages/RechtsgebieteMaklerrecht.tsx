@@ -28,7 +28,7 @@ const RechtsgebieteMaklerrecht = () => {
             <div 
               className="w-full h-64 md:h-80 rounded-lg shadow-lg relative bg-cover bg-center"
               style={{
-                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.3), rgba(255, 255, 255, 0.1), rgba(0, 86, 179, 0.2)), url('/lovable-uploads/6f662738-736c-4ade-859f-1733b3ea9f0a.png')`
+                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.6), rgba(255, 255, 255, 0.1), rgba(0, 86, 179, 0.4)), url('/lovable-uploads/6f662738-736c-4ade-859f-1733b3ea9f0a.png')`
               }}
             >
             </div>
