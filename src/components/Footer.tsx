@@ -1,6 +1,5 @@
 import { Facebook, Instagram, Youtube, Linkedin, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import footerAward from '../assets/footer-award.png';
 
 const Footer = () => {
   const locations = [
@@ -106,7 +105,7 @@ const Footer = () => {
             {/* Award Image */}
             <div className="mb-6 flex justify-center lg:justify-start">
               <img 
-                src={footerAward} 
+                src="https://i.imgur.com/8Pk1t7j.png" 
                 alt="Auszeichnung" 
                 className="w-24 h-24 object-contain"
               />
