@@ -9,7 +9,7 @@ const Header = () => {
   const menuItems = [
     {
       title: "Kanzlei",
-      items: ["Über uns", "News", "Downloads"]
+      items: ["Über uns", "Team", "News", "Downloads"]
     },
     {
       title: "Rechtsgebiete", 
@@ -69,6 +69,7 @@ const Header = () => {
                     <div className={`py-2 ${menu.items.length > 5 ? 'grid grid-cols-2 gap-0' : ''}`}>
                       {menu.items.map((item, itemIndex) => {
                         const isUeberUns = menu.title === "Kanzlei" && item === "Über uns";
+                        const isTeam = menu.title === "Kanzlei" && item === "Team";
                         const isNews = menu.title === "Kanzlei" && item === "News";
                         const isDownloads = menu.title === "Kanzlei" && item === "Downloads";
                         const isInsolvenzrecht = menu.title === "Rechtsgebiete" && item === "Insolvenzrecht";
@@ -92,6 +93,19 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/ueber-uns"
+                              className={baseClasses}
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isTeam) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/team"
                               className={baseClasses}
                               onClick={closeDropdowns}
                             >
@@ -360,6 +374,7 @@ const Header = () => {
                     <div className="ml-4 mt-2 space-y-1">
                       {menu.items.map((item, itemIndex) => {
                         const isUeberUns = menu.title === "Kanzlei" && item === "Über uns";
+                        const isTeam = menu.title === "Kanzlei" && item === "Team";
                         const isNews = menu.title === "Kanzlei" && item === "News";
                         const isDownloads = menu.title === "Kanzlei" && item === "Downloads";
                         const isInsolvenzrecht = menu.title === "Rechtsgebiete" && item === "Insolvenzrecht";
@@ -381,6 +396,19 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/ueber-uns"
+                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isTeam) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/team"
                               className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
                               onClick={closeDropdowns}
                             >

@@ -60,6 +60,7 @@ import SteuerberatungPrivatsteuern from "./pages/SteuerberatungPrivatsteuern";
 import SteuerberatungSteuerplanung from "./pages/SteuerberatungSteuerplanung";
 import SteuerberatungJahresabschluss from "./pages/SteuerberatungJahresabschluss";
 import Stellenangebote from "./pages/Stellenangebote";
+import Team from "./pages/Team";
 import Kontakt from "./pages/Kontakt";
 import NotFound from "./pages/NotFound";
 
@@ -129,6 +130,7 @@ const App = () => (
           <Route path="/steuerberatung/steuerplanung" element={<SteuerberatungSteuerplanung />} />
           <Route path="/steuerberatung/jahresabschluss" element={<SteuerberatungJahresabschluss />} />
           <Route path="/stellenangebote" element={<Stellenangebote />} />
+          <Route path="/team" element={<Team />} />
           <Route path="/kontakt" element={<Kontakt />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
