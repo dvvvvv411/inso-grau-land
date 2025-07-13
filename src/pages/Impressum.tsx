@@ -24,17 +24,17 @@ const Impressum = () => {
             <h2 className="text-2xl font-bold text-primary">Angaben gemäß § 5 TMG</h2>
             <div className="text-muted-foreground leading-relaxed">
               <p className="font-semibold text-foreground">Heß & Partner Rechtsanwälte PartG</p>
-              <p>Sophienstraße 7</p>
-              <p>04109 Leipzig</p>
+              <p>Marienstr. 19/20</p>
+              <p>10117 Berlin</p>
             </div>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-primary">Kontakt</h2>
             <div className="text-muted-foreground leading-relaxed">
-              <p>Telefon: +49 (0) 341 21 73 61 0</p>
-              <p>Fax: +49 (0) 341 21 73 61 29</p>
-              <p>E-Mail: kanzlei@hess-leipzig.de</p>
+              <p>Telefon: +49 (0)30 123 456 789</p>
+              <p>Fax: +49 (0)30 123 456 790</p>
+              <p>E-Mail: info@hess-anwaltskanzlei.de</p>
             </div>
           </section>
 
@@ -60,8 +60,8 @@ const Impressum = () => {
             <h2 className="text-2xl font-bold text-primary">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
             <div className="text-muted-foreground leading-relaxed">
               <p>Dr. Kai Henrik Heß</p>
-              <p>Sophienstraße 7</p>
-              <p>04109 Leipzig</p>
+              <p>Marienstr. 19/20</p>
+              <p>10117 Berlin</p>
             </div>
           </section>
 

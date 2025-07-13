@@ -70,10 +70,10 @@ const Datenschutz = () => {
               </p>
               <div className="text-muted-foreground leading-relaxed">
                 <p>Heß & Partner Rechtsanwälte PartG</p>
-                <p>Sophienstraße 7</p>
-                <p>04109 Leipzig</p>
-                <p>Telefon: +49 (0) 341 21 73 61 0</p>
-                <p>E-Mail: kanzlei@hess-leipzig.de</p>
+                <p>Marienstr. 19/20</p>
+                <p>10117 Berlin</p>
+                <p>Telefon: +49 (0)30 123 456 789</p>
+                <p>E-Mail: info@hess-anwaltskanzlei.de</p>
               </div>
               
               <h3 className="text-xl font-semibold text-foreground">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>

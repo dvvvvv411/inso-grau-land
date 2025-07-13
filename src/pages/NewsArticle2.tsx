@@ -112,10 +112,10 @@ const NewsArticle2 = () => {
               <p>
                 Für die Einschätzung sämtlicher datenschutzrelevanter Informationen stehen wir Ihnen unkompliziert und vertrauensvoll per E-Mail unter{" "}
                 <a 
-                  href="mailto:kanzlei@hess-leipzig.de" 
+                  href="mailto:info@hess-partner-berlin.de" 
                   className="text-[#004595] hover:underline font-medium"
                 >
-                  kanzlei@hess-leipzig.de
+                  info@hess-partner-berlin.de
                 </a>
                 {" "}oder telefonisch zur Verfügung.
               </p>
