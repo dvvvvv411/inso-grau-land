@@ -20,10 +20,6 @@ const Header = () => {
       items: ["Unternehmenssteuern", "Privatsteuern", "Steuerplanung", "Jahresabschluss"]
     },
     {
-      title: "Stellenangebote",
-      items: ["Anwälte", "Steuerberater", "Sekretariat", "Praktikanten"]
-    },
-    {
       title: "Kontakt",
       items: ["Standorte", "Terminvereinbarung", "Anfahrt", "Notfallkontakt"]
     }
@@ -315,6 +311,15 @@ const Header = () => {
                 )}
               </div>
             ))}
+
+            {/* Stellenangebote as direct link */}
+            <Link
+              to="/stellenangebote"
+              className="px-4 py-3 rounded-lg hover:bg-blue-600/80 transition-all duration-200 font-medium text-white"
+              onClick={closeDropdowns}
+            >
+              Stellenangebote
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -369,7 +374,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/ueber-uns"
-                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -382,7 +387,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/news"
-                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -395,7 +400,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/downloads"
-                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -408,7 +413,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/rechtsgebiete/insolvenzrecht"
-                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -416,64 +421,64 @@ const Header = () => {
                           );
                         }
                         
-                         if (isGrundstuecksrecht) {
-                           return (
-                             <Link
-                               key={itemIndex}
-                               to="/rechtsgebiete/Grundstuecksrecht"
-                               className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
-                               onClick={closeDropdowns}
-                             >
-                               {item}
-                             </Link>
-                           );
-                         }
-                         
-                         if (isKaufrecht) {
-                           return (
-                             <Link
-                               key={itemIndex}
-                               to="/rechtsgebiete/Kaufrecht"
-                               className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
-                               onClick={closeDropdowns}
-                             >
-                               {item}
-                             </Link>
-                           );
-                         }
-                         
-                         if (isMaklerrecht) {
-                           return (
-                             <Link
-                               key={itemIndex}
-                               to="/rechtsgebiete/maklerrecht"
-                               className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
-                               onClick={closeDropdowns}
-                             >
-                               {item}
-                             </Link>
-                           );
-                         }
-                         
-                         if (isSozialrecht) {
-                           return (
-                             <Link
-                               key={itemIndex}
-                               to="/rechtsgebiete/Sozialrecht"
-                               className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
-                               onClick={closeDropdowns}
-                             >
-                               {item}
-                             </Link>
-                           );
-                         }
-                         
+                        if (isGrundstuecksrecht) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/rechtsgebiete/Grundstuecksrecht"
+                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isKaufrecht) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/rechtsgebiete/Kaufrecht"
+                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isMaklerrecht) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/rechtsgebiete/maklerrecht"
+                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isSozialrecht) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/rechtsgebiete/Sozialrecht"
+                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
                           if (isSteuerrecht) {
                             return (
                               <Link
                                 key={itemIndex}
                                 to="/rechtsgebiete/steuerrecht"
-                                className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                                className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
                                 onClick={closeDropdowns}
                               >
                                 {item}
@@ -486,7 +491,7 @@ const Header = () => {
                               <Link
                                 key={itemIndex}
                                 to="/rechtsgebiete/Vertragsrecht"
-                                className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                                className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
                                 onClick={closeDropdowns}
                               >
                                 {item}
@@ -499,7 +504,7 @@ const Header = () => {
                               <Link
                                 key={itemIndex}
                                 to="/rechtsgebiete/Verwaltungsrecht"
-                                className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                                className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
                                 onClick={closeDropdowns}
                               >
                                 {item}
@@ -512,7 +517,7 @@ const Header = () => {
                               <Link
                                 key={itemIndex}
                                 to="/rechtsgebiete/Wettbewerbsrecht"
-                                className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                                className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
                                 onClick={closeDropdowns}
                               >
                                 {item}
@@ -525,7 +530,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/steuerberatung/unternehmenssteuern"
-                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -538,7 +543,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/steuerberatung/privatsteuern"
-                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -551,7 +556,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/steuerberatung/steuerplanung"
-                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -564,7 +569,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/steuerberatung/jahresabschluss"
-                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -576,7 +581,7 @@ const Header = () => {
                           <a
                             key={itemIndex}
                             href="#"
-                            className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                            className="block px-4 py-2 text-blue-100 hover:text-white transition-colors rounded"
                             onClick={closeDropdowns}
                           >
                             {item}
@@ -587,18 +592,19 @@ const Header = () => {
                   )}
                 </div>
               ))}
+
+              {/* Stellenangebote as direct link in mobile */}
+              <Link
+                to="/stellenangebote"
+                className="block px-4 py-3 rounded-lg hover:bg-blue-600/80 transition-colors font-medium"
+                onClick={closeDropdowns}
+              >
+                Stellenangebote
+              </Link>
             </div>
           </div>
         )}
       </div>
-
-      {/* Overlay to close dropdown when clicking outside */}
-      {activeDropdown && (
-        <div 
-          className="fixed inset-0 z-40" 
-          onClick={closeDropdowns}
-        />
-      )}
     </header>
   );
 };
