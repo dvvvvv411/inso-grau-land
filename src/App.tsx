@@ -11,6 +11,7 @@ import NewsArticle2 from "./pages/NewsArticle2";
 import NewsArticle3 from "./pages/NewsArticle3";
 import NewsArticle4 from "./pages/NewsArticle4";
 import NewsArticle5 from "./pages/NewsArticle5";
+import NewsArticle6 from "./pages/NewsArticle6";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/news/bargeschaeft-insolvenz" element={<NewsArticle3 />} />
           <Route path="/news/datenuebertragung" element={<NewsArticle4 />} />
           <Route path="/news/coronahilfe-rueckforderung" element={<NewsArticle5 />} />
+          <Route path="/news/videoueberwachung-am-arbeitsplatz" element={<NewsArticle6 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

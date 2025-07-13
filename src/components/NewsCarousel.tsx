@@ -45,7 +45,7 @@ const newsArticles = [
   {
     title: "Videoüberwachung am Arbeitsplatz",
     excerpt: "Wichtiges zur Videoüberwachung im Überblick(1) Grundsätzlich ist Videoüberwachung datenschutzrechtlich zulässig, sowohl im öffentlichen als auch im…",
-    link: "https://www.steinbock-partner.de/rechts-news/videoueberwachung-am-arbeitsplatz/",
+    link: "/news/videoueberwachung-am-arbeitsplatz",
     image: newsImage6
   },
   {
