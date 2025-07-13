@@ -233,11 +233,11 @@ const Index = () => {
             
             {/* Left Column - Image */}
             <div className="flex justify-center">
-              <div className="w-full max-w-xl">
+              <div className="w-full max-w-md">
                 <img 
                   src={workplaceCollage} 
                   alt="Arbeitsplatz Übersicht"
-                  className="w-full h-auto aspect-[4/3] object-cover rounded-2xl shadow-lg"
+                  className="w-full h-auto aspect-[3/4] object-cover rounded-2xl shadow-lg"
                 />
               </div>
             </div>
