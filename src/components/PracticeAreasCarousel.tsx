@@ -8,55 +8,55 @@ const practiceAreas = [
   {
     title: "Grundstücksrecht",
     icon: Building,
-    description: "Rechtliche Begleitung bei Grundstücksangelegenheiten und Immobilientransaktionen",
+    description: "Umfassende Beratung bei Immobilienerwerb, Baurecht und Grundstücksverträgen",
     link: "/rechtsgebiete/grundstuecksrecht"
   },
   {
     title: "Insolvenzrecht", 
     icon: Calculator,
-    description: "Kompetente Unterstützung bei Insolvenzverfahren und Sanierungsmaßnahmen",
+    description: "Strategische Begleitung in Insolvenzverfahren und bei der Unternehmenssanierung",
     link: "/rechtsgebiete/insolvenzrecht"
   },
   {
     title: "Kaufrecht",
     icon: Briefcase,
-    description: "Beratung bei Kaufverträgen und gewährleistungsrechtlichen Ansprüchen",
+    description: "Expertenberatung bei Kaufverträgen, Gewährleistung und Verbraucherschutz",
     link: "/rechtsgebiete/kaufrecht"
   },
   {
     title: "Maklerrecht",
     icon: Home,
-    description: "Rechtliche Unterstützung rund um Maklerverträge und Provisionsansprüche",
+    description: "Professionelle Beratung bei Maklerverträgen, Provisionsfragen und Immobilienvermittlung",
     link: "/rechtsgebiete/maklerrecht"
   },
   {
     title: "Sozialrecht",
     icon: Users,
-    description: "Vertretung vor Sozialgerichten und bei sozialrechtlichen Angelegenheiten",
+    description: "Durchsetzung Ihrer Ansprüche in Renten-, Kranken- und Arbeitslosenversicherung",
     link: "/rechtsgebiete/sozialrecht"
   },
   {
     title: "Steuerrecht",
     icon: FileText,
-    description: "Professionelle Steuerberatung für Privatpersonen und Unternehmen",
+    description: "Optimale Steuergestaltung und -beratung für Privatpersonen und Unternehmen",
     link: "/rechtsgebiete/steuerrecht"
   },
   {
     title: "Vertragsrecht",
     icon: Scale,
-    description: "Vertragsgestaltung und -prüfung für alle Arten von Rechtsgeschäften",
+    description: "Rechtssichere Vertragsgestaltung und -prüfung für alle Geschäftsbereiche",
     link: "/rechtsgebiete/vertragsrecht"
   },
   {
     title: "Verwaltungsrecht",
     icon: Building,
-    description: "Vertretung gegenüber Behörden und in verwaltungsrechtlichen Verfahren",
+    description: "Effektive Vertretung gegenüber Behörden und in verwaltungsgerichtlichen Verfahren",
     link: "/rechtsgebiete/verwaltungsrecht"
   },
   {
     title: "Wettbewerbsrecht",
     icon: Gavel,
-    description: "Schutz vor unlauterem Wettbewerb und wettbewerbsrechtliche Beratung",
+    description: "Schutz Ihrer Wettbewerbsposition und Durchsetzung fairer Marktpraktiken",
     link: "/rechtsgebiete/wettbewerbsrecht"
   }
 ];

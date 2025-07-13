@@ -11,10 +11,10 @@ import TestimonialsSection from "../components/TestimonialsSection";
 
 const Index = () => {
   const features = [
-    "5 Jahre Erfahrung",
+    "Über 15 Jahre Expertise",
     "Berlin Mitte", 
-    "schnell & kompetent",
-    "moderne Kanzlei"
+    "Schnelle Lösungen",
+    "Digitale Kanzlei"
   ];
 
   // Custom checkmark SVG from the original (blue color #004595)
@@ -77,11 +77,11 @@ const Index = () => {
               {/* Main Headlines */}
               <div className="space-y-4 md:space-y-6">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight">
-                  Rechtsanwälte und <span className="text-[#004595]">Steuerberater</span>
+                  Ihre <span className="text-[#004595]">Rechtsexperten</span> in Berlin
                 </h1>
                 
                 <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground font-medium leading-relaxed">
-                  Ein starkes Team. Wenn's drauf ankommt!
+                  Kompetente Beratung für Ihren Erfolg - rechtssicher und zukunftsorientiert
                 </p>
               </div>
               
@@ -145,7 +145,7 @@ const Index = () => {
         <div className="w-full max-w-7xl mx-auto px-4 md:px-8 h-full flex flex-col justify-center py-12 md:py-16">
           {/* Section Title */}
           <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white text-center mb-8 md:mb-12 leading-tight max-w-4xl mx-auto px-2">
-            Willkommen bei Heß & Partner, einem erfahrenen Team von Anwälten und Steuerexperten in Berlin.
+            Ihr vertrauensvoller Partner für Recht und Steuern im Herzen Berlins
           </h2>
 
           {/* Two Column Layout - Mobile Responsive */}
@@ -166,13 +166,13 @@ const Index = () => {
             <div className="space-y-4 md:space-y-6 h-full flex flex-col justify-center">
               <div className="text-white/90 text-sm md:text-base leading-relaxed space-y-3 md:space-y-4">
                 <p>
-                  Unsere Mission ist es, unseren Klienten eine kompetente und effektive Rechts- und Steuerberatung zu bieten. Wir verstehen, dass rechtliche und steuerliche Angelegenheiten komplex sein können und dass eine gründliche Beratung von entscheidender Bedeutung ist.
+                  Bei Heß & Partner verbinden wir juristische Expertise mit moderner Beratung. Unsere Mandanten profitieren von über 15 Jahren Erfahrung in komplexen Rechts- und Steuerangelegenheiten.
                 </p>
                 <p>
-                  Deshalb sind wir bestrebt, für jeden Klienten eine maßgeschneiderte Lösung zu finden, die seine individuellen Bedürfnisse erfüllt. Wir setzen uns engagiert für die Rechte unserer Klienten ein und arbeiten hart, um ihre Interessen zu schützen.
+                  Wir entwickeln strategische Lösungen, die Ihre Interessen optimal schützen und Ihre Ziele verwirklichen. Dabei setzen wir auf persönliche Betreuung, transparente Kommunikation und nachhaltige Ergebnisse.
                 </p>
                 <p className="hidden md:block">
-                  Als Berliner Kanzlei verstehen wir die besonderen Herausforderungen der Hauptstadt und bieten maßgeschneiderte Lösungen für Ihre rechtlichen und steuerlichen Anliegen.
+                  Von unserem Standort in Berlin Mitte aus betreuen wir Mandanten deutschlandweit - mit der Kombination aus lokaler Präsenz und digitaler Effizienz.
                 </p>
               </div>
 
@@ -183,7 +183,7 @@ const Index = () => {
                   className="bg-white text-[#004595] hover:bg-gray-100 font-semibold px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-lg transition-all duration-300 hover:shadow-lg w-full sm:w-auto"
                   asChild
                 >
-                  <Link to="/ueber-uns">Mehr über Heß & Partner</Link>
+                  <Link to="/ueber-uns">Unsere Kanzlei kennenlernen</Link>
                 </Button>
               </div>
             </div>
@@ -200,7 +200,7 @@ const Index = () => {
               Unsere <span className="text-[#004595]">Tätigkeitsbereiche</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
-              Kompetente Beratung in allen wichtigen Rechtsbereichen – für Privatpersonen und Unternehmen
+              Spezialisierte Rechtsberatung für alle Lebensbereiche - von der Erstberatung bis zur Prozessführung
             </p>
           </div>
 
@@ -218,7 +218,7 @@ const Index = () => {
               <span className="text-[#004595]">News</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto px-2">
-              Die wichtigsten Rechts-News und Entwicklungen von unserer Kanzlei im Überblick
+              Aktuelle Rechtsentwicklungen und Fachbeiträge aus unserem Expertenteam
             </p>
           </div>
 
@@ -249,21 +249,21 @@ const Index = () => {
               {/* Title - Centered */}
               <div className="space-y-4 text-center">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#002d4a]">
-                  Stellenangebote
+                  Karriere bei Heß & Partner
                 </h2>
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  Gemeinsam kommen wir weiter. Sie mit uns. Wir mit Ihnen. Finden und erleben Sie Arbeits- und Ausbildungsplätze mit Zukunft.
+                  Werden Sie Teil unseres Erfolgs. Wir bieten Ihnen eine Karriere mit Perspektive in einer der modernsten Kanzleien Berlins.
                 </p>
               </div>
 
               {/* Flexible Features Grid - 2 rows */}
               <div className="flex flex-wrap gap-3 justify-center">
                 {[
-                  "moderne Kanzlei",
-                  "Homeoffice", 
-                  "flexible Arbeitszeiten",
+                  "Moderne Arbeitsplätze",
+                  "Flexible Arbeitsmodelle", 
+                  "Fortbildungsmöglichkeiten",
                   "Berlin Mitte",
-                  "junges und dynamisches Team"
+                  "Dynamisches Expertenteam"
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-200/50 hover:bg-gray-50 hover:shadow-md transition-all duration-300 group flex-shrink-0">
                     <div className="p-1 bg-[#004595]/10 rounded-full group-hover:bg-[#004595]/20 transition-colors flex-shrink-0">
@@ -282,7 +282,7 @@ const Index = () => {
                   asChild
                 >
                   <Link to="/stellenangebote" className="flex items-center justify-center gap-3">
-                    <span>Zu den Stellenangeboten</span>
+                    <span>Jetzt bewerben</span>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>

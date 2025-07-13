@@ -19,7 +19,7 @@ const TestimonialsSection = () => {
       company: "Weber Industries GmbH",
       position: "Geschäftsführer",
       rating: 5,
-      text: "Heß & Partner hat uns in einer komplexen Unternehmensumstrukturierung hervorragend beraten. Die professionelle Betreuung und das tiefe Verständnis für steuerrechtliche Fragen haben uns enorm geholfen. Absolute Empfehlung!",
+      text: "Die Expertise von Heß & Partner bei unserer Unternehmensumstrukturierung war außergewöhnlich. Strategisches Denken gepaart mit präziser Umsetzung - genau was wir brauchten. Absolut empfehlenswert!",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
     },
     {
@@ -28,7 +28,7 @@ const TestimonialsSection = () => {
       company: "TechStart Solutions",
       position: "Gründerin",
       rating: 5,
-      text: "Als Start-up brauchten wir zuverlässige rechtliche Beratung von Anfang an. Das Team von Heß & Partner hat uns mit ihrer Expertise und schnellen Reaktionszeit beeindruckt. Wir fühlen uns bestens aufgehoben.",
+      text: "Von der Gründungsberatung bis zur Expansion - Heß & Partner war der ideale Partner für unser Start-up. Agile Beratung mit Weitblick und immer ein offenes Ohr für unsere Herausforderungen.",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
     },
     {
@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
       company: "Hoffmann Immobilien",
       position: "Inhaber",
       rating: 5,
-      text: "Bei unserem Immobilienprojekt war die rechtliche Absicherung entscheidend. Heß & Partner hat uns durch alle Vertragsverhandlungen begleitet und dabei stets unsere Interessen im Blick behalten. Top Service!",
+      text: "Komplexe Immobilienprojekte erfordern juristische Präzision. Heß & Partner navigierte uns sicher durch alle rechtlichen Herausforderungen und schützte dabei konsequent unsere Interessen. Erstklassige Beratung!",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
     },
     {
@@ -46,7 +46,7 @@ const TestimonialsSection = () => {
       company: "Schneider Consulting",
       position: "Partnerin",
       rating: 5,
-      text: "Die steuerrechtliche Beratung durch Heß & Partner ist außergewöhnlich kompetent. Komplexe Sachverhalte werden verständlich erklärt und praktikable Lösungen entwickelt. Ein vertrauensvoller Partner für unser Unternehmen.",
+      text: "Steueroptimierung auf höchstem Niveau - Heß & Partner macht komplexe Sachverhalte verständlich und entwickelt maßgeschneiderte Lösungen. Ein echter Mehrwert für unsere Unternehmensführung.",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
     },
     {
@@ -55,7 +55,7 @@ const TestimonialsSection = () => {
       company: "Klein Automotive",
       position: "Geschäftsführer",
       rating: 5,
-      text: "In unserem Rechtsstreit haben die Anwälte von Heß & Partner mit strategischem Geschick und fundiertem Fachwissen einen erfolgreichen Ausgang erreicht. Professionell, zuverlässig und ergebnisorientiert.",
+      text: "Prozessführung auf Spitzenniveau - Heß & Partner kombiniert strategisches Denken mit juristischer Brillanz. Der erfolgreiche Ausgang unseres komplexen Rechtsstreits spricht für sich.",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&h=150&q=80"
     }
   ];
@@ -88,7 +88,7 @@ const TestimonialsSection = () => {
             Das sagen unsere <span className="text-[#004595]">Mandanten</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            Vertrauen und Zufriedenheit unserer Klienten stehen für uns an erster Stelle
+            Ihr Vertrauen ist unser Ansporn - Exzellenz in der Beratung ist unser Versprechen
           </p>
         </div>
 
@@ -138,7 +138,7 @@ const TestimonialsSection = () => {
 
           {/* Testimonial Selection List - Scrollable (2/5 width) */}
           <div className="lg:col-span-2 flex flex-col h-full">
-            <h3 className="text-lg font-bold text-foreground mb-4">Weitere Bewertungen</h3>
+            <h3 className="text-lg font-bold text-foreground mb-4">Weitere Kundenstimmen</h3>
             
             <div className="space-y-3 max-h-48 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-blue-300 scrollbar-track-blue-50 hover:scrollbar-thumb-blue-400 transition-colors duration-200 rounded-lg"
                  style={{
