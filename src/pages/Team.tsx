@@ -70,26 +70,37 @@ const Team = () => {
 
           {/* Team Members Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-            {teamMembers.map((member) => (
-              <Card key={member.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-white">
-                <div className="aspect-square overflow-hidden">
+            {teamMembers.map((member, index) => (
+              <Card 
+                key={member.id} 
+                className="group overflow-hidden hover:shadow-2xl transition-all duration-300 bg-white border-0 shadow-lg hover:-translate-y-2 animate-fade-in"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="relative aspect-square overflow-hidden">
                   <img
                     src={member.image}
                     alt={`Porträt von ${member.name}`}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
+                    <p className="text-white text-sm font-medium">
+                      Rechtsanwalt & Experte
+                    </p>
+                  </div>
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <CardContent className="p-6 relative">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
                     {member.name}
                   </h3>
-                  <div className="space-y-2">
+                  <div className="space-y-3">
                     <p className="text-sm text-gray-500 font-medium">Spezialisierung:</p>
                     <div className="flex flex-wrap gap-2">
-                      {member.areas.map((area, index) => (
+                      {member.areas.map((area, areaIndex) => (
                         <span
-                          key={index}
-                          className="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-sm font-medium rounded-full"
+                          key={areaIndex}
+                          className="inline-block px-3 py-2 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 text-sm font-medium rounded-full border border-blue-200 hover:from-blue-100 hover:to-blue-200 transition-all duration-200 transform hover:scale-105"
                         >
                           {area}
                         </span>
