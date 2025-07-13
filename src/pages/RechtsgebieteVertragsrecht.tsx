@@ -13,7 +13,7 @@ const RechtsgebieteVertragsrecht = () => {
       
       <StandardHero
         title="Vertragsrecht"
-        description="Die Rechtsanwälte und Fachanwälte von Heß & Partner sind Fachleute für Vertragsfragen und Vertragstexte aller Art. Wenn Sie eine Vertragsformulierung benötigen, einen Vertrag auf seine Folgen prüfen lassen wollen oder Vertragskonflikte bestehen, sind unsere Anwälte für Vertragsrecht für Sie da."
+        description="Expertenberatung für rechtssichere Vertragsgestaltung und -prüfung. Wir schützen Ihre Interessen bei Vertragsverhandlungen, setzen Ansprüche durch und entwickeln maßgeschneiderte Vertragslösungen."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Rechtsgebiete", href: "/" },
@@ -37,35 +37,35 @@ const RechtsgebieteVertragsrecht = () => {
           
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Sie suchen einen Rechtsanwalt für Vertragsrecht?
+              Ihre Vertragsrechtsexperten für rechtssichere Lösungen
             </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                Die Rechtsanwälte von Heß & Partner sind Fachleute, wenn es um Verträge, Vertragsklauseln und vertragliche Ansprüche geht:
+                Als spezialisierte Vertragsrechtsexperten von Heß & Partner entwickeln wir maßgeschneiderte Lösungen für alle vertraglichen Herausforderungen:
               </p>
               <ul className="space-y-4 ml-6">
                 <li className="list-disc">
-                  Wir prüfen Ihren Vertrag – damit Sie genau wissen, wozu die Vertragsvereinbarungen Sie und die Gegenseite verpflichten und ob in den Klauseln rechtliche Probleme lauern.
+                  <strong>Vertragsprüfung:</strong> Wir analysieren Ihre Verträge gründlich, damit Sie genau verstehen, welche Rechte und Pflichten entstehen und potenzielle Risiken frühzeitig erkennen.
                 </li>
                 <li className="list-disc">
-                  Wir formulieren hieb- und stichfeste Vertragstexte, die Ihre Interessen mit der geltenden Rechtslage optimal in Übereinstimmung bringen.
+                  <strong>Vertragsgestaltung:</strong> Wir entwickeln rechtssichere Vertragstexte, die Ihre Interessen optimal schützen und alle rechtlichen Anforderungen erfüllen.
                 </li>
                 <li className="list-disc">
-                  Wir beraten Sie bei Vertragsverhandlungen. Verhandlungsgeschick und Rechtskompetenz in Kombination bringen in Vertragsfragen den Erfolg.
+                  <strong>Vertragsverhandlungen:</strong> Wir begleiten Sie strategisch bei Verhandlungen und kombinieren Verhandlungsgeschick mit juristischer Präzision für optimale Ergebnisse.
                 </li>
                 <li className="list-disc">
-                  Wir setzen Ihre Rechte durch und vertreten Sie bei Auseinandersetzungen. Dafür wenden wir, stets in Absprache mit Ihnen, das gesamte Instrumentarium an: Anwaltliche Schreiben, eine mögliche Vertragsstrafe, wenn nötig auch eine Klage vor Gericht. Gemeinsam gewährleisten wir Ihre vertraglich gesicherten Ansprüche und wehren unberechtigte Forderungen ab.
+                  <strong>Rechtsdurchsetzung:</strong> Wir setzen Ihre vertraglichen Ansprüche konsequent durch - von anwaltlichen Schreiben über Vertragsstrafen bis hin zur Klage vor Gericht.
                 </li>
                 <li className="list-disc">
-                  Wir beraten Sie zur Kündigung, zur Möglichkeit einer Anfechtung, dem Widerruf bei Verbraucherverträgen und der Auflösung von Verträgen durch einen Aufhebungsvertrag. Als Rechtsanwälte für Vertragsrecht wissen wir genau, wann die jeweiligen Voraussetzungen vorliegen. Wir sagen Ihnen, ob Sie aus einem Vertrag wieder herauskommen und unterstützen Sie beim Verhandeln über eine einvernehmliche Vertragsauflösung.
+                  <strong>Vertragsauflösung:</strong> Wir beraten Sie zu Kündigungen, Anfechtung, Widerruf und einvernehmlichen Vertragsauflösungen und prüfen alle rechtlichen Möglichkeiten.
                 </li>
               </ul>
 
               <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                Im Vertragsrecht lauern viele Fallen – vor denen Sie unsere Anwälte bewahren
+                Vermeidung kostspieliger Vertragsfallen durch Expertenwissen
               </h3>
               <p>
-                Mangelhafte Vertragsgestaltungen richten viel Schaden an. Vertragsrechtliche Bestimmungen können unverhofft zum Bumerang werden. Manchmal zeigt sich das Risiko erst nach vielen Jahren. Nur drei Beispiele:
+                Mangelhafte Vertragsgestaltung kann erhebliche finanzielle Schäden verursachen. Unsere Rechtsexperten schützen Sie vor versteckten Risiken und rechtlichen Fallen, die sich oft erst Jahre später zeigen. Drei typische Risikobereiche:
               </p>
 
               <h4 className="text-xl font-semibold text-gray-900 mt-6 mb-3">
@@ -161,7 +161,7 @@ const RechtsgebieteVertragsrecht = () => {
                     Vertragsrecht von A-Z
                   </h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    Wir möchten Ihnen die Möglichkeit geben, verschiedene Situationen aus dem Blickwinkel eines Anwaltes mit Schwerpunkt im Vertragsrecht kennen zu lernen. Aus diesem Grund erklären wir Anwältinnen und Anwälte zahlreiche Fachbegriffen aus dem Vertragsrecht mit verständlicher Sprache.
+                    Umfassendes Expertenwissen zu allen Aspekten des Vertragsrechts. Wir erläutern komplexe Rechtssituationen verständlich und entwickeln praktische Lösungsstrategien für Ihre vertraglichen Herausforderungen.
                   </p>
                   <Button asChild className="bg-[#004595] hover:bg-blue-700 text-white">
                     <Link to="/vertragsrecht/a-z/" className="inline-flex items-center">

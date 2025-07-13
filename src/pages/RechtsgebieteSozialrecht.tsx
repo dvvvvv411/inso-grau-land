@@ -13,7 +13,7 @@ const RechtsgebieteSozialrecht = () => {
       
       <StandardHero
         title="Sozialrecht"
-        description="Das Sozialrecht greift in alle Bereiche des Lebens ein und regelt eine breite Vorsorge für verschiedenste Stadien im Leben, wie z.B. bei Alter, Tod, Invalidität, Krankheit und Arbeitsunfall. Hier bietet sich die Möglichkeit, vielen zu helfen, die Hilfe dringend nötig haben."
+        description="Professionelle Vertretung in allen Bereichen des Sozialrechts. Wir setzen Ihre Ansprüche gegen Sozialversicherungsträger durch und helfen bei Erwerbsminderungsrenten, Schwerbehindertenrecht und Statusfeststellungsverfahren."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Rechtsgebiete", href: "/" },
@@ -38,13 +38,13 @@ const RechtsgebieteSozialrecht = () => {
           <div className="mb-12">
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                Wir vertreten Sie im Sozialrecht unter anderem in den Bereichen der Sozialversicherung, des sozialen Entschädigungsrechts (z.B. Schwerbehindertenrecht), der sozialen Förderung (z.B. Kindergeld) und wir helfen Ihnen dabei, Erwerbsminderungsrenten durchzusetzen oder Ansprüche gegenüber Berufsgenossenschaften geltend zu machen.
+                Als spezialisierte Sozialrechtsexperten vertreten wir Sie erfolgreich in allen Bereichen der Sozialversicherung, des sozialen Entschädigungsrechts und der sozialen Förderung. Unser Schwerpunkt liegt auf der Durchsetzung von Erwerbsminderungsrenten und der Geltendmachung von Ansprüchen gegenüber Berufsgenossenschaften.
               </p>
               <p>
-                Dabei überprüfen wir z.B. behördliche Bescheide, ob diese unter hinreichender Beachtung der berechtigten Belange des Rechtssuchenden erlassen worden sind. Aktuell kümmern wir uns im Sozialrecht auch häufig um das Problem der Scheinselbständigkeit. Häufig kommen Mandanten zu uns, die ein sogenanntes Statusfeststellungverfahren bei der Deutschen Rentenversicherung (DRV) eingeleitet haben und denen nun die Nachzahlung von Versicherungsbeiträgen droht.
+                Wir prüfen behördliche Bescheide gründlich auf ihre Rechtmäßigkeit und setzen Ihre berechtigten Ansprüche konsequent durch. Ein aktueller Schwerpunkt unserer Tätigkeit liegt in der Beratung bei Scheinselbständigkeits-Verfahren der Deutschen Rentenversicherung, wo wir Sie vor kostspieligen Nachzahlungen schützen.
               </p>
               <p>
-                Aufgrund von Arbeitsüberlastung schaffen wir es leider nicht, auch Mandate im Bereich der sozialen Hilfen annehmen zu können. Bei Anfragen zu Grundsicherung für Arbeitssuchende oder Grundsicherung im Alter und bei Erwerbsunfähigkeit empfehlen wir Onlineportale zu nutzen, insbesondere beim Bürgergeld-Bescheid das Portal Hartz4Widerspruch.
+                Aufgrund hoher Nachfrage konzentrieren wir uns auf unsere Kernkompetenzen und können derzeit keine Mandate im Bereich der sozialen Hilfen (Grundsicherung, Bürgergeld) übernehmen. Hierfür empfehlen wir spezialisierte Online-Portale wie Hartz4Widerspruch.
               </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ const RechtsgebieteSozialrecht = () => {
                     Sozialrecht von A-Z
                   </h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    Wir möchten Ihnen die Möglichkeit geben, verschiedene Situationen aus dem Blickwinkel eines Anwaltes kennen zu lernen. Aus diesem Grund erklären wir Anwältinnen und Anwälte zahlreiche Fachbegriffen aus dem Sozialrecht mit verständlicher Sprache.
+                    Spezialisierte Einblicke in alle Bereiche des Sozialrechts. Wir erklären komplexe sozialrechtliche Zusammenhänge verständlich und entwickeln erfolgreiche Strategien für Ihre Anspruchsdurchsetzung.
                   </p>
                   <Button asChild className="bg-[#004595] hover:bg-blue-700 text-white">
                     <Link to="/sozialrecht/a-z/" className="inline-flex items-center">

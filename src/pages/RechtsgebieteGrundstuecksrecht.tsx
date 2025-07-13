@@ -13,7 +13,7 @@ const RechtsgebieteGrundstuecksrecht = () => {
       
       <StandardHero
         title="Grundstücksrecht"
-        description="Arnold Bernstein berät beim Grundstücksrecht insbesondere bei rechtlichen Fragen und Themen rund um Kauf und Verkauf von Grundstücken und Immobilien. Auch bei Fragen rund um die Belastung von Grundstücken mit Rechten wie z.B. Nießbrauch, Wohnrecht, Wegerecht oder Grundpfandrechten (z.B. Grundschuld, Hypothek) berät er Sie sehr gerne."
+        description="Professionelle Beratung bei Immobilienerwerb, Grundstücksverträgen und nachbarrechtlichen Konflikten. Unser Expertenteam sichert Ihre Interessen rechtlich ab und begleitet Sie erfolgreich durch komplexe Grundstücksangelegenheiten."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Rechtsgebiete", href: "/" },
@@ -37,20 +37,20 @@ const RechtsgebieteGrundstuecksrecht = () => {
           
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Warum sind wir die richtigen Berater im Grundstücksrecht für Sie?
+              Ihr strategischer Partner für Grundstücks- und Immobilienrecht
             </h2>
             
             <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
               <p>
-                Arnold Bernstein ist sowohl Fachanwalt für Baurecht als auch Fachanwalt für Miet- und Wohnungseigentumsrecht. Wir haben die thematische Ausrichtung unserer Anwälte aus dem Blickwinkel der Mandanten gesehen.
+                Als spezialisierte Fachanwälte für Baurecht sowie Miet- und Wohnungseigentumsrecht verstehen wir die vielschichtigen Herausforderungen des Immobilienmarktes. Unsere umfassende Expertise deckt alle Aspekte des Grundstücksrechts ab - von der Vertragsgestaltung bis zur Konfliktlösung.
               </p>
               
               <p>
-                In der Praxis fallen viele Themen rund um die Immobilie und das Wohnen und Bauen zusammen. Das Immobilienrecht umfasst alles, was mit dem Eigentum, der Verwaltung oder auch der Nutzung von Grundstücken zu tun hat. Etwa die Rechte und Pflichten von Grundstücksnachbarn, beispielsweise im Hinblick auf Lärm, Baum- und Pflanzenbewuchs (Höhe/Mindestabstand von der Grundstücksgrenze, Laub- und Obstfall, Überhang von Ästen/Eindringen von Wurzeln auf das Nachbargrundstück etc.) regelt. Sowie die Beratung bei allen Fragen rund um den Kauf von Grundstücken.
+                Unser ganzheitlicher Beratungsansatz umfasst sämtliche immobilienbezogenen Rechtsbereiche: Grundstückskauf und -verkauf, Nachbarschaftsrecht, Grundpfandrechte, Nießbrauch, Wohnrechte und Wegerechte. Dabei profitieren Sie von unserer langjährigen Erfahrung und unserem tiefen Verständnis für die Berliner Immobilienlandschaft.
               </p>
               
               <p>
-                Arnold Bernstein steht unseren Mandanten daher rund um die Themen Haus (Immobilie), Wohnung oder Grundstück und Nachbarschaft zur Seite.
+                Als Ihr vertrauensvoller Rechtsberater stehen wir Ihnen bei allen Fragen rund um Immobilien, Wohneigentum und Nachbarschaftsangelegenheiten zur Seite - kompetent, lösungsorientiert und mit dem klaren Ziel, Ihre Rechte optimal zu schützen.
               </p>
             </div>
           </div>
@@ -64,7 +64,7 @@ const RechtsgebieteGrundstuecksrecht = () => {
                     Grundstücksrecht von A-Z
                   </h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    Wir möchten Ihnen die Möglichkeit geben, verschiedene Situationen aus dem Blickwinkel eines Anwaltes im Grundstücksrecht kennen zu lernen. Aus diesem Grund erklären wir Anwältinnen und Anwälte zahlreiche Fachbegriffen aus dem Grundstücksrecht mit verständlicher Sprache.
+                    Entdecken Sie unser umfassendes Fachwissen im Grundstücksrecht. Wir erläutern komplexe Rechtsbegriffe verständlich und praxisnah - damit Sie fundierte Entscheidungen treffen können.
                   </p>
                   <Button asChild className="bg-[#004595] hover:bg-blue-700 text-white">
                     <Link to="/grundstuecksrecht/a-z/" className="inline-flex items-center">

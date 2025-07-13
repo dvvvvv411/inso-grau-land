@@ -13,7 +13,7 @@ const RechtsgebieteMaklerrecht = () => {
       
       <StandardHero
         title="Maklerrecht"
-        description="Der Makler fordert seine Provision ein, aber der Kunde bezahlt nicht? Wie ist eine Maklerklausel zu beurteilen? Muss ein Vorkaufsberechtigter bei Ausübung seines Vorkaufsrechts die Maklerprovision bezahlen? Diese und zahlreiche weitere Rechtsfragen stellen sich im Maklerrecht."
+        description="Spezialisierte Beratung bei Maklerverträgen, Provisionsfragen und Immobilienvermittlung. Wir schützen Ihre Interessen als Makler oder Auftraggeber und lösen komplexe maklerrechtliche Konflikte erfolgreich."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Rechtsgebiete", href: "/" },
@@ -37,45 +37,42 @@ const RechtsgebieteMaklerrecht = () => {
           
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Hilfe vom Rechtsanwalt, wenn es zum Rechtsstreit kommt
+              Professionelle Maklerrechtsberatung für alle Beteiligten
             </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                Das Maklerrecht ist zwar in den §§ 652 bis 655 BGB gesetzlich geregelt. Trotzdem zeigen die Erfahrungen in der Praxis, dass die vorhandenen gesetzlichen Regelungen der auf dem zweiten Blick sehr komplexen Materie des Maklerrechts nicht gerecht werden. Vielmehr muss jeder Fall gesondert und unter Zugrundelegung der aktuellen Rechtsprechung betrachtet werden.
+                Das Maklerrecht ist ein hochspezialisiertes Rechtsgebiet mit komplexen gesetzlichen Regelungen und einer umfangreichen Rechtsprechung. Als erfahrene Maklerrechtsexperten verstehen wir die Feinheiten dieses Rechtsbereichs und entwickeln maßgeschneiderte Lösungen für Ihre spezifischen Herausforderungen.
               </p>
               <p>
-                Das Maklerrecht ist im Gesetz nur lückenhaft geregelt. Dies setzt beim beratenden Rechtsanwalt tiefgehende Kenntnisse der aktuellen Rechtsprechung und der Gesetzeslage voraus. Aufgrund unserer jahrelangen Erfahrungen mit dem Maklerrecht verfügen wir über die notwenige Kompetenz, Ihnen bei entsprechenden Rechtsfragen zur Seite zu stehen.
+                Jeder Fall erfordert eine individuelle Betrachtung unter Berücksichtigung der aktuellen Rechtsprechung. Mit unserer langjährigen Expertise im Maklerrecht verfügen wir über die notwendige Kompetenz, Sie bei allen maklerrechtlichen Fragestellungen erfolgreich zu beraten und zu vertreten.
               </p>
             </div>
           </div>
 
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Was ist ein Maklervertrag und wie kommt er zustande?
+              Maklerverträge: Rechtssichere Gestaltung und Durchsetzung
             </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                Der Maklervertrag ist auf den Nachweis oder die Vermittlung eines Hauptvertrages gerichtet. Beteiligte des Maklervertrags sind somit der Makler und sein Auftraggeber, also der Kunde. In den meisten Fällen handelt es sich beim Hauptvertrag um einen Immobilienkauf- oder Mietvertrag zwischen dem Auftraggeber und einem Dritten. Dies ist aber nicht zwingend, ein Maklervertrag kann sich etwa auch auf den Nachweis oder die Vermittlung eines Ausbildungs-oder Arbeitsplatzes beziehen. Zu beachten ist, dass jeweils neben den §§ 652 ff. BGB auch noch spezialgesetzliche Regelungen zum Maklerrecht existieren, die das Verhältnis von Makler und seinem Auftraggeber konkretisieren. So gilt bei der Vermittlung bzw. dem Nachweis eines Mietvertrages auch das Wohnungsvermittlungsgesetz (WoVermG).
+                Der Maklervertrag ist auf den professionellen Nachweis oder die Vermittlung von Hauptverträgen ausgerichtet. Als Rechtsbeziehung zwischen Makler und Auftraggeber umfasst er meist Immobilienkauf- oder Mietverträge, kann aber auch andere Vermittlungsleistungen wie Arbeitsplätze oder Ausbildungsplätze betreffen.
               </p>
               <p>
-                Obwohl ein Formerfordernis grundsätzlich nicht besteht, sollte der Maklervertrag idealerweise eine Vereinbarung zur Höhe der Maklerprovision enthalten, weil gem. § 653 Absatz 2 BGB ansonsten die übliche Maklerprovision als vereinbart gilt. Die Beweislast für den Vertragsschluss liegt dabei beim Makler.
+                Neben den grundlegenden BGB-Regelungen (§§ 652 ff.) sind spezialgesetzliche Bestimmungen zu beachten, wie das Wohnungsvermittlungsgesetz bei Mietverträgen. Eine professionelle Vertragsgestaltung sollte klare Provisionsvereinbarungen enthalten, da sonst die übliche Provision als vereinbart gilt.
               </p>
             </div>
           </div>
 
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Wann entsteht der Provisionsanspruch des Maklers?
+              Provisionsansprüche: Durchsetzung und Verteidigung
             </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                Ist ein Maklervertrag wirksam zustande gekommen, ist der Auftraggeber im Falle des Erfolgs der Vermittlung bzw. des Nachweises eines wirksamen Hauptvertrages zur Zahlung der vereinbarten bzw. ansonsten üblichen Maklerprovision verpflichtet. Zu beachten ist, dass es den Beteiligten aufgrund ihrer Vertragsfreiheit auch zusteht, eine erfolgsunabhängige Provisionsvereinbarung zu treffen oder etwa den Maklervertrag unter einer Bedingung zu vereinbaren, etwa, dass der Provisionsanspruch nur ab einer bestimmten Kaufpreishöhe des zu vermittelnden bzw. nachzuweisenden Kaufvertrags zustande kommen soll.
+                Der Provisionsanspruch entsteht grundsätzlich bei erfolgreichem Abschluss des vermittelten Hauptvertrags. Entscheidend ist die Mitursächlichkeit der Maklertätigkeit für den Vertragsabschluss. Wir entwickeln strategische Ansätze zur Durchsetzung berechtigter Provisionsansprüche und zur Abwehr unbegründeter Forderungen.
               </p>
               <p>
-                Die Tätigkeit des Maklers muss aufgrund der Erfolgsbezogenheit des Maklervertrags für den Abschluss des Hauptvertrags zumindest mitursächlich geworden sein, damit ihm ein Anspruch auf die Provision zusteht. Daher stehen mehreren Maklern nebeneinander jeweils die entsprechenden Provisionsansprüche zu, wenn deren Tätigkeiten jeweils mitursächlich für den Abschluss des Hauptvertrags waren.
-              </p>
-              <p>
-                An den Nachweis der Mitursächlichkeit der Maklertätigkeit werden von der Rechtsprechung je nach der konkreten Fallgestaltung unterschiedliche Anforderungen gestellt. So gilt zugunsten des Maklers eine Vermutungsregelung für die Mitursächlichkeit seiner Tätigkeit, wenn der Hauptvertrag in einem angemessenen Zeitabstand nach dem Maklervertrag zustande kommt. In diesem Fall muss der Auftraggeber die Unterbrechung des Kausalzusammenhangs nachweisen.
+                Die Rechtsprechung stellt unterschiedliche Anforderungen an den Nachweis der Mitursächlichkeit. Bei zeitnahem Vertragsabschluss greift eine Vermutungsregelung zugunsten des Maklers. Wir nutzen diese und andere rechtliche Instrumente optimal für Ihren Erfolg.
               </p>
             </div>
           </div>
@@ -93,14 +90,14 @@ const RechtsgebieteMaklerrecht = () => {
 
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Kompetente Beratung durch unsere Rechtsanwälte für Maklerrecht
+              Umfassende Maklerrechtsberatung für Ihren Erfolg
             </h2>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                In maklerrechtlichen Fragestellungen sind wir gerne mit unserem Team kompetent an Ihrer Seite. Sofern Sie Fragen zur Maklerprovision haben, klären wir Sie gerne darüber auf.
+                Als spezialisierte Maklerrechtsexperten stehen wir Ihnen mit umfassender Kompetenz zur Seite. Ob Provisionsstreitigkeiten, Vertragsgestaltung oder präventive Beratung - wir entwickeln maßgeschneiderte Lösungen für Ihre maklerrechtlichen Herausforderungen.
               </p>
               <p>
-                Über ein Pauschalhonorar oder ein Stundenhonorar wird individuell mit Ihnen und abhängig von der rechtlichen Fragestellung, der Schwierigkeit und dem Umfang Ihrer Angelegenheit in einem gemeinsamen Beratungsgespräch entschieden. Vereinbaren Sie für Ihr Anliegen einfach ein Gespräch, das dank unserer technischen Ausstattung auch telefonisch oder online durchgeführt werden kann. Darüber hinaus können Sie auch gerne unseren kostenlosen „ Rückruf-Service " nutzen.
+                Unser Beratungsansatz ist transparent und effizient: Wir besprechen individuell das optimale Gebührenmodell - Pauschalhonorar oder Stundenhonorar - abhängig von Komplexität und Umfang Ihres Falls. Nutzen Sie unsere moderne Infrastruktur für Beratungsgespräche vor Ort, telefonisch oder online. Unser kostenloser Rückruf-Service steht Ihnen jederzeit zur Verfügung.
               </p>
             </div>
           </div>
@@ -114,7 +111,7 @@ const RechtsgebieteMaklerrecht = () => {
                     Maklerrecht von A-Z
                   </h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    Wir möchten Ihnen die Möglichkeit geben, verschiedene Situationen aus dem Blickwinkel eines Anwaltes kennen zu lernen. Aus diesem Grund erklären wir Anwältinnen und Anwälte zahlreiche Fachbegriffen aus dem Maklerrecht mit verständlicher Sprache.
+                    Umfassendes Expertenwissen zu allen Facetten des Maklerrechts. Wir erläutern komplexe Sachverhalte verständlich und zeigen praxisnahe Lösungsstrategien für Ihre maklerrechtlichen Anliegen auf.
                   </p>
                   <Button asChild className="bg-[#004595] hover:bg-blue-700 text-white">
                     <Link to="/maklerrecht/a-z/" className="inline-flex items-center">

@@ -13,7 +13,7 @@ const RechtsgebieteVerwaltungsrecht = () => {
       
       <StandardHero
         title="Verwaltungsrecht"
-        description="Das Verwaltungsrecht ist ein umfassendes und vielseitiges Rechtsgebiet, das sich mit den Interaktionen zwischen Bürgern und staatlichen Institutionen sowie innerhalb der Verwaltung befasst. Als ein zentraler Teil des öffentlichen Rechts bildet es die Grundlage für die Organisation und das Handeln von Verwaltungsbehörden und sorgt dafür, dass staatliche Entscheidungen transparent, gerecht und gesetzeskonform getroffen werden."
+        description="Effektive Vertretung gegenüber Behörden und in verwaltungsgerichtlichen Verfahren. Wir schützen Ihre Rechte gegen staatliche Übergriffe und setzen Ihre Ansprüche erfolgreich durch."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Rechtsgebiete", href: "/" },

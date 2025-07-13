@@ -13,7 +13,7 @@ const RechtsgebieteWettbewerbsrecht = () => {
       
       <StandardHero
         title="Wettbewerbsrecht"
-        description="Unterstützung für rechtskonformes Handeln im Wettbewerbsrecht"
+        description="Schutz Ihrer Wettbewerbsposition und Abwehr unlauterer Konkurrenzpraktiken. Wir beraten präventiv bei Werbemaßnahmen und verteidigen Sie erfolgreich gegen wettbewerbsrechtliche Abmahnungen."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Rechtsgebiete", href: "/" },

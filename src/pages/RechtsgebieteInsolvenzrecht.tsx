@@ -13,7 +13,7 @@ const RechtsgebieteInsolvenzrecht = () => {
       
       <StandardHero
         title="Insolvenzrecht"
-        description="In den letzten Jahren ist die Zahl der Insolvenzen dramatisch gewachsen. Auch viele Privatpersonen sind von der Insolvenz betroffen."
+        description="Strategische Beratung in Insolvenzverfahren und bei Unternehmenssanierungen. Wir schützen Ihre Forderungen, minimieren Ausfallrisiken und entwickeln maßgeschneiderte Lösungen für komplexe Insolvenzsituationen."
         breadcrumbs={[
           { label: "Rechtsgebiete" },
           { label: "Insolvenzrecht" }
@@ -38,20 +38,20 @@ const RechtsgebieteInsolvenzrecht = () => {
           {/* Article Text */}
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Das Insolvenzrecht bearbeiten wir aus vielen Blickwinkeln. Wir betreuen ebenso
+              Unser Insolvenzrecht-Team vertritt Sie umfassend in allen Phasen von Insolvenzverfahren:
             </p>
 
             <ul className="list-disc list-inside mb-6 space-y-3">
-              <li>die typische Interessenlage der Gläubiger insolventer Unternehmen, die ihren Verlust möglichst begrenzen wollen. Nicht selten geht ein Inkassomandat in den Bereich der Insolvenz über</li>
-              <li>Geschäftsführer von überschuldeten und/oder von Zahlungsunfähigkeit bedrohten Unternehmen, die geschützt werden möchten vor strafbaren Fehlern oder auch der ggf. drohenden Durchgriffshaftung.</li>
+              <li>Strategische Gläubigerberatung: Wir minimieren Forderungsausfälle und optimieren Ihre Rechtsposition in Insolvenzverfahren</li>
+              <li>Geschäftsführerhaftung: Präventive Beratung und Verteidigung bei Durchgriffshaftung und strafrechtlichen Risiken in Krisensituationen</li>
             </ul>
 
             <p className="mb-6">
-              Der Schwerpunkt unserer Tätigkeit im Insolvenzrecht liegt allerdings darin, Firmen und Personen zu unterstützen, deren Forderungen durch die Insolvenz von Geschäftspartnern bedroht sind. Wir unterstützen unsere Mandanten zunächst dabei ihr Forderungsmanagement so aufzubauen, dass der Ausfall von Forderungen möglichst gering ausfällt. Sollte es dennoch nötig sein, melden wir Ihre Forderungen beim Insolvenzverfahren an und machen Aussonderungsrechte wie z.B. Eigentumsvorbehalt geltend.
+              Unser Schwerpunkt liegt in der professionellen Gläubigervertretung. Wir entwickeln präventive Forderungsmanagement-Strategien, melden Ihre Ansprüche fristgerecht an und setzen Aussonderungsrechte wie Eigentumsvorbehalte erfolgreich durch. So sichern wir Ihre wirtschaftlichen Interessen optimal ab.
             </p>
 
             <p className="mb-8">
-              Wir unterstützen Sie auch, wenn der Insolvenzverwalter bereits an Sie gezahlte Beträge zurück fordert. Soweit Ansatzpunkte dafür bestehen, dass der Geschäftspartner eigentlich hätte absehen können, dass er nicht mehr bezahlen kann, prüfen wir auch ob eine Forderung aus vorsätzlicher unerlaubter Handlung vorliegt, die auch nach einer eventuellen Restschuldbefreiung weiterbesteht.
+              Bei Rückforderungen des Insolvenzverwalters prüfen wir alle Abwehrmöglichkeiten und entwickeln durchsetzungsstarke Strategien. Wir analysieren auch potenzielle Ansprüche aus vorsätzlich unerlaubter Handlung, die einer Restschuldbefreiung nicht unterliegen.
             </p>
 
             {/* Insolvenzrecht von A-Z Card */}
@@ -60,7 +60,7 @@ const RechtsgebieteInsolvenzrecht = () => {
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold text-white">Insolvenzrecht von A-Z</CardTitle>
                   <CardDescription className="text-white/90 text-base">
-                    Wir möchten Ihnen die Möglichkeit geben, verschiedene Situationen aus dem Blickwinkel eines Anwaltes kennen zu lernen. Aus diesem Grund erklären wir Anwältinnen und Anwälte zahlreiche Fachbegriffen aus dem Insolvenzrecht mit verständlicher Sprache.
+                    Professionelle Einblicke in komplexe Insolvenzverfahren. Wir erklären Fachbegriffe verständlich und zeigen praxisnahe Lösungsansätze für Ihre individuelle Situation auf.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>

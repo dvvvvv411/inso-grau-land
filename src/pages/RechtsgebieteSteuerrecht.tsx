@@ -12,8 +12,8 @@ const RechtsgebieteSteuerrecht = () => {
       <Header />
       
       <StandardHero
-        title="Ihre Rechtsanwälte im Steuerrecht"
-        description="Nicht immer ist es mit der reinen Steuerberatung innerhalb des Steuerrecht getan. Auseinandersetzungen mit dem Finanzamt können ebenso von der unterschiedlichen Rechtsauffassung wie unterschiedlicher Bewertung von Lebenssachverhalten getragen werden."
+        title="Steuerrecht"
+        description="Umfassende steuerrechtliche Beratung und Vertretung vor Finanzgerichten. Wir lösen Konflikte mit Finanzbehörden, optimieren Ihre Steuerlast und schützen Sie vor kostspieligen Fehlern im Steuerrecht."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Rechtsgebiete", href: "/" },
@@ -38,16 +38,16 @@ const RechtsgebieteSteuerrecht = () => {
           <div className="mb-12">
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                In vielen Fällen sind die Auswirkungen aber für die Betroffenen gravierend, wir erinnern an den berühmten deutschen Tennisspieler, dem Gefängnisstrafen drohten und der Millionen nachzahlen musste, weil er falsche Steuererklärungen abgegeben hatte. Es ging im Ergebnis allerdings nicht um komplizierte Rechtsfragen des Steuerrecht, sondern recht einfach um die Frage, ob hier ein Wohnsitz in Deutschland vorlag sowie, ob mehr als die Hälfte der Tage innerhalb eines Kalenderjahres in Deutschland verbracht wurden. Die unbeschränkte Steuerpflicht nach § 1 EStG erlischt ja, wenn man den Wohnsitz in Deutschland aufgibt.
+                Steuerrechtliche Auseinandersetzungen können schwerwiegende finanzielle Folgen haben. Unser spezialisiertes Steuerrechts-Team vertritt Sie erfolgreich bei komplexen Verfahren mit Finanzbehörden und vor Finanzgerichten. Dabei geht es oft um mehr als nur unterschiedliche Rechtsauffassungen - häufig stehen erhebliche Nachzahlungen oder sogar strafrechtliche Konsequenzen im Raum.
               </p>
               <p>
-                Außenprüfungen, Durchsuchungen, überhöhte Steuerfestsetzungen, die Möglichkeiten der Auseinandersetzung sind mannigfaltig.
+                Von Außenprüfungen über Durchsuchungen bis hin zu überhöhten Steuerfestsetzungen - die Konfliktfelder sind vielfältig. Wir übernehmen die komplette rechtliche Auseinandersetzung und entlasten Sie vollständig von belastenden Behördenkontakten.
               </p>
               <p>
-                Wir nehmen unseren Mandanten die komplette Auseinandersetzung und jeglichen Schriftwechsel ab, sei es nun im Steuerfestsetzungsverfahren, die Vertretung im Umgang mit den Behörden, oder – falls notwendig – die Vertretung vor den Finanzgerichten.
+                Unser umfassender Service erstreckt sich von der Vertretung im Steuerfestsetzungsverfahren über den professionellen Umgang mit Behörden bis hin zur strategischen Prozessführung vor Finanzgerichten. Als leistungsstarke Kanzlei mit drei spezialisierten Steuerrechtsanwälten verfügen wir über die notwendigen Ressourcen für eine umfassende Mandantenbetreuung.
               </p>
               <p>
-                Als mittelständische Kanzlei mit rund 70 Mitarbeitern und allein 3 Rechtsanwälten, die in diesem Fachgebiet tätig sind, bieten wir genügend Ressourcen, um Ihren Fall jederzeit umfassend betreuen zu können. Möchten Sie uns direkt kontaktieren, um einen Termin zu vereinbaren oder uns sonst eine Frage zu stellen, freuen wir uns auf Ihre Kontaktaufnahme. Vereinbaren Sie für Ihr Anliegen einfach ein Gespräch, das dank unserer technischen Ausstattung auch telefonisch oder online durchgeführt werden kann. Darüber hinaus können Sie auch gerne unseren kostenlosen „Rückruf-Service" nutzen.
+                Nutzen Sie unsere moderne Beratungsinfrastruktur: Termine vor Ort, telefonisch oder online sowie unseren kostenlosen Rückruf-Service für Ihre erste Kontaktaufnahme.
               </p>
             </div>
           </div>
@@ -61,7 +61,7 @@ const RechtsgebieteSteuerrecht = () => {
                     Steuerrecht von A-Z
                   </h3>
                   <p className="text-gray-700 mb-6 leading-relaxed">
-                    Wir möchten Ihnen die Möglichkeit geben, verschiedene Situationen aus dem Blickwinkel eines Rechtsanwaltes mit Schwerpunkt im Steuerrecht kennen zu lernen. Aus diesem Grund erklären wir Anwältinnen und Anwälte zahlreiche Fachbegriffen aus dem Steuerrecht mit verständlicher Sprache.
+                    Professionelle Einblicke in komplexe Steuerrechtsverfahren. Wir erläutern steuerrechtliche Fachbegriffe verständlich und entwickeln strategische Lösungsansätze für Ihre individuellen Herausforderungen.
                   </p>
                   <Button asChild className="bg-[#004595] hover:bg-blue-700 text-white">
                     <Link to="/steuerrecht/a-z/" className="inline-flex items-center">
