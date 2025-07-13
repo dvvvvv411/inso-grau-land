@@ -120,8 +120,8 @@ const Kontakt = () => {
                     <div>
                       <p className="font-medium text-gray-900">Anschrift</p>
                       <p className="text-gray-600 text-sm">
-                        Marienstr. 19/20<br />
-                        10117 Berlin
+                        Sophienstraße 7<br />
+                        04109 Leipzig
                       </p>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ const Kontakt = () => {
                     <Phone className="w-5 h-5 text-[#004595] flex-shrink-0" />
                     <div>
                       <p className="font-medium text-gray-900">Telefon</p>
-                      <p className="text-gray-600 text-sm">+49 (0) 30 12345678</p>
+                      <p className="text-gray-600 text-sm">+49 (0) 341 21 73 61 0</p>
                     </div>
                   </div>
 
@@ -138,7 +138,7 @@ const Kontakt = () => {
                     <Printer className="w-5 h-5 text-[#004595] flex-shrink-0" />
                     <div>
                       <p className="font-medium text-gray-900">Fax</p>
-                      <p className="text-gray-600 text-sm">+49 (0) 30 12345679</p>
+                      <p className="text-gray-600 text-sm">+49 (0) 341 21 73 61 29</p>
                     </div>
                   </div>
 
@@ -146,7 +146,7 @@ const Kontakt = () => {
                     <Mail className="w-5 h-5 text-[#004595] flex-shrink-0" />
                     <div>
                       <p className="font-medium text-gray-900">E-Mail</p>
-                      <p className="text-gray-600 text-sm">info@hess-partner-berlin.de</p>
+                      <p className="text-gray-600 text-sm">kanzlei@hess-leipzig.de</p>
                     </div>
                   </div>
 
