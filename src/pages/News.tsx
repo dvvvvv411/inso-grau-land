@@ -64,7 +64,7 @@ const News = () => {
       
       <StandardHero
         title="News"
-        description="Hier finden Sie die wichtigsten Rechts-News und Entwicklungen von unserer Kanzlei im Überblick."
+        description="Bleiben Sie informiert über aktuelle Rechtsentwicklungen, wichtige Urteile und fachliche Einschätzungen unserer Rechtsexperten zu relevanten juristischen Themen."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "News" }

@@ -63,7 +63,7 @@ const Team = () => {
       
       <StandardHero
         title="Unser Team"
-        description="Lernen Sie unser erfahrenes Team von Rechtsanwälten und Experten kennen, die sich für Ihre rechtlichen Angelegenheiten einsetzen."
+        description="Lernen Sie unser hochqualifiziertes Expertenteam kennen - erfahrene Rechtsanwälte und Steuerberater, die sich mit voller Hingabe für Ihren Erfolg einsetzen."
         breadcrumbs={breadcrumbs}
       />
 
@@ -72,11 +72,11 @@ const Team = () => {
           {/* Team Introduction */}
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              Expertise und Erfahrung für Ihren Erfolg
+              Exzellenz durch Expertise und Leidenschaft
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Unser Team vereint jahrzehntelange Erfahrung und spezialisierte Kenntnisse in verschiedenen Rechtsgebieten. 
-              Wir stehen Ihnen mit Kompetenz und Engagement zur Seite.
+              Unser Team vereint jahrzehntelange Berufserfahrung mit hochspezialisiertem Fachwissen in allen relevanten Rechtsgebieten. 
+              Wir sind Ihr strategischer Partner für juristischen Erfolg auf höchstem Niveau.
             </p>
           </div>
 
@@ -97,7 +97,7 @@ const Team = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
                     <p className="text-white text-sm font-medium">
-                      Rechtsanwalt & Experte
+                      Ihr Experte für rechtlichen Erfolg
                     </p>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ const Team = () => {
                     {member.name}
                   </h3>
                   <div className="space-y-3">
-                    <p className="text-sm text-gray-500 font-medium">Spezialisierung:</p>
+                    <p className="text-sm text-gray-500 font-medium">Kernkompetenzen:</p>
                     <div className="flex flex-wrap gap-2">
                       {member.areas.map((area, areaIndex) => (
                         <Link
@@ -130,15 +130,15 @@ const Team = () => {
             <div className="max-w-3xl mx-auto">
               <Users className="w-16 h-16 mx-auto mb-6 text-blue-200" />
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Verstärken Sie unser Team
+                Werden Sie Teil der Erfolgsgeschichte
               </h2>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                Sind Sie auf der Suche nach einer neuen beruflichen Herausforderung? 
-                Wir freuen uns auf engagierte und qualifizierte Bewerber, die unser Team bereichern möchten.
+                Suchen Sie eine Karriere mit Perspektive? Verstärken Sie unser Expertenteam und gestalten Sie die Zukunft 
+                einer der innovativsten Kanzleien Berlins aktiv mit.
               </p>
               <Button asChild size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-blue-50">
                 <Link to="/stellenangebote" className="inline-flex items-center">
-                  Aktuelle Stellenangebote
+                  Karrieremöglichkeiten entdecken
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>

@@ -10,7 +10,7 @@ const UeberUns = () => {
       
       <StandardHero
         title="Über uns"
-        description="Im Jahr 2020 eröffnete die Anwaltskanzlei Heß & Partner in Berlin Mitte. Die Idee hinter unserer Kanzleigründung: auch in der dynamischen Hauptstadt Berlin besteht Bedarf an spezialisierter Rechtsberatung mit persönlichem Kontakt."
+        description="Seit 2020 stehen wir für exzellente Rechtsberatung im Herzen Berlins. Erfahren Sie mehr über unsere Werte, unsere Expertise und unseren Anspruch an erstklassigen Service."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Über uns" }
@@ -22,10 +22,10 @@ const UeberUns = () => {
         <div className="w-full max-w-7xl mx-auto px-8">
           <div className="text-center max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
-              Spezialisierte Beratung im Herzen Berlins
+              Ihre Rechtsexperten im Zentrum der Hauptstadt
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Fundiertes anwaltliches Wissen auf unterschiedlichen Rechtsgebieten direkt in Berlin Mitte - persönlich, kompetent und mit dem Verständnis für die Besonderheiten der Hauptstadt!
+              Strategische Rechtsberatung auf höchstem Niveau - persönlich, effizient und mit dem tiefen Verständnis für die Anforderungen moderner Mandanten in Berlin und darüber hinaus.
             </p>
           </div>
         </div>
@@ -36,30 +36,30 @@ const UeberUns = () => {
         <div className="w-full max-w-7xl mx-auto px-8">
           <div className="text-foreground text-lg leading-relaxed space-y-6 max-w-5xl mx-auto">
             <p>
-              Dieses Konzept hat sich von Beginn an bewährt. Innerhalb von fünf Jahren sind wir zu einem kompetenten Team von fünf spezialisierten Anwälten gewachsen.
+              Was 2020 als Vision begann, ist heute Realität: Heß & Partner hat sich zu einer führenden Kanzlei mit hochspezialisierten Rechtsexperten entwickelt, die deutschlandweit Mandanten betreuen.
             </p>
             <p>
-              Heute gehören fünf Rechtsanwältinnen und Rechtsanwälte zu unserer Kanzlei, viele davon mit Fachanwaltstitel.
-              Dazu kommen in der Steuerabteilung erfahrene Steuerberater und spezialisierte Fachangestellte.
-              Dank unserer Bandbreite an Fachkompetenz betreuen wir fast jedes rechtliche oder steuerliche Anliegen, mit dem Sie konfrontiert sind.
-              Unsere Kanzlei bearbeitet eine Vielzahl von Mandaten im Jahr.
-              Sie finden uns zentral in Berlin Mitte in der Marienstraße 19/20.
+              Unser Team vereint fünf erfahrene Rechtsanwältinnen und Rechtsanwälte mit ausgewiesener Fachkompetenz und Fachanwaltstitel.
+              Ergänzt wird diese Expertise durch unsere erfahrenen Steuerberater und spezialisierten Fachangestellten.
+              Diese Vielfalt an Fachkenntnissen ermöglicht es uns, nahezu jede rechtliche oder steuerliche Herausforderung erfolgreich zu meistern.
+              Mit hunderten erfolgreich abgeschlossenen Mandaten pro Jahr setzen wir neue Maßstäbe in der Kanzleiarbeit.
+              Sie finden uns zentral und gut erreichbar in Berlin Mitte, Marienstraße 19/20.
             </p>
             
             <h3 className="text-2xl font-bold text-foreground pt-6">
-              Anwälte und Steuerberater aus Überzeugung
+              Leidenschaft für Recht und Excellence
             </h3>
             
             <p>
-              „Nur wer Anwalt werden will, wird ein guter Anwalt." Diese alte Weisheit unter Jura-Professoren bringt es auf den Punkt: Nur wer seinen Beruf aus Leidenschaft betreibt, ist wirklich gut darin.
+              „Exzellenz entsteht nur dort, wo Leidenschaft auf Kompetenz trifft." Diese Philosophie prägt jeden Tag unserer Arbeit bei Heß & Partner.
             </p>
             
             <p>
-              Bei Heß & Partner arbeiten „Überzeugungstäter": Wir lieben unsere Arbeit und identifizieren uns mit der Philosophie der Kanzlei. Wir haben uns bewusst und gerne für diese Kanzlei entschieden, auch wenn die Abschlussnoten den Weg zu einer Großkanzlei, zur Staatsanwaltschaft oder ins Richteramt ermöglicht hätten.
+              Unser Team besteht aus überzeugten Juristen, die bewusst den Weg der spezialisierten Beratung gewählt haben. Obwohl unsere Qualifikationen auch andere Karrierewege ermöglicht hätten, haben wir uns für Heß & Partner entschieden - weil hier unsere Vision von erstklassiger Rechtsberatung Realität wird.
             </p>
             
             <p>
-              Diese Überzeugung zeigt sich in unserem Engagement für die Mandanten, im juristischen Qualitätsniveau und unserem hohen Anspruch an die eigene Arbeit. Das sind die Werte, die Heß & Partner in der alltäglichen Arbeit umsetzt.
+              Diese innere Überzeugung spiegelt sich in unserem unermüdlichen Einsatz für Mandanten wider, in der juristischen Präzision unserer Arbeit und in unserem Anspruch, stets die bestmöglichen Ergebnisse zu erzielen. Das sind die Werte, die Heß & Partner täglich zum Leben erweckt.
             </p>
           </div>
         </div>
@@ -70,14 +70,14 @@ const UeberUns = () => {
         <div className="w-full max-w-7xl mx-auto px-8">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 text-center leading-tight">
-              Eine Kanzlei auf aktuellem Stand
+              Innovation trifft auf bewährte Expertise
             </h2>
             <p className="text-xl text-white/90 leading-relaxed">
-              Heß & Partner hat keine Angst vor Neuem. Unsere Kanzlei nutzt moderne Technologien und Arbeitsweisen, um für unsere Mandanten optimale Ergebnisse zu erzielen. Als moderne Berliner Kanzlei setzen wir von Anfang an auf innovative Ansätze.
+              Heß & Partner verbindet traditionelle Rechtsexpertise mit modernster Technologie. Unsere digitale Kanzleiführung ermöglicht es uns, effizienter zu arbeiten und bessere Ergebnisse für unsere Mandanten zu erzielen.
             </p>
             <br />
             <p className="text-xl text-white/90 leading-relaxed">
-              Wir haben die Digitalisierung der Kanzlei-Abläufe von Beginn an konsequent umgesetzt. Unsere zentrale Wissensdatenbank ermöglicht es uns, schnell und effizient auf relevante Informationen zuzugreifen. Wir arbeiten weitgehend papierlos und nutzen moderne Kommunikationsmittel wie Video-Meetings selbstverständlich. In Berlin vernetzt, flexibel erreichbar und hocheffizient arbeitend - das ist unser Ansatz der modernen Mandantenbetreuung.
+              Von Beginn an haben wir auf vollständige Digitalisierung gesetzt: intelligente Wissensdatenbanken, papierlose Prozesse und modernste Kommunikationstechnologie. Diese Infrastruktur ermöglicht uns flexible Arbeitsmodelle und schnelle Reaktionszeiten. So verbinden wir die Vorteile einer Berliner Präsenzkanzlei mit der Effizienz digitaler Arbeitsweisen - für eine Mandantenbetreuung, die neue Standards setzt.
             </p>
           </div>
         </div>
@@ -88,16 +88,16 @@ const UeberUns = () => {
         <div className="w-full max-w-7xl mx-auto px-8">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-12 text-center leading-tight">
-              Unser Alleinstellungsmerkmal: die Summe aus dem, was Heß & Partner ausmacht
+              Was Heß & Partner einzigartig macht
             </h2>
             
             <div className="space-y-6">
               {[
-                "Unsere Kanzlei bietet Ihnen kompetente, qualifizierte Unterstützung zu Ihren rechtlichen Anliegen unabhängig vom Rechtsgebiet, dazu auch Steuerberatung.",
-                "Unsere spezialisierte Rechtsberatung muss den Qualitätsvergleich mit großen Kanzleien nicht scheuen.",
-                "Ihnen steht unser gesamtes Team zur Verfügung. Dank Vernetzung und moderner Technik wird der richtige Anwalt oder Steuerberater für Ihren Fall hinzugezogen.",
-                "Die Beratung bei Heß & Partner ist nie akademisch oder abgehoben. Wir sind mitten in Berlin verwurzelt, Menschen zum Anfassen, die im Leben stehen und die pragmatische Perspektive unserer Mandanten teilen.",
-                "Alle Mitglieder unseres Kanzleiteams – Rechtsanwälte, Steuerberater und Fachangestellte – sind aus Überzeugung und mit vollem Einsatz für Sie da. Wir lieben, was wir tun. Als Mandant sehen Sie das am Erfolg unserer Arbeit."
+                "Umfassende Expertise: Wir bieten Ihnen erstklassige rechtliche und steuerliche Beratung auf höchstem Niveau - unabhängig von der Komplexität Ihres Anliegens.",
+                "Qualität ohne Kompromisse: Unsere spezialisierte Beratung steht den renommiertesten Großkanzleien in nichts nach - mit dem Vorteil persönlicher Betreuung.",
+                "Synergien nutzen: Unser vernetztes Expertenteam stellt sicher, dass für Ihren Fall immer der optimale Spezialist zur Verfügung steht - effizient und zielgerichtet.",
+                "Praxisnahe Lösungen: Unsere Beratung ist niemals abstrakt. Als Berliner sind wir fest verwurzelt, verstehen reale Herausforderungen und entwickeln pragmatische Lösungen mit echtem Mehrwert.",
+                "Leidenschaft für Erfolg: Jedes Mitglied unseres Teams - von Rechtsanwälten über Steuerberater bis hin zu Fachangestellten - brennt für erstklassige Ergebnisse. Diese Hingabe sehen Sie an unserem Erfolg für Sie."
               ].map((point, index) => (
                 <div key={index} className="flex items-start gap-4">
                   <div className="w-2 h-2 bg-[#004595] rounded-full mt-3 flex-shrink-0"></div>
