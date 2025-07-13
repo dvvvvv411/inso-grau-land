@@ -1,6 +1,6 @@
 import heroImage from "/lovable-uploads/a36d0ea7-6638-4770-b104-68e1d1383eb9.png";
 import partnerImage from "/lovable-uploads/fa338e2d-e8d3-485c-b80a-8ec5d5769623.png";
-import workplaceCollage from "/lovable-uploads/5f00c7e6-d31c-40e9-af00-820eee0fd5c1.png";
+import workplaceCollage from "/lovable-uploads/d37caa46-8c2c-480a-a143-6ab6fa8c5e0d.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Button } from "../components/ui/button";
@@ -233,11 +233,11 @@ const Index = () => {
             
             {/* Left Column - Image */}
             <div className="flex justify-center">
-              <div className="w-full max-w-lg">
+              <div className="w-full max-w-xl">
                 <img 
                   src={workplaceCollage} 
-                  alt="Bildercollage Arbeitsplatz"
-                  className="w-full h-auto rounded-2xl shadow-lg"
+                  alt="Arbeitsplatz Übersicht"
+                  className="w-full h-auto aspect-[4/3] object-cover rounded-2xl shadow-lg"
                 />
               </div>
             </div>
