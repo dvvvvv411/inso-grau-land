@@ -75,20 +75,20 @@ const News = () => {
       {/* News Articles Grid */}
       <section className="py-20 px-4 flex-grow">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-col gap-6">
             {newsArticles.map((article, index) => (
               <Card 
                 key={article.title}
-                className="h-full bg-white border border-gray-200/50 hover:border-[#004595]/30 hover:shadow-xl transition-all duration-300 group cursor-pointer overflow-hidden"
+                className="bg-white border border-gray-200/50 hover:border-[#004595]/30 hover:shadow-xl transition-all duration-300 group cursor-pointer overflow-hidden"
               >
                 <a 
                   href={article.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="block h-full"
+                  className="flex flex-col md:flex-row h-full"
                 >
                   {/* Image */}
-                  <div className="h-64 overflow-hidden">
+                  <div className="w-full md:w-80 h-48 md:h-40 overflow-hidden flex-shrink-0">
                     <img 
                       src={article.image} 
                       alt={article.title}
@@ -97,14 +97,14 @@ const News = () => {
                   </div>
 
                   {/* Content */}
-                  <CardContent className="p-6 h-64 flex flex-col">
+                  <CardContent className="p-6 flex-1 flex flex-col">
                     {/* Title */}
-                    <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-[#004595] transition-colors duration-300 line-clamp-3 leading-tight">
+                    <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-[#004595] transition-colors duration-300 leading-tight">
                       {article.title}
                     </h3>
 
                     {/* Excerpt */}
-                    <p className="text-muted-foreground text-sm leading-relaxed flex-grow line-clamp-5 mb-4">
+                    <p className="text-muted-foreground text-sm leading-relaxed flex-grow mb-4">
                       {article.excerpt}
                     </p>
 

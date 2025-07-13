@@ -9,7 +9,7 @@ const Header = () => {
   const menuItems = [
     {
       title: "Kanzlei",
-      items: ["Über uns", "Team", "Philosophie", "Geschichte"]
+      items: ["Über uns", "News", "Team", "Philosophie", "Geschichte"]
     },
     {
       title: "Rechtsgebiete", 
@@ -69,12 +69,26 @@ const Header = () => {
                     <div className="py-2">
                       {menu.items.map((item, itemIndex) => {
                         const isUeberUns = menu.title === "Kanzlei" && item === "Über uns";
+                        const isNews = menu.title === "Kanzlei" && item === "News";
                         
                         if (isUeberUns) {
                           return (
                             <Link
                               key={itemIndex}
                               to="/ueber-uns"
+                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isNews) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/news"
                               className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
                               onClick={closeDropdowns}
                             >
@@ -132,12 +146,26 @@ const Header = () => {
                     <div className="ml-4 mt-2 space-y-1">
                       {menu.items.map((item, itemIndex) => {
                         const isUeberUns = menu.title === "Kanzlei" && item === "Über uns";
+                        const isNews = menu.title === "Kanzlei" && item === "News";
                         
                         if (isUeberUns) {
                           return (
                             <Link
                               key={itemIndex}
                               to="/ueber-uns"
+                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isNews) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/news"
                               className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
                               onClick={closeDropdowns}
                             >
