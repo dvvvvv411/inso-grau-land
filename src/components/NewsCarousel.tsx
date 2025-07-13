@@ -20,7 +20,7 @@ const newsArticles = [
   {
     title: "Meldefristen beim Datenschutzvorfall",
     excerpt: "Wann muss eine Datenpanne der Aufsichtsbehörde gemeldet werden? Nicht selten kommt es vor, dass Daten durch…",
-    link: "https://www.steinbock-partner.de/datenschutzrecht/meldefristen-beim-datenschutzvorfall/",
+    link: "/news/meldefristen-beim-datenschutzvorfall",
     image: newsImage2
   },
   {
