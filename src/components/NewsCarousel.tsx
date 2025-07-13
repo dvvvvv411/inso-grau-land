@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
@@ -58,7 +58,25 @@ const newsArticles = [
 
 const NewsCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const cardsPerView = 3;
+  const [cardsPerView, setCardsPerView] = useState(3);
+  
+  // Responsive cards per view
+  useEffect(() => {
+    const updateCardsPerView = () => {
+      if (window.innerWidth < 768) {
+        setCardsPerView(1); // Mobile: 1 card
+      } else if (window.innerWidth < 1024) {
+        setCardsPerView(2); // Tablet: 2 cards
+      } else {
+        setCardsPerView(3); // Desktop: 3 cards
+      }
+    };
+
+    updateCardsPerView();
+    window.addEventListener('resize', updateCardsPerView);
+    return () => window.removeEventListener('resize', updateCardsPerView);
+  }, []);
+
   const maxIndex = Math.max(0, newsArticles.length - cardsPerView);
 
   const goToPrevious = () => {
@@ -75,28 +93,28 @@ const NewsCarousel = () => {
 
   return (
     <div className="relative">
-      {/* Navigation Buttons */}
-      <div className="flex justify-between items-center mb-8">
+      {/* Mobile-first Navigation */}
+      <div className="flex justify-between items-center mb-6 md:mb-8">
         <Button
           variant="outline"
-          size="lg"
+          size={cardsPerView === 1 ? "default" : "lg"}
           onClick={goToPrevious}
           disabled={currentIndex === 0}
-          className="rounded-full p-3 border-[#004595]/20 hover:border-[#004595] hover:bg-[#004595]/5 disabled:opacity-30"
+          className="rounded-full p-2 md:p-3 border-[#004595]/20 hover:border-[#004595] hover:bg-[#004595]/5 disabled:opacity-30 touch-manipulation"
         >
-          <ChevronLeft className="w-6 h-6 text-[#004595]" />
+          <ChevronLeft className="w-4 h-4 md:w-6 md:h-6 text-[#004595]" />
         </Button>
 
-        {/* Dot Indicators */}
-        <div className="flex gap-2">
+        {/* Touch-friendly Dot Indicators */}
+        <div className="flex gap-1 md:gap-2">
           {Array.from({ length: maxIndex + 1 }, (_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              className={`h-3 rounded-full transition-all duration-300 touch-manipulation ${
                 currentIndex === index 
-                  ? 'bg-[#004595] w-8' 
-                  : 'bg-[#004595]/30 hover:bg-[#004595]/50'
+                  ? 'bg-[#004595] w-6 md:w-8' 
+                  : 'bg-[#004595]/30 hover:bg-[#004595]/50 w-3'
               }`}
             />
           ))}
@@ -104,12 +122,12 @@ const NewsCarousel = () => {
 
         <Button
           variant="outline"
-          size="lg"
+          size={cardsPerView === 1 ? "default" : "lg"}
           onClick={goToNext}
           disabled={currentIndex === maxIndex}
-          className="rounded-full p-3 border-[#004595]/20 hover:border-[#004595] hover:bg-[#004595]/5 disabled:opacity-30"
+          className="rounded-full p-2 md:p-3 border-[#004595]/20 hover:border-[#004595] hover:bg-[#004595]/5 disabled:opacity-30 touch-manipulation"
         >
-          <ChevronRight className="w-6 h-6 text-[#004595]" />
+          <ChevronRight className="w-4 h-4 md:w-6 md:h-6 text-[#004595]" />
         </Button>
       </div>
 
@@ -122,7 +140,7 @@ const NewsCarousel = () => {
           {newsArticles.map((article, index) => (
             <div
               key={article.title}
-              className="flex-shrink-0 px-4"
+              className="flex-shrink-0 px-2 md:px-4"
               style={{ width: `${100 / cardsPerView}%` }}
             >
               <Card className="h-full bg-white border border-gray-200/50 hover:border-[#004595]/30 hover:shadow-xl transition-all duration-300 group cursor-pointer overflow-hidden">
@@ -131,8 +149,8 @@ const NewsCarousel = () => {
                     to={article.link}
                     className="block h-full"
                   >
-                    {/* Image - 50% */}
-                    <div className="h-64 overflow-hidden">
+                    {/* Image - Responsive */}
+                    <div className="h-48 md:h-64 overflow-hidden">
                       <img 
                         src={article.image} 
                         alt={article.title}
@@ -140,15 +158,15 @@ const NewsCarousel = () => {
                       />
                     </div>
 
-                    {/* Content - 50% */}
-                    <CardContent className="p-6 h-64 flex flex-col">
+                    {/* Content - Responsive */}
+                    <CardContent className="p-4 md:p-6 h-56 md:h-64 flex flex-col">
                       {/* Title */}
-                      <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-[#004595] transition-colors duration-300 line-clamp-3 leading-tight">
+                      <h3 className="text-lg md:text-xl font-bold text-foreground mb-3 md:mb-4 group-hover:text-[#004595] transition-colors duration-300 line-clamp-2 md:line-clamp-3 leading-tight">
                         {article.title}
                       </h3>
 
                       {/* Excerpt */}
-                      <p className="text-muted-foreground text-sm leading-relaxed flex-grow line-clamp-5 mb-4">
+                      <p className="text-muted-foreground text-sm leading-relaxed flex-grow line-clamp-3 md:line-clamp-5 mb-3 md:mb-4">
                         {article.excerpt}
                       </p>
 
@@ -166,8 +184,8 @@ const NewsCarousel = () => {
                     rel="noopener noreferrer"
                     className="block h-full"
                   >
-                    {/* Image - 50% */}
-                    <div className="h-64 overflow-hidden">
+                    {/* Image - Responsive */}
+                    <div className="h-48 md:h-64 overflow-hidden">
                       <img 
                         src={article.image} 
                         alt={article.title}
@@ -175,15 +193,15 @@ const NewsCarousel = () => {
                       />
                     </div>
 
-                    {/* Content - 50% */}
-                    <CardContent className="p-6 h-64 flex flex-col">
+                    {/* Content - Responsive */}
+                    <CardContent className="p-4 md:p-6 h-56 md:h-64 flex flex-col">
                       {/* Title */}
-                      <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-[#004595] transition-colors duration-300 line-clamp-3 leading-tight">
+                      <h3 className="text-lg md:text-xl font-bold text-foreground mb-3 md:mb-4 group-hover:text-[#004595] transition-colors duration-300 line-clamp-2 md:line-clamp-3 leading-tight">
                         {article.title}
                       </h3>
 
                       {/* Excerpt */}
-                      <p className="text-muted-foreground text-sm leading-relaxed flex-grow line-clamp-5 mb-4">
+                      <p className="text-muted-foreground text-sm leading-relaxed flex-grow line-clamp-3 md:line-clamp-5 mb-3 md:mb-4">
                         {article.excerpt}
                       </p>
 

@@ -60,11 +60,11 @@ const Index = () => {
         {/* Gradient overlay for depth */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-transparent to-blue-100/30"></div>
         <div className="w-full max-w-7xl mx-auto relative z-10">
-          {/* 50/50 Layout - Increased Height */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 h-[800px]">
+          {/* Responsive Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[600px] md:min-h-[700px] lg:h-[800px]">
             
             {/* Left Column - Content (50%) */}
-            <div className="flex flex-col justify-center space-y-8 px-8 lg:px-12">
+            <div className="flex flex-col justify-center space-y-6 md:space-y-8 px-4 md:px-8 lg:px-12 py-12 lg:py-0">
               
               {/* Company Name */}
               <div className="space-y-2">
@@ -75,54 +75,56 @@ const Index = () => {
               </div>
               
               {/* Main Headlines */}
-              <div className="space-y-6">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              <div className="space-y-4 md:space-y-6">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight">
                   Rechtsanwälte und <span className="text-[#004595]">Steuerberater</span>
                 </h1>
                 
-                <p className="text-xl md:text-2xl text-muted-foreground font-medium leading-relaxed">
+                <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground font-medium leading-relaxed">
                   Ein starkes Team. Wenn's drauf ankommt!
                 </p>
               </div>
               
-              {/* Features Grid - USP Section */}
+              {/* Features Grid - Mobile Optimized USP Section */}
               <div className="home-hero-usp">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                   {features.map((feature, index) => (
-                    <div key={index} className="flex items-center gap-3 p-4 bg-white/80 backdrop-blur-sm rounded-xl border border-gray-200/50 hover:bg-white hover:shadow-lg transition-all duration-300 group">
-                      <div className="p-1 bg-[#004595]/10 rounded-full group-hover:bg-[#004595]/20 transition-colors">
+                    <div key={index} className="flex items-center gap-2 md:gap-3 p-3 md:p-4 bg-white/80 backdrop-blur-sm rounded-xl border border-gray-200/50 hover:bg-white hover:shadow-lg transition-all duration-300 group">
+                      <div className="p-1 bg-[#004595]/10 rounded-full group-hover:bg-[#004595]/20 transition-colors flex-shrink-0">
                         <CheckIcon />
                       </div>
-                      <span className="text-foreground font-semibold text-sm lg:text-base">{feature}</span>
+                      <span className="text-foreground font-semibold text-sm md:text-base lg:text-base">{feature}</span>
                     </div>
                   ))}
                 </div>
               </div>
               
-              {/* Rating Section - No Card, Horizontal Layout */}
-              <div className="flex items-center gap-6">
-                <h3 className="text-lg font-bold text-foreground">Ausgezeichnet</h3>
+              {/* Rating Section - Mobile Responsive */}
+              <div className="flex flex-col sm:flex-row items-center sm:items-center gap-3 sm:gap-6">
+                <h3 className="text-base md:text-lg font-bold text-foreground">Ausgezeichnet</h3>
                 
                 <div className="flex gap-1">
                   {[...Array(5)].map((_, index) => (
-                    <StarIcon key={index} />
+                    <div key={index} className="w-5 h-5 md:w-6 md:h-6">
+                      <StarIcon />
+                    </div>
                   ))}
                 </div>
                 
-                <p className="text-base font-bold text-foreground">974+ Bewertungen</p>
+                <p className="text-sm md:text-base font-bold text-foreground">974+ Bewertungen</p>
               </div>
             </div>
             
-            {/* Right Column - Image (50%) with enhanced shadow effects */}
-            <div className="relative flex items-center justify-end pr-[5%]">
-              <div className="w-[95%] h-[800px] overflow-hidden relative transform hover:scale-[1.02] transition-transform duration-700 ease-out">
-                {/* Multiple layered shadows for depth */}
-                <div className="absolute inset-0 bg-black/20 blur-3xl transform translate-x-4 translate-y-4 rounded-lg"></div>
-                <div className="absolute inset-0 bg-blue-600/30 blur-2xl transform translate-x-2 translate-y-2 rounded-lg"></div>
-                <div className="absolute inset-0 bg-black/30 blur-xl transform translate-x-1 translate-y-1 rounded-lg"></div>
+            {/* Right Column - Mobile Optimized Image */}
+            <div className="relative flex items-center justify-center px-4 md:justify-end md:pr-[5%] order-first lg:order-last">
+              <div className="w-full max-w-sm md:max-w-md lg:w-[95%] h-64 md:h-96 lg:h-[800px] overflow-hidden relative transform hover:scale-[1.02] transition-transform duration-700 ease-out">
+                {/* Responsive layered shadows */}
+                <div className="hidden md:block absolute inset-0 bg-black/20 blur-3xl transform translate-x-4 translate-y-4 rounded-lg"></div>
+                <div className="hidden md:block absolute inset-0 bg-blue-600/30 blur-2xl transform translate-x-2 translate-y-2 rounded-lg"></div>
+                <div className="hidden md:block absolute inset-0 bg-black/30 blur-xl transform translate-x-1 translate-y-1 rounded-lg"></div>
                 
-                {/* Main image container with rounded corners and shadow */}
-                <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl ring-1 ring-black/10">
+                {/* Main image container */}
+                <div className="relative w-full h-full rounded-lg overflow-hidden shadow-xl md:shadow-2xl ring-1 ring-black/10">
                   <img 
                     src={heroImage} 
                     alt="Professionelle Anwaltskanzlei - Heß & Partner"
@@ -138,16 +140,16 @@ const Index = () => {
         </div>
       </div>
 
-      {/* About Section - Fixed height with proper overflow handling */}
-      <div className="h-[650px] overflow-hidden" style={{ backgroundColor: '#004595' }}>
-        <div className="w-full max-w-7xl mx-auto px-8 h-full flex flex-col justify-center py-16">
+      {/* About Section - Mobile Responsive */}
+      <div className="min-h-[500px] md:min-h-[600px] lg:h-[650px] overflow-hidden" style={{ backgroundColor: '#004595' }}>
+        <div className="w-full max-w-7xl mx-auto px-4 md:px-8 h-full flex flex-col justify-center py-12 md:py-16">
           {/* Section Title */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center mb-12 leading-tight max-w-4xl mx-auto">
+          <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white text-center mb-8 md:mb-12 leading-tight max-w-4xl mx-auto px-2">
             Willkommen bei Heß & Partner, einem erfahrenen Team von Anwälten und Steuerexperten in Berlin.
           </h2>
 
-          {/* Two Column Layout - Equal columns */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-[400px]">
+          {/* Two Column Layout - Mobile Responsive */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center min-h-[300px] md:min-h-[400px]">
             
             {/* Left Column - Image (50%) */}
             <div className="flex justify-center h-full">
@@ -161,15 +163,15 @@ const Index = () => {
             </div>
 
             {/* Right Column - Text (50%) */}
-            <div className="space-y-6 h-full flex flex-col justify-center">
-              <div className="text-white/90 text-base leading-relaxed space-y-4">
+            <div className="space-y-4 md:space-y-6 h-full flex flex-col justify-center">
+              <div className="text-white/90 text-sm md:text-base leading-relaxed space-y-3 md:space-y-4">
                 <p>
                   Unsere Mission ist es, unseren Klienten eine kompetente und effektive Rechts- und Steuerberatung zu bieten. Wir verstehen, dass rechtliche und steuerliche Angelegenheiten komplex sein können und dass eine gründliche Beratung von entscheidender Bedeutung ist.
                 </p>
                 <p>
                   Deshalb sind wir bestrebt, für jeden Klienten eine maßgeschneiderte Lösung zu finden, die seine individuellen Bedürfnisse erfüllt. Wir setzen uns engagiert für die Rechte unserer Klienten ein und arbeiten hart, um ihre Interessen zu schützen.
                 </p>
-                <p>
+                <p className="hidden md:block">
                   Als Berliner Kanzlei verstehen wir die besonderen Herausforderungen der Hauptstadt und bieten maßgeschneiderte Lösungen für Ihre rechtlichen und steuerlichen Anliegen.
                 </p>
               </div>
@@ -178,7 +180,7 @@ const Index = () => {
               <div className="pt-2">
                 <Button 
                   size="lg" 
-                  className="bg-white text-[#004595] hover:bg-gray-100 font-semibold px-6 py-3 text-base rounded-lg transition-all duration-300 hover:shadow-lg"
+                  className="bg-white text-[#004595] hover:bg-gray-100 font-semibold px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-lg transition-all duration-300 hover:shadow-lg w-full sm:w-auto"
                   asChild
                 >
                   <Link to="/ueber-uns">Mehr über Heß & Partner</Link>
@@ -189,15 +191,15 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Practice Areas Section - Light Gray Background */}
-      <div className="py-20" style={{ backgroundColor: '#f8f9fa' }}>
-        <div className="w-full max-w-7xl mx-auto px-8">
+      {/* Practice Areas Section - Mobile Responsive */}
+      <div className="py-12 md:py-16 lg:py-20" style={{ backgroundColor: '#f8f9fa' }}>
+        <div className="w-full max-w-7xl mx-auto px-4 md:px-8">
           {/* Section Title */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 md:mb-4">
               Unsere <span className="text-[#004595]">Tätigkeitsbereiche</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
               Kompetente Beratung in allen wichtigen Rechtsbereichen – für Privatpersonen und Unternehmen
             </p>
           </div>
@@ -207,15 +209,15 @@ const Index = () => {
         </div>
       </div>
 
-      {/* News Section - White Background with subtle shadow */}
-      <div className="py-20 bg-white border-y border-gray-100">
-        <div className="w-full max-w-7xl mx-auto px-8">
+      {/* News Section - Mobile Responsive */}
+      <div className="py-12 md:py-16 lg:py-20 bg-white border-y border-gray-100">
+        <div className="w-full max-w-7xl mx-auto px-4 md:px-8">
           {/* Section Title */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 md:mb-4">
               <span className="text-[#004595]">News</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto px-2">
               Die wichtigsten Rechts-News und Entwicklungen von unserer Kanzlei im Überblick
             </p>
           </div>
@@ -225,11 +227,11 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Stellenangebote Section - Gradient Background */}
-      <div className="py-20 bg-gradient-to-br from-gray-50 via-gray-100 to-blue-50">
-        <div className="w-full max-w-7xl mx-auto px-8">
-          {/* Two Column Layout - Equal Widths */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      {/* Stellenangebote Section - Mobile Responsive */}
+      <div className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-gray-50 via-gray-100 to-blue-50">
+        <div className="w-full max-w-7xl mx-auto px-4 md:px-8">
+          {/* Two Column Layout - Mobile Responsive */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
             
             {/* Left Column - Image */}
             <div className="flex justify-center">

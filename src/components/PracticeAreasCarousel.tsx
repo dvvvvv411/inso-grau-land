@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Scale, Home, Briefcase, Building, Calculator, FileText, Users, Gavel } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
@@ -63,7 +63,25 @@ const practiceAreas = [
 
 const PracticeAreasCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const cardsPerView = 3;
+  const [cardsPerView, setCardsPerView] = useState(3);
+  
+  // Responsive cards per view
+  useEffect(() => {
+    const updateCardsPerView = () => {
+      if (window.innerWidth < 768) {
+        setCardsPerView(1); // Mobile: 1 card
+      } else if (window.innerWidth < 1024) {
+        setCardsPerView(2); // Tablet: 2 cards
+      } else {
+        setCardsPerView(3); // Desktop: 3 cards
+      }
+    };
+
+    updateCardsPerView();
+    window.addEventListener('resize', updateCardsPerView);
+    return () => window.removeEventListener('resize', updateCardsPerView);
+  }, []);
+
   const maxIndex = Math.max(0, practiceAreas.length - cardsPerView);
 
   const goToPrevious = () => {
@@ -80,28 +98,28 @@ const PracticeAreasCarousel = () => {
 
   return (
     <div className="relative">
-      {/* Navigation Buttons */}
-      <div className="flex justify-between items-center mb-8">
+      {/* Mobile-first Navigation */}
+      <div className="flex justify-between items-center mb-6 md:mb-8">
         <Button
           variant="outline"
-          size="lg"
+          size={cardsPerView === 1 ? "default" : "lg"}
           onClick={goToPrevious}
           disabled={currentIndex === 0}
-          className="rounded-full p-3 border-[#004595]/20 hover:border-[#004595] hover:bg-[#004595]/5 disabled:opacity-30"
+          className="rounded-full p-2 md:p-3 border-[#004595]/20 hover:border-[#004595] hover:bg-[#004595]/5 disabled:opacity-30 touch-manipulation"
         >
-          <ChevronLeft className="w-6 h-6 text-[#004595]" />
+          <ChevronLeft className="w-4 h-4 md:w-6 md:h-6 text-[#004595]" />
         </Button>
 
-        {/* Dot Indicators */}
-        <div className="flex gap-2">
+        {/* Touch-friendly Dot Indicators */}
+        <div className="flex gap-1 md:gap-2">
           {Array.from({ length: maxIndex + 1 }, (_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              className={`h-3 rounded-full transition-all duration-300 touch-manipulation ${
                 currentIndex === index 
-                  ? 'bg-[#004595] w-8' 
-                  : 'bg-[#004595]/30 hover:bg-[#004595]/50'
+                  ? 'bg-[#004595] w-6 md:w-8' 
+                  : 'bg-[#004595]/30 hover:bg-[#004595]/50 w-3'
               }`}
             />
           ))}
@@ -109,12 +127,12 @@ const PracticeAreasCarousel = () => {
 
         <Button
           variant="outline"
-          size="lg"
+          size={cardsPerView === 1 ? "default" : "lg"}
           onClick={goToNext}
           disabled={currentIndex === maxIndex}
-          className="rounded-full p-3 border-[#004595]/20 hover:border-[#004595] hover:bg-[#004595]/5 disabled:opacity-30"
+          className="rounded-full p-2 md:p-3 border-[#004595]/20 hover:border-[#004595] hover:bg-[#004595]/5 disabled:opacity-30 touch-manipulation"
         >
-          <ChevronRight className="w-6 h-6 text-[#004595]" />
+          <ChevronRight className="w-4 h-4 md:w-6 md:h-6 text-[#004595]" />
         </Button>
       </div>
 
@@ -129,31 +147,31 @@ const PracticeAreasCarousel = () => {
             return (
               <div
                 key={area.title}
-                className="flex-shrink-0 px-4"
+                className="flex-shrink-0 px-2 md:px-4"
                 style={{ width: `${100 / cardsPerView}%` }}
               >
                 <Link to={area.link} className="h-full block">
                   <Card className="h-full bg-white border border-gray-200/50 hover:border-[#004595]/30 hover:shadow-xl transition-all duration-300 group cursor-pointer">
-                    <CardContent className="p-8 text-center h-full flex flex-col">
+                    <CardContent className="p-4 md:p-6 lg:p-8 text-center h-full flex flex-col">
                       {/* Icon */}
-                      <div className="mb-6 mx-auto">
-                        <div className="w-16 h-16 bg-[#004595]/10 rounded-2xl flex items-center justify-center group-hover:bg-[#004595]/20 transition-colors duration-300">
-                          <Icon className="w-8 h-8 text-[#004595]" />
+                      <div className="mb-4 md:mb-6 mx-auto">
+                        <div className="w-12 h-12 md:w-16 md:h-16 bg-[#004595]/10 rounded-2xl flex items-center justify-center group-hover:bg-[#004595]/20 transition-colors duration-300">
+                          <Icon className="w-6 h-6 md:w-8 md:h-8 text-[#004595]" />
                         </div>
                       </div>
 
                       {/* Title */}
-                      <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-[#004595] transition-colors duration-300">
+                      <h3 className="text-lg md:text-xl font-bold text-foreground mb-3 md:mb-4 group-hover:text-[#004595] transition-colors duration-300">
                         {area.title}
                       </h3>
 
                       {/* Description */}
-                      <p className="text-muted-foreground leading-relaxed flex-grow">
+                      <p className="text-sm md:text-base text-muted-foreground leading-relaxed flex-grow">
                         {area.description}
                       </p>
 
                       {/* Hover Accent Bar */}
-                      <div className="mt-6 w-0 h-1 bg-[#004595] rounded-full mx-auto group-hover:w-12 transition-all duration-300"></div>
+                      <div className="mt-4 md:mt-6 w-0 h-1 bg-[#004595] rounded-full mx-auto group-hover:w-12 transition-all duration-300"></div>
                     </CardContent>
                   </Card>
                 </Link>
