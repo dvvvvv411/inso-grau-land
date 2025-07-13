@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Upload, Mail, Phone, User, MessageSquare, Briefcase } from "lucide-react";
 import StandardHero from "../components/StandardHero";
+import Footer from "../components/Footer";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
@@ -168,8 +169,9 @@ const Stellenangebote = () => {
         </div>
 
         {/* Application Form Section */}
-        <div className="max-w-2xl mx-auto">
-          <Card>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="md:col-span-2">
+            <Card>
             <CardHeader className="text-center">
               <CardTitle className="text-2xl font-bold text-gray-900">
                 Bewerbung einreichen
@@ -187,15 +189,15 @@ const Stellenangebote = () => {
                     </Label>
                     <div className="relative">
                       <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-                      <Input
-                        id="name"
-                        type="text"
-                        placeholder="Max Mustermann"
-                        className="pl-10"
-                        value={formData.name}
-                        onChange={(e) => handleInputChange("name", e.target.value)}
-                        required
-                      />
+                       <Input
+                         id="name"
+                         type="text"
+                         placeholder="Dein Name"
+                         className="pl-10"
+                         value={formData.name}
+                         onChange={(e) => handleInputChange("name", e.target.value)}
+                         required
+                       />
                     </div>
                   </div>
 
@@ -205,15 +207,15 @@ const Stellenangebote = () => {
                     </Label>
                     <div className="relative">
                       <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="max@example.com"
-                        className="pl-10"
-                        value={formData.email}
-                        onChange={(e) => handleInputChange("email", e.target.value)}
-                        required
-                      />
+                       <Input
+                         id="email"
+                         type="email"
+                         placeholder="Deine Email"
+                         className="pl-10"
+                         value={formData.email}
+                         onChange={(e) => handleInputChange("email", e.target.value)}
+                         required
+                       />
                     </div>
                   </div>
                 </div>
@@ -327,8 +329,10 @@ const Stellenangebote = () => {
               </form>
             </CardContent>
           </Card>
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
