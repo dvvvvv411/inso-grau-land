@@ -1,6 +1,6 @@
-import heroImage from "../assets/law-firm-hero.jpg";
-import partnerImage from "../assets/partner-team.png";
-import workplaceCollage from "../assets/workplace-collage.jpg";
+import heroImage from "/lovable-uploads/a36d0ea7-6638-4770-b104-68e1d1383eb9.png";
+import partnerImage from "/lovable-uploads/fa338e2d-e8d3-485c-b80a-8ec5d5769623.png";
+import workplaceCollage from "/lovable-uploads/5f00c7e6-d31c-40e9-af00-820eee0fd5c1.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Button } from "../components/ui/button";
