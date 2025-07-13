@@ -80,7 +80,7 @@ const Footer = () => {
               <img 
                 src="https://i.imgur.com/8Pk1t7j.png" 
                 alt="Auszeichnung" 
-                className="object-contain w-48 h-auto"
+                className="object-contain w-80 h-auto"
               />
             </div>
           </div>
