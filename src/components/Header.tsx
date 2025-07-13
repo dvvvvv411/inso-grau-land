@@ -13,7 +13,7 @@ const Header = () => {
     },
     {
       title: "Rechtsgebiete", 
-      items: ["Familienrecht", "Arbeitsrecht", "Vertragsrecht", "Immobilienrecht", "Strafrecht"]
+      items: ["Arbeitsrecht", "Insolvenzrecht", "Immobilienrecht", "Mietrecht", "Steuerrecht", "Vertragsrecht", "Erbrecht", "Strafrecht"]
     },
     {
       title: "Steuerberatung",
@@ -71,6 +71,7 @@ const Header = () => {
                         const isUeberUns = menu.title === "Kanzlei" && item === "Über uns";
                         const isNews = menu.title === "Kanzlei" && item === "News";
                         const isDownloads = menu.title === "Kanzlei" && item === "Downloads";
+                        const isInsolvenzrecht = menu.title === "Rechtsgebiete" && item === "Insolvenzrecht";
                         
                         if (isUeberUns) {
                           return (
@@ -103,6 +104,19 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/downloads"
+                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isInsolvenzrecht) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/rechtsgebiete/insolvenzrecht"
                               className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
                               onClick={closeDropdowns}
                             >
@@ -162,6 +176,7 @@ const Header = () => {
                         const isUeberUns = menu.title === "Kanzlei" && item === "Über uns";
                         const isNews = menu.title === "Kanzlei" && item === "News";
                         const isDownloads = menu.title === "Kanzlei" && item === "Downloads";
+                        const isInsolvenzrecht = menu.title === "Rechtsgebiete" && item === "Insolvenzrecht";
                         
                         if (isUeberUns) {
                           return (
@@ -194,6 +209,19 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/downloads"
+                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        if (isInsolvenzrecht) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/rechtsgebiete/insolvenzrecht"
                               className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
                               onClick={closeDropdowns}
                             >
