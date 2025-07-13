@@ -27,9 +27,9 @@ const Footer = () => {
     <footer className="bg-[#004595] text-white">
       <div className="w-full max-w-7xl mx-auto px-8 py-16">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-6 gap-12 mb-12">
           {/* Brand Section */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-2">
             <div className="mb-6">
               <img 
                 src="/lovable-uploads/88fbd551-e951-4bd1-ac03-317ed47b6bec.png"
