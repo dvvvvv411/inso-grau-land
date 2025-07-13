@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import { useCookieConsent } from '@/hooks/useCookieConsent';
 
 const Footer = () => {
+  const { resetConsent } = useCookieConsent();
   const footerMenuItems = [
     { name: 'Impressum', href: '/impressum' },
     { name: 'Datenschutz', href: '/datenschutz' },
@@ -78,7 +80,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/96cce04b-471a-447f-af2e-9200112168b8.png" 
                 alt="Auszeichnung" 
-                className="object-contain w-80 h-auto"
+                className="object-contain w-104 h-auto"
               />
             </div>
           </div>
@@ -106,10 +108,7 @@ const Footer = () => {
                 © 2025 Heß & Partner. Alle Rechte vorbehalten.
               </div>
               <button
-                onClick={() => {
-                  // Cookie dialog functionality would go here
-                  console.log('Open cookie preferences');
-                }}
+                onClick={resetConsent}
                 className="text-blue-200 hover:text-white underline transition-colors duration-200"
               >
                 Cookie-Einwilligung
