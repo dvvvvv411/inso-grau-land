@@ -35,7 +35,7 @@ const SozialrechtUnfallversicherung = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
                 Arbeitsunfälle sind Unfälle von Versicherten infolge einer versicherten Tätigkeit. Versicherte Tätigkeit ist z.B. bei Arbeitnehmern die Arbeitstätigkeit, bei Kindergartenkindern der Kindergarten- bei Schülern der Schulbesuch. Versicherte Tätigkeiten sind auch das „Zurücklegen des mit der versicherten Tätigkeit zusammenhängenden unmittelbaren Weges nach und von dem Ort der Tätigkeit". Erleidet ein Versicherten auf dem unmittelbaren Weg zur Arbeitsstelle einen Verkehrsunfall, liegt ebenfalls ein Arbeitsunfall in Form des Wegeunfalls vor.

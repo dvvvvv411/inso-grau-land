@@ -35,7 +35,7 @@ const MaklerrechtProbleme = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Arten von Maklerverträgen / Vertragsprüfung
             </h2>
@@ -61,7 +61,7 @@ const MaklerrechtProbleme = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Abwehr von Provisionsansprüchen eines Maklers
             </h2>
@@ -72,7 +72,7 @@ const MaklerrechtProbleme = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Widerrufsrecht Maklervertrag
             </h2>
@@ -83,7 +83,7 @@ const MaklerrechtProbleme = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Schadensersatzpflicht vom Makler bei unvollständiger Information
             </h2>
@@ -97,7 +97,7 @@ const MaklerrechtProbleme = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Ausschluss des Kausalitätserfordernisses und erfolgsunabhängige Provision
             </h2>

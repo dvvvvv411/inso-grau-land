@@ -35,7 +35,7 @@ const SteuerrechtStrafverfahren = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Wer leitet ein Steuerstrafverfahren ein?
             </h2>
@@ -46,7 +46,7 @@ const SteuerrechtStrafverfahren = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Wann wird ein Steuerstrafverfahren eingeleitet?
             </h2>
@@ -60,7 +60,7 @@ const SteuerrechtStrafverfahren = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Wie läuft ein Steuerstrafverfahren ab?
             </h2>
@@ -80,7 +80,7 @@ const SteuerrechtStrafverfahren = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Können meine Steuerstraftaten auch verjähren?
             </h2>
@@ -94,7 +94,7 @@ const SteuerrechtStrafverfahren = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Welche Strafe muss ich befürchten?
             </h2>
@@ -108,7 +108,7 @@ const SteuerrechtStrafverfahren = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Hilft mir eine Selbstanzeige?
             </h2>
@@ -125,7 +125,7 @@ const SteuerrechtStrafverfahren = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Wann sollte ich mich um einen Anwalt bemühen?
             </h2>

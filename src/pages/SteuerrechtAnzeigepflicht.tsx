@@ -32,7 +32,7 @@ const SteuerrechtAnzeigepflicht = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Grundlagen der Anzeigepflicht
             </h2>
@@ -43,7 +43,7 @@ const SteuerrechtAnzeigepflicht = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Wann besteht die Anzeigepflicht?
             </h2>
@@ -57,7 +57,7 @@ const SteuerrechtAnzeigepflicht = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Was ist anzuzeigen?
             </h2>
@@ -68,7 +68,7 @@ const SteuerrechtAnzeigepflicht = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Wie erfüllt man die Anzeigepflicht?
             </h2>
@@ -79,7 +79,7 @@ const SteuerrechtAnzeigepflicht = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Folgen bei Nichtbeachtung
             </h2>

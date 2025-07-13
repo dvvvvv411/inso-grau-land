@@ -32,7 +32,7 @@ const SteuerrechtWegzugsbesteuerung = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Grundlagen der Wegzugsbesteuerung
             </h2>
@@ -43,7 +43,7 @@ const SteuerrechtWegzugsbesteuerung = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Betroffene Personen und Beteiligungen
             </h2>
@@ -57,7 +57,7 @@ const SteuerrechtWegzugsbesteuerung = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Stundung und Zahlungserleichterungen
             </h2>
@@ -68,7 +68,7 @@ const SteuerrechtWegzugsbesteuerung = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Mitteilungspflichten und Folgen bei Nichtbeachtung
             </h2>
@@ -79,7 +79,7 @@ const SteuerrechtWegzugsbesteuerung = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Entscheidung des BFH vom 06.09.2023
             </h2>
@@ -90,7 +90,7 @@ const SteuerrechtWegzugsbesteuerung = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Strategien zur Steueroptimierung
             </h2>

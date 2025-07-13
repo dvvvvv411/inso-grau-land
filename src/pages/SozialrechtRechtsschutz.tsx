@@ -35,7 +35,7 @@ const SozialrechtRechtsschutz = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
                 Somit stärkte das Gericht im vorliegend einstweiligen Rechtsschutz die Rechte einer Antragstellerin, die wirtschaftlich die Hyperthermiebehandlung nicht selbst finanzieren könnte. Dies, da die Antragstellerin ansonsten mit einer nicht reversiblen Lebensverkürzung zu rechnen hätte, ihr also schwere und nicht anders abwendbare Nachteile drohten.

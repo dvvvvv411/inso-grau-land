@@ -37,7 +37,7 @@ const GrundstuecksrechtUnberechtigteParkplatznutzung = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 space-y-8">
+          <div className="p-8 space-y-8">
             
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
               <p>

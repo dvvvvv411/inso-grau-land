@@ -32,7 +32,7 @@ const SteuerrechtGestaltungsmissbrauch = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Grundlagen des Gestaltungsmissbrauchs
             </h2>
@@ -49,7 +49,7 @@ const SteuerrechtGestaltungsmissbrauch = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Was ist eine unangemessene Gestaltung?
             </h2>
@@ -63,7 +63,7 @@ const SteuerrechtGestaltungsmissbrauch = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Beispiele für Gestaltungsmissbrauch
             </h2>
@@ -77,7 +77,7 @@ const SteuerrechtGestaltungsmissbrauch = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Gibt es auch Fälle von Gestaltungsmissbrauch, die nicht nach § 42 AO zu beurteilen sind?
             </h2>
@@ -88,7 +88,7 @@ const SteuerrechtGestaltungsmissbrauch = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Fazit: Prüfung und Absicherung durch Steuerberater oder einen Fachanwalt für Steuerrecht ist dringend anzuraten
             </h2>

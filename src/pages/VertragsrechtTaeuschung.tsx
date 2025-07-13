@@ -35,7 +35,7 @@ const VertragsrechtTaeuschung = () => {
       {/* Main Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8">
+          <div className="p-8">
             <div className="space-y-8 text-gray-700 leading-relaxed">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">
