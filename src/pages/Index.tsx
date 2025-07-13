@@ -146,12 +146,12 @@ const Index = () => {
             Willkommen bei Steinbock & Partner, einem erfahrenen Team von Anwälten und Steuerexperten.
           </h2>
 
-          {/* Two Column Layout - Fixed height container */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-[400px]">
+          {/* Two Column Layout - Image larger than text */}
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center h-[400px]">
             
-            {/* Left Column - Image with constrained height */}
-            <div className="flex justify-center h-full">
-              <div className="w-full max-w-md h-full flex items-center">
+            {/* Left Column - Image takes 3/5 of space */}
+            <div className="lg:col-span-3 flex justify-center h-full">
+              <div className="w-full max-w-lg h-full flex items-center">
                 <img 
                   src={partnerImage} 
                   alt="Steinbock & Partner Team"
@@ -160,8 +160,8 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Right Column - Content */}
-            <div className="space-y-6 h-full flex flex-col justify-center">
+            {/* Right Column - Text takes 2/5 of space */}
+            <div className="lg:col-span-2 space-y-6 h-full flex flex-col justify-center">
               <div className="text-white/90 text-base leading-relaxed space-y-4">
                 <p>
                   Unsere Mission ist es, unseren Klienten eine kompetente und effektive Rechts- und Steuerberatung zu bieten. Wir verstehen, dass rechtliche und steuerliche Angelegenheiten komplex sein können und dass eine gründliche Beratung von entscheidender Bedeutung ist.
