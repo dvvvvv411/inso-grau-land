@@ -108,7 +108,11 @@ const Footer = () => {
                 © 2025 Heß & Partner. Alle Rechte vorbehalten.
               </div>
               <button
-                onClick={resetConsent}
+                onClick={() => {
+                  // Clear localStorage and force reload to show banner
+                  localStorage.removeItem('cookie-consent');
+                  window.location.reload();
+                }}
                 className="text-blue-200 hover:text-white underline transition-colors duration-200"
               >
                 Cookie-Einwilligung
