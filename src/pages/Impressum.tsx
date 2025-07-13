@@ -23,8 +23,8 @@ const Impressum = () => {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-primary">Angaben gemäß § 5 TMG</h2>
             <div className="text-muted-foreground leading-relaxed">
-              <p className="font-semibold text-foreground">Rechtsanwälte Heß & Partner</p>
-              <p>Friedrichstraße 123</p>
+              <p className="font-semibold text-foreground">Heß & Partner Rechtsanwälte PartG</p>
+              <p>Marienstr. 19/20</p>
               <p>10117 Berlin</p>
             </div>
           </section>
@@ -34,7 +34,7 @@ const Impressum = () => {
             <div className="text-muted-foreground leading-relaxed">
               <p>Telefon: +49 (0)30 123 456 789</p>
               <p>Fax: +49 (0)30 123 456 790</p>
-              <p>E-Mail: info@hess-partner.de</p>
+              <p>E-Mail: info@hess-anwaltskanzlei.de</p>
             </div>
           </section>
 
@@ -59,8 +59,8 @@ const Impressum = () => {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-primary">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
             <div className="text-muted-foreground leading-relaxed">
-              <p>Rechtsanwalt Max Heß</p>
-              <p>Friedrichstraße 123</p>
+              <p>Dr. Kai Henrik Heß</p>
+              <p>Marienstr. 19/20</p>
               <p>10117 Berlin</p>
             </div>
           </section>

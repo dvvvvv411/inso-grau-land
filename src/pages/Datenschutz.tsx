@@ -69,11 +69,11 @@ const Datenschutz = () => {
                 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
               </p>
               <div className="text-muted-foreground leading-relaxed">
-                <p>Rechtsanwälte Heß & Partner</p>
-                <p>Friedrichstraße 123</p>
+                <p>Heß & Partner Rechtsanwälte PartG</p>
+                <p>Marienstr. 19/20</p>
                 <p>10117 Berlin</p>
                 <p>Telefon: +49 (0)30 123 456 789</p>
-                <p>E-Mail: info@hess-partner.de</p>
+                <p>E-Mail: info@hess-anwaltskanzlei.de</p>
               </div>
               
               <h3 className="text-xl font-semibold text-foreground">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
