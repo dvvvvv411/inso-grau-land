@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "../components/ui/card";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -38,7 +39,7 @@ const newsArticles = [
   {
     title: "Corona-Soforthilfe: Wann eine Rückforderung unzulässig ist",
     excerpt: "Corona-Wirtschaftshilfen auch 2025 noch Thema von hoher Relevanz Bundesweit sind auch 5 Jahre nach Beginn der…",
-    link: "https://www.steinbock-partner.de/rechts-news/coronahilfe-rueckforderung/",
+    link: "/news/coronahilfe-rueckforderung",
     image: newsImage5
   },
   {
@@ -81,43 +82,75 @@ const News = () => {
                 key={article.title}
                 className="bg-white border border-gray-200/50 hover:border-[#004595]/30 hover:shadow-xl transition-all duration-300 group cursor-pointer overflow-hidden"
               >
-                <a 
-                  href={article.link.startsWith('http') ? article.link : undefined}
-                  {...(article.link.startsWith('/') ? {} : { target: "_blank", rel: "noopener noreferrer" })}
-                  onClick={article.link.startsWith('/') ? (e) => {
-                    e.preventDefault();
-                    window.location.href = article.link;
-                  } : undefined}
-                  className="flex flex-col md:flex-row h-full"
-                >
-                  {/* Image */}
-                  <div className="w-full md:w-80 h-48 md:h-40 overflow-hidden flex-shrink-0">
-                    <img 
-                      src={article.image} 
-                      alt={article.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-
-                  {/* Content */}
-                  <CardContent className="p-6 flex-1 flex flex-col">
-                    {/* Title */}
-                    <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-[#004595] transition-colors duration-300 leading-tight">
-                      {article.title}
-                    </h3>
-
-                    {/* Excerpt */}
-                    <p className="text-muted-foreground text-sm leading-relaxed flex-grow mb-4">
-                      {article.excerpt}
-                    </p>
-
-                    {/* Read More Link */}
-                    <div className="flex items-center text-[#004595] text-sm font-medium group-hover:text-[#004595]/80 transition-colors duration-300 mt-auto">
-                      <span>Weiterlesen</span>
-                      <ExternalLink className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
+                {article.link.startsWith('/') ? (
+                  <Link 
+                    to={article.link}
+                    className="flex flex-col md:flex-row h-full"
+                  >
+                    {/* Image */}
+                    <div className="w-full md:w-80 h-48 md:h-40 overflow-hidden flex-shrink-0">
+                      <img 
+                        src={article.image} 
+                        alt={article.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
                     </div>
-                  </CardContent>
-                </a>
+
+                    {/* Content */}
+                    <CardContent className="p-6 flex-1 flex flex-col">
+                      {/* Title */}
+                      <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-[#004595] transition-colors duration-300 leading-tight">
+                        {article.title}
+                      </h3>
+
+                      {/* Excerpt */}
+                      <p className="text-muted-foreground text-sm leading-relaxed flex-grow mb-4">
+                        {article.excerpt}
+                      </p>
+
+                      {/* Read More Link */}
+                      <div className="flex items-center text-[#004595] text-sm font-medium group-hover:text-[#004595]/80 transition-colors duration-300 mt-auto">
+                        <span>Weiterlesen</span>
+                        <ExternalLink className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
+                      </div>
+                    </CardContent>
+                  </Link>
+                ) : (
+                  <a 
+                    href={article.link}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex flex-col md:flex-row h-full"
+                  >
+                    {/* Image */}
+                    <div className="w-full md:w-80 h-48 md:h-40 overflow-hidden flex-shrink-0">
+                      <img 
+                        src={article.image} 
+                        alt={article.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+
+                    {/* Content */}
+                    <CardContent className="p-6 flex-1 flex flex-col">
+                      {/* Title */}
+                      <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-[#004595] transition-colors duration-300 leading-tight">
+                        {article.title}
+                      </h3>
+
+                      {/* Excerpt */}
+                      <p className="text-muted-foreground text-sm leading-relaxed flex-grow mb-4">
+                        {article.excerpt}
+                      </p>
+
+                      {/* Read More Link */}
+                      <div className="flex items-center text-[#004595] text-sm font-medium group-hover:text-[#004595]/80 transition-colors duration-300 mt-auto">
+                        <span>Weiterlesen</span>
+                        <ExternalLink className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
+                      </div>
+                    </CardContent>
+                  </a>
+                )}
               </Card>
             ))}
           </div>

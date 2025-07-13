@@ -1,4 +1,5 @@
 import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import newsImage2 from "../assets/news-placeholder-2.jpg";
@@ -13,16 +14,12 @@ const NewsArticle2 = () => {
         <div className="max-w-4xl mx-auto">
           {/* Breadcrumb Navigation */}
           <nav className="flex items-center space-x-2 text-white/80 mb-8">
-            <a 
-              href="/news" 
+            <Link 
+              to="/news" 
               className="hover:text-white transition-colors duration-200 text-sm font-medium"
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = "/news";
-              }}
             >
               News
-            </a>
+            </Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-white text-sm font-medium">
               Meldefristen beim Datenschutzvorfall

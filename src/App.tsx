@@ -10,6 +10,7 @@ import NewsArticle1 from "./pages/NewsArticle1";
 import NewsArticle2 from "./pages/NewsArticle2";
 import NewsArticle3 from "./pages/NewsArticle3";
 import NewsArticle4 from "./pages/NewsArticle4";
+import NewsArticle5 from "./pages/NewsArticle5";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/news/meldefristen-beim-datenschutzvorfall" element={<NewsArticle2 />} />
           <Route path="/news/bargeschaeft-insolvenz" element={<NewsArticle3 />} />
           <Route path="/news/datenuebertragung" element={<NewsArticle4 />} />
+          <Route path="/news/coronahilfe-rueckforderung" element={<NewsArticle5 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

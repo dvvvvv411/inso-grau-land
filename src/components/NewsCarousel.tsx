@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
@@ -38,7 +39,7 @@ const newsArticles = [
   {
     title: "Corona-Soforthilfe: Wann eine Rückforderung unzulässig ist",
     excerpt: "Corona-Wirtschaftshilfen auch 2025 noch Thema von hoher Relevanz Bundesweit sind auch 5 Jahre nach Beginn der…",
-    link: "https://www.steinbock-partner.de/rechts-news/coronahilfe-rueckforderung/",
+    link: "/news/coronahilfe-rueckforderung",
     image: newsImage5
   },
   {
@@ -125,43 +126,75 @@ const NewsCarousel = () => {
               style={{ width: `${100 / cardsPerView}%` }}
             >
               <Card className="h-full bg-white border border-gray-200/50 hover:border-[#004595]/30 hover:shadow-xl transition-all duration-300 group cursor-pointer overflow-hidden">
-                <a 
-                  href={article.link.startsWith('http') ? article.link : undefined}
-                  {...(article.link.startsWith('/') ? {} : { target: "_blank", rel: "noopener noreferrer" })}
-                  onClick={article.link.startsWith('/') ? (e) => {
-                    e.preventDefault();
-                    window.location.href = article.link;
-                  } : undefined}
-                  className="block h-full"
-                >
-                  {/* Image - 50% */}
-                  <div className="h-64 overflow-hidden">
-                    <img 
-                      src={article.image} 
-                      alt={article.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-
-                  {/* Content - 50% */}
-                  <CardContent className="p-6 h-64 flex flex-col">
-                    {/* Title */}
-                    <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-[#004595] transition-colors duration-300 line-clamp-3 leading-tight">
-                      {article.title}
-                    </h3>
-
-                    {/* Excerpt */}
-                    <p className="text-muted-foreground text-sm leading-relaxed flex-grow line-clamp-5 mb-4">
-                      {article.excerpt}
-                    </p>
-
-                    {/* Read More Link */}
-                    <div className="flex items-center text-[#004595] text-sm font-medium group-hover:text-[#004595]/80 transition-colors duration-300 mt-auto">
-                      <span>Weiterlesen</span>
-                      <ExternalLink className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
+                {article.link.startsWith('/') ? (
+                  <Link 
+                    to={article.link}
+                    className="block h-full"
+                  >
+                    {/* Image - 50% */}
+                    <div className="h-64 overflow-hidden">
+                      <img 
+                        src={article.image} 
+                        alt={article.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
                     </div>
-                  </CardContent>
-                </a>
+
+                    {/* Content - 50% */}
+                    <CardContent className="p-6 h-64 flex flex-col">
+                      {/* Title */}
+                      <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-[#004595] transition-colors duration-300 line-clamp-3 leading-tight">
+                        {article.title}
+                      </h3>
+
+                      {/* Excerpt */}
+                      <p className="text-muted-foreground text-sm leading-relaxed flex-grow line-clamp-5 mb-4">
+                        {article.excerpt}
+                      </p>
+
+                      {/* Read More Link */}
+                      <div className="flex items-center text-[#004595] text-sm font-medium group-hover:text-[#004595]/80 transition-colors duration-300 mt-auto">
+                        <span>Weiterlesen</span>
+                        <ExternalLink className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
+                      </div>
+                    </CardContent>
+                  </Link>
+                ) : (
+                  <a 
+                    href={article.link}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block h-full"
+                  >
+                    {/* Image - 50% */}
+                    <div className="h-64 overflow-hidden">
+                      <img 
+                        src={article.image} 
+                        alt={article.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+
+                    {/* Content - 50% */}
+                    <CardContent className="p-6 h-64 flex flex-col">
+                      {/* Title */}
+                      <h3 className="text-xl font-bold text-foreground mb-4 group-hover:text-[#004595] transition-colors duration-300 line-clamp-3 leading-tight">
+                        {article.title}
+                      </h3>
+
+                      {/* Excerpt */}
+                      <p className="text-muted-foreground text-sm leading-relaxed flex-grow line-clamp-5 mb-4">
+                        {article.excerpt}
+                      </p>
+
+                      {/* Read More Link */}
+                      <div className="flex items-center text-[#004595] text-sm font-medium group-hover:text-[#004595]/80 transition-colors duration-300 mt-auto">
+                        <span>Weiterlesen</span>
+                        <ExternalLink className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
+                      </div>
+                    </CardContent>
+                  </a>
+                )}
               </Card>
             </div>
           ))}
