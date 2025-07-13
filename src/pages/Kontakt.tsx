@@ -100,13 +100,13 @@ const Kontakt = () => {
       </section>
 
       {/* Contact Information and Form */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
             
             {/* Contact Information */}
-            <div className="lg:col-span-1">
-              <div className="bg-white rounded-xl shadow-lg p-8 sticky top-8">
+            <div className="bg-gray-100 p-12">
+              <div className="sticky top-8">
                 <h3 className="text-2xl font-bold text-[#004595] mb-6">Kontaktdaten</h3>
                 
                 <div className="space-y-6">
@@ -166,118 +166,63 @@ const Kontakt = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="lg:col-span-2">
-              <div className="bg-white rounded-xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-[#004595] mb-6">Nachricht senden</h3>
-                <p className="text-gray-600 mb-8">
-                  Nutzen Sie unser Kontaktformular für eine schnelle und unkomplizierte Kontaktaufnahme. 
-                  Wir melden uns zeitnah bei Ihnen zurück.
-                </p>
+            <div className="p-12">
+              <h3 className="text-2xl font-bold text-[#004595] mb-6">Nachricht senden</h3>
+              <p className="text-gray-600 mb-8">
+                Nutzen Sie unser Kontaktformular für eine schnelle und unkomplizierte Kontaktaufnahme. 
+                Wir melden uns zeitnah bei Ihnen zurück.
+              </p>
 
-                <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <FormField
-                        control={form.control}
-                        name="salutation"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Anrede *</FormLabel>
-                            <Select onValueChange={field.onChange} defaultValue={field.value}>
-                              <FormControl>
-                                <SelectTrigger>
-                                  <SelectValue placeholder="Bitte wählen" />
-                                </SelectTrigger>
-                              </FormControl>
-                              <SelectContent>
-                                <SelectItem value="herr">Herr</SelectItem>
-                                <SelectItem value="frau">Frau</SelectItem>
-                                <SelectItem value="divers">Divers</SelectItem>
-                              </SelectContent>
-                            </Select>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-
-                      <FormField
-                        control={form.control}
-                        name="fullName"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Vollständiger Name *</FormLabel>
-                            <FormControl>
-                              <Input placeholder="Vor- und Nachname" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <FormField
-                        control={form.control}
-                        name="email"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>E-Mail-Adresse *</FormLabel>
-                            <FormControl>
-                              <Input type="email" placeholder="ihre@email.de" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-
-                      <FormField
-                        control={form.control}
-                        name="phone"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Telefonnummer *</FormLabel>
-                            <FormControl>
-                              <Input placeholder="+49 123 456789" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                    </div>
-
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <FormField
                       control={form.control}
-                      name="requestCallback"
-                      render={({ field }) => (
-                        <FormItem className="flex flex-row items-start space-x-3 space-y-0">
-                          <FormControl>
-                            <Checkbox
-                              checked={field.value}
-                              onCheckedChange={field.onChange}
-                            />
-                          </FormControl>
-                          <div className="space-y-1 leading-none">
-                            <FormLabel>Rückruf gewünscht</FormLabel>
-                            <p className="text-sm text-gray-600">
-                              Bitte rufen Sie mich zurück, um einen Termin zu vereinbaren.
-                            </p>
-                          </div>
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="message"
+                      name="salutation"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Ihre Nachricht *</FormLabel>
+                          <FormLabel>Anrede *</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger>
+                                <SelectValue placeholder="Bitte wählen" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              <SelectItem value="herr">Herr</SelectItem>
+                              <SelectItem value="frau">Frau</SelectItem>
+                              <SelectItem value="divers">Divers</SelectItem>
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="fullName"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Vollständiger Name *</FormLabel>
                           <FormControl>
-                            <Textarea
-                              placeholder="Beschreiben Sie Ihr Anliegen..."
-                              className="min-h-[120px]"
-                              {...field}
-                            />
+                            <Input placeholder="Vor- und Nachname" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
+                      name="email"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>E-Mail-Adresse *</FormLabel>
+                          <FormControl>
+                            <Input type="email" placeholder="ihre@email.de" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -286,38 +231,91 @@ const Kontakt = () => {
 
                     <FormField
                       control={form.control}
-                      name="privacy"
+                      name="phone"
                       render={({ field }) => (
-                        <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                        <FormItem>
+                          <FormLabel>Telefonnummer *</FormLabel>
                           <FormControl>
-                            <Checkbox
-                              checked={field.value}
-                              onCheckedChange={field.onChange}
-                            />
+                            <Input placeholder="+49 123 456789" {...field} />
                           </FormControl>
-                          <div className="space-y-1 leading-none">
-                            <FormLabel>Datenschutzerklärung *</FormLabel>
-                            <p className="text-sm text-gray-600">
-                              Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung 
-                              meiner Daten zur Bearbeitung meiner Anfrage zu. Die Einwilligung kann 
-                              jederzeit widerrufen werden.
-                            </p>
-                          </div>
                           <FormMessage />
                         </FormItem>
                       )}
                     />
+                  </div>
 
-                    <Button
-                      type="submit"
-                      className="w-full bg-[#004595] hover:bg-blue-700 text-white py-3"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? "Wird gesendet..." : "Nachricht senden"}
-                    </Button>
-                  </form>
-                </Form>
-              </div>
+                  <FormField
+                    control={form.control}
+                    name="requestCallback"
+                    render={({ field }) => (
+                      <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                        <FormControl>
+                          <Checkbox
+                            checked={field.value}
+                            onCheckedChange={field.onChange}
+                          />
+                        </FormControl>
+                        <div className="space-y-1 leading-none">
+                          <FormLabel>Rückruf gewünscht</FormLabel>
+                          <p className="text-sm text-gray-600">
+                            Bitte rufen Sie mich zurück, um einen Termin zu vereinbaren.
+                          </p>
+                        </div>
+                      </FormItem>
+                    )}
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name="message"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Ihre Nachricht *</FormLabel>
+                        <FormControl>
+                          <Textarea
+                            placeholder="Beschreiben Sie Ihr Anliegen..."
+                            className="min-h-[120px]"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name="privacy"
+                    render={({ field }) => (
+                      <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                        <FormControl>
+                          <Checkbox
+                            checked={field.value}
+                            onCheckedChange={field.onChange}
+                          />
+                        </FormControl>
+                        <div className="space-y-1 leading-none">
+                          <FormLabel>Datenschutzerklärung *</FormLabel>
+                          <p className="text-sm text-gray-600">
+                            Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung 
+                            meiner Daten zur Bearbeitung meiner Anfrage zu. Die Einwilligung kann 
+                            jederzeit widerrufen werden.
+                          </p>
+                        </div>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <Button
+                    type="submit"
+                    className="w-full bg-[#004595] hover:bg-blue-700 text-white py-3"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Wird gesendet..." : "Nachricht senden"}
+                  </Button>
+                </form>
+              </Form>
             </div>
           </div>
         </div>
