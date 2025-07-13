@@ -13,7 +13,7 @@ const RechtsgebieteGrundstuecksrecht = () => {
       
       <StandardHero
         title="Grundstücksrecht"
-        description="Rechtsanwalt Stegmann berät beim Grundstücksrecht insbesondere bei rechtlichen Fragen und Themen rund um Kauf und Verkauf von Grundstücken und Immobilien. Auch bei Fragen rund um die Belastung von Grundstücken mit Rechten wie z.B. Nießbrauch, Wohnrecht, Wegerecht oder Grundpfandrechten (z.B. Grundschuld, Hypothek) berät er Sie sehr gerne."
+        description="Arnold Bernstein berät beim Grundstücksrecht insbesondere bei rechtlichen Fragen und Themen rund um Kauf und Verkauf von Grundstücken und Immobilien. Auch bei Fragen rund um die Belastung von Grundstücken mit Rechten wie z.B. Nießbrauch, Wohnrecht, Wegerecht oder Grundpfandrechten (z.B. Grundschuld, Hypothek) berät er Sie sehr gerne."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Rechtsgebiete", href: "/" },
@@ -42,7 +42,7 @@ const RechtsgebieteGrundstuecksrecht = () => {
             
             <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
               <p>
-                Rechtsanwalt Stegmann ist sowohl Fachanwalt für Baurecht als auch Fachanwalt für Miet- und Wohnungseigentumsrecht. Wir haben die thematische Ausrichtung unserer Anwälte aus dem Blickwinkel der Mandanten gesehen.
+                Arnold Bernstein ist sowohl Fachanwalt für Baurecht als auch Fachanwalt für Miet- und Wohnungseigentumsrecht. Wir haben die thematische Ausrichtung unserer Anwälte aus dem Blickwinkel der Mandanten gesehen.
               </p>
               
               <p>
@@ -50,7 +50,7 @@ const RechtsgebieteGrundstuecksrecht = () => {
               </p>
               
               <p>
-                Rechtsanwalt Stegmann steht unseren Mandanten daher rund um die Themen Haus (Immobilie), Wohnung oder Grundstück und Nachbarschaft zur Seite.
+                Arnold Bernstein steht unseren Mandanten daher rund um die Themen Haus (Immobilie), Wohnung oder Grundstück und Nachbarschaft zur Seite.
               </p>
             </div>
           </div>
