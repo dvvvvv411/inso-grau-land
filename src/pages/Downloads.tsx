@@ -67,29 +67,18 @@ const Downloads = () => {
             {downloadItems.map((item, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-200 hover:border-[#004595]/20 group"
+                className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 p-6 border border-gray-200 hover:border-[#004595]/20 group cursor-pointer"
               >
-                <div className="flex flex-col items-center text-center space-y-4">
-                  {/* Download Icon */}
-                  <div className="w-16 h-16 bg-[#004595]/10 rounded-full flex items-center justify-center group-hover:bg-[#004595]/20 transition-colors">
-                    <Download className="w-8 h-8 text-[#004595]" />
-                  </div>
-                  
+                <div className="flex items-center justify-between">
                   {/* Title */}
-                  <h3 className="text-lg font-semibold text-foreground leading-tight">
+                  <h3 className="text-base font-medium text-foreground leading-tight flex-1 pr-4">
                     {item.title}
                   </h3>
                   
-                  {/* File Size */}
-                  <div className="text-sm text-muted-foreground bg-gray-100 px-3 py-1 rounded-full">
-                    {item.size}
+                  {/* Download Icon */}
+                  <div className="flex-shrink-0">
+                    <Download className="w-5 h-5 text-[#004595] group-hover:text-[#003366]" />
                   </div>
-                  
-                  {/* Download Button (placeholder for now) */}
-                  <button className="w-full mt-4 bg-[#004595] text-white hover:bg-[#003366] font-medium px-4 py-2 rounded-lg transition-all duration-300 hover:shadow-lg flex items-center justify-center gap-2">
-                    <Download className="w-4 h-4" />
-                    Download
-                  </button>
                 </div>
               </div>
             ))}
