@@ -1,7 +1,7 @@
-import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import StandardHero from "../components/StandardHero";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import partnerTeamImage from "../assets/partner-team.png";
@@ -11,28 +11,14 @@ const RechtsgebieteInsolvenzrecht = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       
-      {/* Blue Hero Section */}
-      <section className="bg-[#004595] py-24 px-4">
-        <div className="max-w-4xl mx-auto">
-          {/* Breadcrumb Navigation */}
-          <nav className="flex items-center space-x-2 text-white/80 mb-8">
-            <span className="text-white text-sm font-medium">Rechtsgebiete</span>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-white text-sm font-medium">
-              Insolvenzrecht
-            </span>
-          </nav>
-          
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Insolvenzrecht
-            </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              In den letzten Jahren ist die Zahl der Insolvenzen dramatisch gewachsen. Auch viele Privatpersonen sind von der Insolvenz betroffen.
-            </p>
-          </div>
-        </div>
-      </section>
+      <StandardHero
+        title="Insolvenzrecht"
+        description="In den letzten Jahren ist die Zahl der Insolvenzen dramatisch gewachsen. Auch viele Privatpersonen sind von der Insolvenz betroffen."
+        breadcrumbs={[
+          { label: "Rechtsgebiete" },
+          { label: "Insolvenzrecht" }
+        ]}
+      />
 
       {/* Article Content */}
       <article className="py-20 px-4 flex-grow">
