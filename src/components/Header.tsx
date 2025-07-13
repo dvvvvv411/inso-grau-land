@@ -9,7 +9,7 @@ const Header = () => {
   const menuItems = [
     {
       title: "Kanzlei",
-      items: ["Über uns", "News", "Downloads", "Team", "Philosophie", "Geschichte"]
+      items: ["Über uns", "News", "Downloads"]
     },
     {
       title: "Rechtsgebiete", 
