@@ -7,6 +7,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import UeberUns from "./pages/UeberUns";
 import News from "./pages/News";
+import Impressum from "./pages/Impressum";
+import Datenschutz from "./pages/Datenschutz";
 import NewsArticle1 from "./pages/NewsArticle1";
 import NewsArticle2 from "./pages/NewsArticle2";
 import NewsArticle3 from "./pages/NewsArticle3";
@@ -132,6 +134,8 @@ const App = () => (
           <Route path="/stellenangebote" element={<Stellenangebote />} />
           <Route path="/team" element={<Team />} />
           <Route path="/kontakt" element={<Kontakt />} />
+          <Route path="/impressum" element={<Impressum />} />
+          <Route path="/datenschutz" element={<Datenschutz />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
