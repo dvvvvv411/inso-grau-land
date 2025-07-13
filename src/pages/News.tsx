@@ -26,7 +26,7 @@ const newsArticles = [
   {
     title: "Bargeschäftsprivileg bei Vorsatzanfechtung",
     excerpt: "Neue Entscheidung des BGH gibt Klarheit zum Merkmal der Unlauterkeit im Rahmen des Bargeschäftsprivilegs bei Vorsatzanfechtung…",
-    link: "https://www.steinbock-partner.de/rechts-news/bargeschaeft-insolvenz/",
+    link: "/news/bargeschaeft-insolvenz",
     image: newsImage3
   },
   {
