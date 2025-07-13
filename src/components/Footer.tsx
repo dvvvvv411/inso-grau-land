@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Youtube, Linkedin, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import footerAward from '../assets/footer-award.png';
 
 const Footer = () => {
   const locations = [
@@ -102,6 +103,14 @@ const Footer = () => {
 
           {/* Social Media Section */}
           <div className="lg:col-span-1">
+            {/* Award Image */}
+            <div className="mb-6 flex justify-center lg:justify-start">
+              <img 
+                src={footerAward} 
+                alt="Auszeichnung" 
+                className="w-24 h-24 object-contain"
+              />
+            </div>
             <h3 className="text-xl font-bold text-white mb-6">Folgen Sie uns</h3>
             <div className="flex flex-wrap gap-4">
               {socialLinks.map((social) => {
