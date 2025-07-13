@@ -26,7 +26,7 @@ const RechtsgebieteVerwaltungsrecht = () => {
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <img 
-              src="/api/placeholder/400/300" 
+              src="/lovable-uploads/ceed31b4-65ae-4203-807b-9a69c2bc01a1.png" 
               alt="Team Verwaltungsrecht" 
               className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
             />

@@ -26,7 +26,7 @@ const RechtsgebieteSteuerrecht = () => {
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <img 
-              src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=400&h=300" 
+              src="/lovable-uploads/fadea5fe-d754-4949-9dce-10414d7c1be9.png" 
               alt="Steuerrecht Team" 
               className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
             />

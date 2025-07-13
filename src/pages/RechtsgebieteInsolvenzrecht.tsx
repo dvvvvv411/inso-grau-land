@@ -26,7 +26,7 @@ const RechtsgebieteInsolvenzrecht = () => {
           {/* Hero Image */}
           <div className="mb-12">
             <img 
-              src={partnerTeamImage}
+              src="/lovable-uploads/15349153-a75f-48a5-a7a1-3060dddde8cb.png"
               alt="Insolvenzrecht Team"
               className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
             />

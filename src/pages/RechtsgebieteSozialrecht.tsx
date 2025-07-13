@@ -26,7 +26,7 @@ const RechtsgebieteSozialrecht = () => {
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&h=300" 
+              src="/lovable-uploads/6e3e40b9-401f-4bbd-b08d-0ad16e3c7827.png" 
               alt="Sozialrecht Team" 
               className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
             />

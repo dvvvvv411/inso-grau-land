@@ -26,7 +26,7 @@ const RechtsgebieteGrundstuecksrecht = () => {
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <img 
-              src="https://www.steinbock-partner.de/wp-content/uploads/2023/06/team-grundstuecksrecht.jpg" 
+              src="/lovable-uploads/be3e4c30-b54a-47ce-b256-f0c9bdf74f64.png" 
               alt="Anwalt für Grundstücksrecht" 
               className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
             />

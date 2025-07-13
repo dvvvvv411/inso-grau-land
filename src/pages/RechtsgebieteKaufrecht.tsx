@@ -26,7 +26,7 @@ const RechtsgebieteKaufrecht = () => {
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <img 
-              src="/api/placeholder/400/300" 
+              src="/lovable-uploads/9c6ffd77-bb56-4025-a2a2-0f079995c484.png" 
               alt="Team Kaufrecht" 
               className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
             />

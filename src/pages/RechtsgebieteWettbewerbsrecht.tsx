@@ -26,7 +26,7 @@ const RechtsgebieteWettbewerbsrecht = () => {
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <img 
-              src="/api/placeholder/400/300" 
+              src="/lovable-uploads/d91bbd96-5d56-4440-8616-e67a101236b7.png" 
               alt="IT-Recht Team" 
               className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
             />

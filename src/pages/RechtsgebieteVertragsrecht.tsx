@@ -26,7 +26,7 @@ const RechtsgebieteVertragsrecht = () => {
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <img 
-              src="/api/placeholder/400/300" 
+              src="/lovable-uploads/a90d4293-73bd-4088-893a-fd787049c2e7.png" 
               alt="Team Vertragsrecht" 
               className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
             />

@@ -26,7 +26,7 @@ const RechtsgebieteMaklerrecht = () => {
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <img 
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&h=300" 
+              src="/lovable-uploads/6f662738-736c-4ade-859f-1733b3ea9f0a.png" 
               alt="Maklerrecht Team" 
               className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
             />
