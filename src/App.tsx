@@ -44,6 +44,9 @@ import SteuerrechtStrafverfahren from "./pages/SteuerrechtStrafverfahren";
 import SteuerrechtWegzugsbesteuerung from "./pages/SteuerrechtWegzugsbesteuerung";
 import GrundstuecksrechtNachgenehmigung from "./pages/GrundstuecksrechtNachgenehmigung";
 import GrundstuecksrechtUnberechtigteParkplatznutzung from "./pages/GrundstuecksrechtUnberechtigteParkplatznutzung";
+import RechtsgebieteVertragsrecht from "./pages/RechtsgebieteVertragsrecht";
+import VertragsrechtAZ from "./pages/VertragsrechtAZ";
+import VertragsrechtTaeuschung from "./pages/VertragsrechtTaeuschung";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -96,6 +99,9 @@ const App = () => (
             <Route path="/steuerrecht/Wegzugsbesteuerung/" element={<SteuerrechtWegzugsbesteuerung />} />
           <Route path="/grundstuecksrecht/nachgenehmigung/" element={<GrundstuecksrechtNachgenehmigung />} />
           <Route path="/grundstuecksrecht/unberechtigte-parkplatznutzung/" element={<GrundstuecksrechtUnberechtigteParkplatznutzung />} />
+          <Route path="/rechtsgebiete/Vertragsrecht" element={<RechtsgebieteVertragsrecht />} />
+          <Route path="/vertragsrecht/a-z/" element={<VertragsrechtAZ />} />
+          <Route path="/vertragsrecht/taeuschung/" element={<VertragsrechtTaeuschung />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
