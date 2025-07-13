@@ -27,6 +27,10 @@ import RechtsgebieteKaufrecht from "./pages/RechtsgebieteKaufrecht";
 import KaufrechtAZ from "./pages/KaufrechtAZ";
 import KaufrechtAutokauf from "./pages/KaufrechtAutokauf";
 import KaufrechtInternetversandhandel from "./pages/KaufrechtInternetversandhandel";
+import RechtsgebieteMaklerrecht from "./pages/RechtsgebieteMaklerrecht";
+import MaklerrechtAZ from "./pages/MaklerrechtAZ";
+import MaklerrechtInformationen from "./pages/MaklerrechtInformationen";
+import MaklerrechtProbleme from "./pages/MaklerrechtProbleme";
 import GrundstuecksrechtNachgenehmigung from "./pages/GrundstuecksrechtNachgenehmigung";
 import GrundstuecksrechtUnberechtigteParkplatznutzung from "./pages/GrundstuecksrechtUnberechtigteParkplatznutzung";
 import NotFound from "./pages/NotFound";
@@ -64,6 +68,10 @@ const App = () => (
             <Route path="/kaufrecht/a-z/" element={<KaufrechtAZ />} />
             <Route path="/kaufrecht/autokauf-und-gewaehrleistung/" element={<KaufrechtAutokauf />} />
             <Route path="/kaufrecht/internetversandhandel/" element={<KaufrechtInternetversandhandel />} />
+            <Route path="/rechtsgebiete/maklerrecht" element={<RechtsgebieteMaklerrecht />} />
+            <Route path="/maklerrecht/a-z/" element={<MaklerrechtAZ />} />
+            <Route path="/maklerrecht/rechtliche-informationen-fuer-makler/" element={<MaklerrechtInformationen />} />
+            <Route path="/maklerrecht/probleme-mit-dem-makler-immobilien-versicherungsvertrag/" element={<MaklerrechtProbleme />} />
           <Route path="/grundstuecksrecht/nachgenehmigung/" element={<GrundstuecksrechtNachgenehmigung />} />
           <Route path="/grundstuecksrecht/unberechtigte-parkplatznutzung/" element={<GrundstuecksrechtUnberechtigteParkplatznutzung />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
