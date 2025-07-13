@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, CardContent } from "../components/ui/card";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import StandardHero from "../components/StandardHero";
 import newsImage1 from "../assets/news-placeholder-1.jpg";
 import newsImage2 from "../assets/news-placeholder-2.jpg";
 import newsImage3 from "../assets/news-placeholder-3.jpg";
@@ -61,17 +62,14 @@ const News = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       
-      {/* Blue Hero Section */}
-      <section className="bg-[#004595] py-24 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl font-bold text-white mb-6">
-            News
-          </h1>
-          <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
-            Hier finden Sie die wichtigsten Rechts-News und Entwicklungen von unserer Kanzlei im Überblick.
-          </p>
-        </div>
-      </section>
+      <StandardHero
+        title="News"
+        description="Hier finden Sie die wichtigsten Rechts-News und Entwicklungen von unserer Kanzlei im Überblick."
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "News" }
+        ]}
+      />
 
       {/* News Articles Grid */}
       <section className="py-20 px-4 flex-grow">

@@ -4,33 +4,22 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import StandardHero from "@/components/StandardHero";
 
 const RechtsgebieteMaklerrecht = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
       
-      {/* Hero Section */}
-      <section className="bg-[#004595] text-white py-16 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-transparent"></div>
-        <div className="max-w-7xl mx-auto relative">
-          {/* Breadcrumb */}
-          <div className="flex items-center text-blue-200 mb-6 text-sm">
-            <Link to="/" className="hover:text-white transition-colors">Rechtsgebiete</Link>
-            <ChevronRight className="w-4 h-4 mx-2" />
-            <span className="text-white">Maklerrecht</span>
-          </div>
-          
-          <div>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-              Maklerrecht
-            </h1>
-            <p className="text-xl text-blue-100 leading-relaxed">
-              Der Makler fordert seine Provision ein, aber der Kunde bezahlt nicht? Wie ist eine Maklerklausel zu beurteilen? Muss ein Vorkaufsberechtigter bei Ausübung seines Vorkaufsrechts die Maklerprovision bezahlen? Diese und zahlreiche weitere Rechtsfragen stellen sich im Maklerrecht.
-            </p>
-          </div>
-        </div>
-      </section>
+      <StandardHero
+        title="Maklerrecht"
+        description="Der Makler fordert seine Provision ein, aber der Kunde bezahlt nicht? Wie ist eine Maklerklausel zu beurteilen? Muss ein Vorkaufsberechtigter bei Ausübung seines Vorkaufsrechts die Maklerprovision bezahlen? Diese und zahlreiche weitere Rechtsfragen stellen sich im Maklerrecht."
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Rechtsgebiete", href: "/" },
+          { label: "Maklerrecht" }
+        ]}
+      />
 
       {/* Main Content */}
       <section className="py-16 px-6">

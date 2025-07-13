@@ -1,22 +1,31 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Button } from "../components/ui/button";
+import StandardHero from "../components/StandardHero";
 
 const UeberUns = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-accent/20">
-      {/* Header */}
       <Header />
       
-      {/* Section 1: Spezialisierte Beratung mit regionalen Wurzeln - Blue Background */}
-      <div className="py-20" style={{ backgroundColor: '#004595' }}>
+      <StandardHero
+        title="Über uns"
+        description="Mit drei Rechtsanwälten eröffnete im Jahr 2000 die Anwaltskanzlei Steinbock & Partner in Randersacker bei Würzburg. Die Idee hinter unserer Kanzleigründung: auch in kleineren und mittleren Städten und auf dem Land besteht Bedarf an spezialisierter Rechtsberatung."
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Über uns" }
+        ]}
+      />
+      
+      {/* Section 1: Spezialisierte Beratung mit regionalen Wurzeln - Content */}
+      <div className="py-20" style={{ backgroundColor: '#f8f9fa' }}>
         <div className="w-full max-w-7xl mx-auto px-8">
           <div className="text-center max-w-5xl mx-auto">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
               Spezialisierte Beratung mit regionalen Wurzeln
-            </h1>
-            <p className="text-xl text-white/90 leading-relaxed">
-              Mit drei Rechtsanwälten eröffnete im Jahr 2000 die Anwaltskanzlei Steinbock & Partner in Randersacker bei Würzburg. Die Idee hinter unserer Kanzleigründung: auch in kleineren und mittleren Städten und auf dem Land besteht Bedarf an spezialisierter Rechtsberatung. Wer fundiertes anwaltliches Wissen auf unterschiedlichen Rechtsgebieten benötigt, soll dafür nicht nach Berlin, Frankfurt oder Nürnberg fahren müssen!
+            </h2>
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              Wer fundiertes anwaltliches Wissen auf unterschiedlichen Rechtsgebieten benötigt, soll dafür nicht nach Berlin, Frankfurt oder Nürnberg fahren müssen!
             </p>
           </div>
         </div>

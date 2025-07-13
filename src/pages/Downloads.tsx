@@ -1,6 +1,7 @@
 import { Download } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import StandardHero from "../components/StandardHero";
 
 const Downloads = () => {
   const downloadItems = [
@@ -42,22 +43,14 @@ const Downloads = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       
-      {/* Blue Hero Section */}
-      <section className="bg-[#004595] py-24 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Downloads
-          </h1>
-          <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
-            Die Rechte an dieser Website und an den enthaltenen Inhalten liegen bei Steinbock & Partner. 
-            Besucher der Webseite dürfen gerne Dateien oder Inhalte herunterladen, nutzen und weiter übertragen. 
-            Urheberrechtsvermerke dürfen allerdings nicht entfernt werden.
-          </p>
-          <p className="text-lg text-white/80 mt-4 max-w-3xl mx-auto">
-            Eine gewerbliche Nutzung ohne unsere vorherige Zustimmung ist nicht erlaubt.
-          </p>
-        </div>
-      </section>
+      <StandardHero
+        title="Downloads"
+        description="Die Rechte an dieser Website und an den enthaltenen Inhalten liegen bei Steinbock & Partner. Besucher der Webseite dürfen gerne Dateien oder Inhalte herunterladen, nutzen und weiter übertragen. Urheberrechtsvermerke dürfen allerdings nicht entfernt werden. Eine gewerbliche Nutzung ohne unsere vorherige Zustimmung ist nicht erlaubt."
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Downloads" }
+        ]}
+      />
 
       {/* Downloads Content */}
       <section className="py-20 px-4 flex-grow bg-gray-50">

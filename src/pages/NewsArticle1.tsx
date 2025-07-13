@@ -2,6 +2,7 @@ import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import StandardHero from "../components/StandardHero";
 import newsImage1 from "../assets/news-placeholder-1.jpg";
 
 const NewsArticle1 = () => {
@@ -9,30 +10,15 @@ const NewsArticle1 = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       
-      {/* Blue Hero Section */}
-      <section className="bg-[#004595] py-24 px-4">
-        <div className="max-w-4xl mx-auto">
-          {/* Breadcrumb Navigation */}
-          <nav className="flex items-center space-x-2 text-white/80 mb-8">
-            <Link 
-              to="/news" 
-              className="hover:text-white transition-colors duration-200 text-sm font-medium"
-            >
-              News
-            </Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-white text-sm font-medium">
-              20 % Schadensersatz gegenüber der Bank bei Kreditkartenmissbrauch
-            </span>
-          </nav>
-          
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              20 % Schadensersatz gegenüber der Bank bei Kreditkartenmissbrauch
-            </h1>
-          </div>
-        </div>
-      </section>
+      <StandardHero
+        title="20 % Schadensersatz gegenüber der Bank bei Kreditkartenmissbrauch"
+        description="Das Oberlandesgericht (OLG) Dresden hat am 5. Mai 2025 (Az. 8 U 1482/24) ein bedeutendes Urteil zur Haftung von Banken bei Phishing-Angriffen gefällt."
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "News", href: "/news" },
+          { label: "20 % Schadensersatz gegenüber der Bank bei Kreditkartenmissbrauch" }
+        ]}
+      />
 
       {/* Article Content */}
       <article className="py-20 px-4 flex-grow">
