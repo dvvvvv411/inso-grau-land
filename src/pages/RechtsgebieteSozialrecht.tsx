@@ -28,7 +28,7 @@ const RechtsgebieteSozialrecht = () => {
             <div 
               className="w-full h-64 md:h-80 rounded-lg shadow-lg relative bg-cover bg-center"
               style={{
-                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.6), rgba(255, 255, 255, 0.1), rgba(0, 86, 179, 0.4)), url('/lovable-uploads/6e3e40b9-401f-4bbd-b08d-0ad16e3c7827.png')`
+                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.6), rgba(0, 86, 179, 0.4)), url('/lovable-uploads/6e3e40b9-401f-4bbd-b08d-0ad16e3c7827.png')`
               }}
             >
             </div>

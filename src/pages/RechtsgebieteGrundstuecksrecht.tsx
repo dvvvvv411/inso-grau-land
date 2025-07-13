@@ -28,7 +28,7 @@ const RechtsgebieteGrundstuecksrecht = () => {
             <div 
               className="w-full h-64 md:h-80 rounded-lg shadow-lg relative bg-cover bg-center"
               style={{
-                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.6), rgba(255, 255, 255, 0.1), rgba(0, 86, 179, 0.4)), url('/lovable-uploads/be3e4c30-b54a-47ce-b256-f0c9bdf74f64.png')`
+                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.6), rgba(0, 86, 179, 0.4)), url('/lovable-uploads/be3e4c30-b54a-47ce-b256-f0c9bdf74f64.png')`
               }}
             >
             </div>
