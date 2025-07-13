@@ -76,7 +76,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex justify-center lg:justify-start">
               <img 
-                src="https://i.imgur.com/8Pk1t7j.png" 
+                src="/lovable-uploads/96cce04b-471a-447f-af2e-9200112168b8.png" 
                 alt="Auszeichnung" 
                 className="object-contain w-80 h-auto"
               />
