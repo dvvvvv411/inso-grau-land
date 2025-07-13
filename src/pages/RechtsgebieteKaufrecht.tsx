@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import teamKaufrecht from "@/assets/team-kaufrecht.png";
 
 const RechtsgebieteKaufrecht = () => {
   return (
@@ -33,7 +32,7 @@ const RechtsgebieteKaufrecht = () => {
             </div>
             <div className="flex justify-center lg:justify-end">
               <img 
-                src={teamKaufrecht} 
+                src="/api/placeholder/400/300" 
                 alt="Team Kaufrecht" 
                 className="rounded-2xl shadow-2xl max-w-md w-full object-cover"
               />
