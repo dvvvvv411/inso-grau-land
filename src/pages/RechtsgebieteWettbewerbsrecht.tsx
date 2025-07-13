@@ -25,11 +25,13 @@ const RechtsgebieteWettbewerbsrecht = () => {
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <img 
-              src="/lovable-uploads/d91bbd96-5d56-4440-8616-e67a101236b7.png" 
-              alt="IT-Recht Team" 
-              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg mb-8"
-            />
+            <div 
+              className="w-full h-64 md:h-80 rounded-lg shadow-lg relative bg-cover bg-center"
+              style={{
+                backgroundImage: `linear-gradient(135deg, rgba(0, 69, 149, 0.8), rgba(0, 86, 179, 0.6)), url('/lovable-uploads/d91bbd96-5d56-4440-8616-e67a101236b7.png')`
+              }}
+            >
+            </div>
           </div>
           
           <div className="mb-12">
