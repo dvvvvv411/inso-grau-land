@@ -72,7 +72,7 @@ const Datenschutz = () => {
                 <p>Heß & Partner Rechtsanwälte PartG</p>
                 <p>Marienstr. 19/20</p>
                 <p>10117 Berlin</p>
-                <p>Telefon: +49 (0)30 123 456 789</p>
+                <p>Telefon: +49 (0) 30 75420496</p>
                 <p>E-Mail: info@hess-anwaltskanzlei.de</p>
               </div>
               

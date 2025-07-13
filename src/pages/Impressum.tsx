@@ -32,8 +32,8 @@ const Impressum = () => {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-primary">Kontakt</h2>
             <div className="text-muted-foreground leading-relaxed">
-              <p>Telefon: +49 (0)30 123 456 789</p>
-              <p>Fax: +49 (0)30 123 456 790</p>
+              <p>Telefon: +49 (0) 30 75420496</p>
+              <p>Fax: +49 (0) 30 75420497</p>
               <p>E-Mail: info@hess-anwaltskanzlei.de</p>
             </div>
           </section>

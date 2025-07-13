@@ -120,7 +120,7 @@ const VerwaltungsrechtImpfpflicht = () => {
                   Sie haben Fragen hierzu oder benötigen Unterstützung, dann kommen Sie gerne auf uns zu. Arbeitsrecht ist von Beginn an eine der Säulen unserer Kanzlei gewesen, und bis heute geblieben. Wir beraten, unterstützen und vertreten Sie umfassend.
                 </p>
                 <p>
-                  Rufen Sie uns einfach unverbindlich an oder schreiben Sie uns eine E-Mail an info@hess-partner-berlin.de und schildern Sie uns Ihr Anliegen. Gerne können Sie für die Kontaktaufnahme auch unseren Button „Rückruf-Service" nutzen. Gespräche über Kosten kosten nichts.
+                  Rufen Sie uns einfach unverbindlich an oder schreiben Sie uns eine E-Mail an info@hess-anwaltskanzlei.de und schildern Sie uns Ihr Anliegen. Gerne können Sie für die Kontaktaufnahme auch unseren Button „Rückruf-Service" nutzen. Gespräche über Kosten kosten nichts.
                 </p>
               </div>
             </div>
