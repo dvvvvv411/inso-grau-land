@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -66,16 +67,33 @@ const Header = () => {
                 {activeDropdown === menu.title && (
                   <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-gray-100 z-50 overflow-hidden">
                     <div className="py-2">
-                      {menu.items.map((item, itemIndex) => (
-                        <a
-                          key={itemIndex}
-                          href="#"
-                          className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
-                          onClick={closeDropdowns}
-                        >
-                          {item}
-                        </a>
-                      ))}
+                      {menu.items.map((item, itemIndex) => {
+                        const isUeberUns = menu.title === "Kanzlei" && item === "Über uns";
+                        
+                        if (isUeberUns) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/ueber-uns"
+                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        return (
+                          <a
+                            key={itemIndex}
+                            href="#"
+                            className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                            onClick={closeDropdowns}
+                          >
+                            {item}
+                          </a>
+                        );
+                      })}
                     </div>
                   </div>
                 )}
@@ -112,16 +130,33 @@ const Header = () => {
                   
                   {activeDropdown === menu.title && (
                     <div className="ml-4 mt-2 space-y-1">
-                      {menu.items.map((item, itemIndex) => (
-                        <a
-                          key={itemIndex}
-                          href="#"
-                          className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
-                          onClick={closeDropdowns}
-                        >
-                          {item}
-                        </a>
-                      ))}
+                      {menu.items.map((item, itemIndex) => {
+                        const isUeberUns = menu.title === "Kanzlei" && item === "Über uns";
+                        
+                        if (isUeberUns) {
+                          return (
+                            <Link
+                              key={itemIndex}
+                              to="/ueber-uns"
+                              className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                              onClick={closeDropdowns}
+                            >
+                              {item}
+                            </Link>
+                          );
+                        }
+                        
+                        return (
+                          <a
+                            key={itemIndex}
+                            href="#"
+                            className="block px-4 py-2 text-blue-100 hover:text-white hover:bg-blue-600/50 rounded transition-colors"
+                            onClick={closeDropdowns}
+                          >
+                            {item}
+                          </a>
+                        );
+                      })}
                     </div>
                   )}
                 </div>
