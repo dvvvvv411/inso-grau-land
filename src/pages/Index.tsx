@@ -45,7 +45,7 @@ const Index = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-accent/20">
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-accent/20 pt-20">
       {/* Header */}
       <Header />
       

@@ -31,7 +31,9 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#004595] text-white shadow-xl relative z-50 border-b border-blue-400/20">
+    <header className="bg-[#004595] text-white shadow-xl fixed top-0 left-0 right-0 z-50 border-b border-blue-400/20"
+      style={{ backdropFilter: 'blur(8px)' }}
+    >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -63,8 +65,8 @@ const Header = () => {
 
                 {/* Dropdown Menu */}
                 {activeDropdown === menu.title && (
-                  <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-gray-100 z-50 overflow-hidden">
-                    <div className="py-2">
+                  <div className={`absolute top-full left-0 mt-2 ${menu.items.length > 5 ? 'w-96' : 'w-64'} bg-white rounded-xl shadow-2xl border border-gray-100 z-50 overflow-hidden`}>
+                    <div className={`py-2 ${menu.items.length > 5 ? 'grid grid-cols-2 gap-0' : ''}`}>
                       {menu.items.map((item, itemIndex) => {
                         const isUeberUns = menu.title === "Kanzlei" && item === "Über uns";
                         const isNews = menu.title === "Kanzlei" && item === "News";
@@ -83,12 +85,14 @@ const Header = () => {
                         const isSteuerplanung = menu.title === "Steuerberatung" && item === "Steuerplanung";
                         const isJahresabschluss = menu.title === "Steuerberatung" && item === "Jahresabschluss";
                         
+                        const baseClasses = `block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium ${menu.items.length > 5 ? 'text-sm' : 'border-b border-gray-50 last:border-b-0'}`;
+                        
                         if (isUeberUns) {
                           return (
                             <Link
                               key={itemIndex}
                               to="/ueber-uns"
-                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              className={baseClasses}
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -101,7 +105,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/news"
-                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              className={baseClasses}
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -114,7 +118,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/downloads"
-                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              className={baseClasses}
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -127,7 +131,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/rechtsgebiete/insolvenzrecht"
-                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              className={baseClasses}
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -140,7 +144,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/rechtsgebiete/grundstuecksrecht"
-                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              className={baseClasses}
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -153,7 +157,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/rechtsgebiete/kaufrecht"
-                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              className={baseClasses}
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -166,7 +170,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/rechtsgebiete/maklerrecht"
-                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              className={baseClasses}
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -179,7 +183,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/rechtsgebiete/sozialrecht"
-                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              className={baseClasses}
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -192,7 +196,7 @@ const Header = () => {
                               <Link
                                 key={itemIndex}
                                 to="/rechtsgebiete/steuerrecht"
-                                className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                                className={baseClasses}
                                 onClick={closeDropdowns}
                               >
                                 {item}
@@ -205,7 +209,7 @@ const Header = () => {
                               <Link
                                 key={itemIndex}
                                 to="/rechtsgebiete/vertragsrecht"
-                                className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                                className={baseClasses}
                                 onClick={closeDropdowns}
                               >
                                 {item}
@@ -218,7 +222,7 @@ const Header = () => {
                               <Link
                                 key={itemIndex}
                                 to="/rechtsgebiete/verwaltungsrecht"
-                                className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                                className={baseClasses}
                                 onClick={closeDropdowns}
                               >
                                 {item}
@@ -231,7 +235,7 @@ const Header = () => {
                               <Link
                                 key={itemIndex}
                                 to="/rechtsgebiete/wettbewerbsrecht"
-                                className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                                className={baseClasses}
                                 onClick={closeDropdowns}
                               >
                                 {item}
@@ -244,7 +248,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/steuerberatung/unternehmenssteuern"
-                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              className={baseClasses}
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -257,7 +261,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/steuerberatung/privatsteuern"
-                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              className={baseClasses}
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -270,7 +274,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/steuerberatung/steuerplanung"
-                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              className={baseClasses}
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -283,7 +287,7 @@ const Header = () => {
                             <Link
                               key={itemIndex}
                               to="/steuerberatung/jahresabschluss"
-                              className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                              className={baseClasses}
                               onClick={closeDropdowns}
                             >
                               {item}
@@ -295,7 +299,7 @@ const Header = () => {
                           <a
                             key={itemIndex}
                             href="#"
-                            className="block px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-[#004595] transition-all duration-150 font-medium border-b border-gray-50 last:border-b-0"
+                            className={baseClasses}
                             onClick={closeDropdowns}
                           >
                             {item}
