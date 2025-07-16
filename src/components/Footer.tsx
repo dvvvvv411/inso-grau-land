@@ -82,11 +82,18 @@ const Footer = () => {
                 alt="Auszeichnung" 
                 className="object-contain w-full max-w-sm h-auto"
               />
-              <img 
-                src="/lovable-uploads/a1364ca9-edc5-47f0-b24c-3bf4e86e0740.png" 
-                alt="Anwalt.de Bewertung 5,0 Sterne" 
-                className="object-contain w-full max-w-sm h-auto"
-              />
+              <a 
+                href="https://www.anwalt.de/hess-partner" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <img 
+                  src="/lovable-uploads/a1364ca9-edc5-47f0-b24c-3bf4e86e0740.png" 
+                  alt="Anwalt.de Bewertung 5,0 Sterne" 
+                  className="object-contain w-full max-w-sm h-auto hover:opacity-80 transition-opacity duration-200"
+                />
+              </a>
             </div>
           </div>
         </div>
