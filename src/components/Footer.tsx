@@ -83,7 +83,7 @@ const Footer = () => {
                 className="object-contain w-full max-w-sm h-auto"
               />
               <a 
-                href="https://www.anwalt.de/hess-partner" 
+                href="https://www.anvvalt.de/hess-partner" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block"
