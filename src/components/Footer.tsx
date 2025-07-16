@@ -76,10 +76,15 @@ const Footer = () => {
 
           {/* Award Image Section - Takes 2 columns for bigger size */}
           <div className="lg:col-span-2">
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex flex-col items-center lg:items-start gap-4">
               <img 
                 src="/lovable-uploads/96cce04b-471a-447f-af2e-9200112168b8.png" 
                 alt="Auszeichnung" 
+                className="object-contain w-full max-w-sm h-auto"
+              />
+              <img 
+                src="/lovable-uploads/a1364ca9-edc5-47f0-b24c-3bf4e86e0740.png" 
+                alt="Anwalt.de Bewertung 5,0 Sterne" 
                 className="object-contain w-full max-w-sm h-auto"
               />
             </div>
